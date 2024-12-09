@@ -1948,7 +1948,7 @@ input:checked + .toggle-bg {
       format("embedded-opentype"),
     url("/assets/fonts/gilroy/Gilroy-SemiBold.woff2") format("woff2"),
     url("/assets/fonts/gilroy/Gilroy-SemiBold.woff") format("woff"),
-    url("/assets/fonts/gilroy/Gilroy-SemiBold.ttf") format("truetype");
+    url("/assets/fonts/gilroy/Gilroy-SemiBold.ttf") format("truet ype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
