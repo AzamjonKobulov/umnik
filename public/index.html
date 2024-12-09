@@ -1703,8 +1703,8 @@
 
         <div class="relative">
           <!-- Swiper -->
-          <div class="max-w-base mx-auto absolute right-0">
-            <div class="swiper mySwiper">
+          <div class="max-w-base mx-auto">
+            <div class="swiper mySwiper w-full px-2.5">
               <div class="swiper-wrapper">
                 <!-- Review 1 -->
                 <div class="swiper-slide">
@@ -1933,7 +1933,534 @@
           </div>
         </div>
       </section>
+
+      <!-- Images -->
+      <section id="image">
+        <div class="max-w-base mx-auto grid grid-cols-4 gap-5 px-2.5">
+          <!-- Image 1 -->
+          <div class="aspect-square rounded-2xl overflow-hidden">
+            <img
+              src="./assets/images/img-images-1.png"
+              alt="Image"
+              class="size-full object-cover"
+            />
+          </div>
+          <!-- Image 2 -->
+          <div
+            class="aspect-square relative bg-brand-yellow-light border-2 border-brand-yellow border-dashed rounded-2xl overflow-hidden"
+          >
+            <img
+              src="./assets/images/img-images-stars.png"
+              alt="Image"
+              class="size-full object-cover"
+            />
+            <h3
+              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-2xl font-semibold leading-8 text-center whitespace-nowrap"
+            >
+              Родителям и детям <br />
+              у нас нравится
+            </h3>
+          </div>
+          <!-- Image 3 -->
+          <div class="aspect-square rounded-2xl overflow-hidden">
+            <img
+              src="./assets/images/img-images-2.png"
+              alt="Image"
+              class="size-full object-cover"
+            />
+          </div>
+          <!-- Image 4 -->
+          <div class="aspect-square rounded-2xl overflow-hidden">
+            <img
+              src="./assets/images/img-images-3.png"
+              alt="Image"
+              class="size-full object-cover"
+            />
+          </div>
+          <!-- Image 5 -->
+          <div class="aspect-square rounded-2xl overflow-hidden">
+            <img
+              src="./assets/images/img-images-4.png"
+              alt="Image"
+              class="size-full object-cover"
+            />
+          </div>
+          <!-- Image 6 -->
+          <div class="aspect-square rounded-2xl overflow-hidden">
+            <img
+              src="./assets/images/img-images-5.png"
+              alt="Image"
+              class="size-full object-cover"
+            />
+          </div>
+          <!-- Image 7 -->
+          <div class="aspect-square rounded-2xl overflow-hidden">
+            <img
+              src="./assets/images/img-images-6.png"
+              alt="Image"
+              class="size-full object-cover"
+            />
+          </div>
+          <!-- Image 8 -->
+          <div class="aspect-square rounded-2xl overflow-hidden">
+            <img
+              src="./assets/images/img-images-7.png"
+              alt="Image"
+              class="size-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Leave Questions ? -->
+      <section id="leave-question">
+        <div class="max-w-base mx-auto px-2.5">
+          <div
+            class="relative flex justify-between bg-brand-blue-norm rounded-30 overflow-hidden"
+          >
+            <div class="w-1/2 spac-y-10 py-60px pl-60px">
+              <div class="space-y-5 relative z-10">
+                <h2>
+                  <span
+                    class="bg-white border-2 border-dashed border-brand-blue rounded-20 mt-2 -ml-5 py-0.5 px-4"
+                    >Остались вопросы?</span
+                  >
+                  Получите ответы у преподавателя
+                </h2>
+                <p class="max-w-[360px] text-xl text-brand-gray leading-6">
+                  Подробно обсудим всё, что вас волнует, и подберём подходящий
+                  курс для вашего ребёнка
+                </p>
+              </div>
+            </div>
+
+            <!-- Image Boxes -->
+            <img
+              src="./assets/images/img-question.png"
+              alt="Image"
+              class="absolute left-0 bottom-0"
+            />
+
+            <!-- Image Girl -->
+            <img
+              src="./assets/images/img-girl-question.png"
+              alt="Image"
+              class="w-fit h-fit mt-auto mr-10"
+            />
+
+            <!-- Form -->
+            <form action="#" class="w-1/2 space-y-5 py-[90px] pr-60px">
+              <!-- Select Container -->
+              <div class="relative select">
+                <!-- Select Button -->
+                <button
+                  class="select-button w-full flex items-center justify-between bg-white text-brand-gray-100 focus:outline-none focus:ring-2 focus:ring-brand-blue rounded-20 p-5"
+                >
+                  <span class="select-label">Выберите филиал</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="select-icon w-5 h-5 transition-transform"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25L12 15.75L4.5 8.25"
+                    />
+                  </svg>
+                </button>
+
+                <!-- Select List -->
+                <ul
+                  class="select-list fade-in absolute mt-2 bg-white rounded-20 shadow-lg w-full hidden z-10"
+                >
+                  <li
+                    class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                    data-value="Уралмаш"
+                  >
+                    <img
+                      src="./assets/images/icon-location.svg"
+                      alt="Location Icon"
+                    />
+                    Уралмаш
+                  </li>
+                  <li
+                    class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                    data-value="Эльмаш"
+                  >
+                    <img
+                      src="./assets/images/icon-location.svg"
+                      alt="Location Icon"
+                    />
+                    Эльмаш
+                  </li>
+                  <li
+                    class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                    data-value="Садовый"
+                  >
+                    <img
+                      src="./assets/images/icon-location.svg"
+                      alt="Location Icon"
+                    />
+                    Садовый
+                  </li>
+                  <li
+                    class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                    data-value="Завокзальный"
+                  >
+                    <img
+                      src="./assets/images/icon-location.svg"
+                      alt="Location Icon"
+                    />
+                    Завокзальный
+                  </li>
+                  <li
+                    class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                    data-value="Широкая речка"
+                  >
+                    <img
+                      src="./assets/images/icon-location.svg"
+                      alt="Location Icon"
+                    />
+                    Широкая речка
+                  </li>
+                </ul>
+              </div>
+
+              <input
+                type="text"
+                placeholder="Ваше имя"
+                class="w-full text-brand-gray-100 outline-none border-none focus:outline-none focus:ring-2 focus:ring-brand-blue rounded-20 placeholder:text-brand-gray-100 p-5"
+              />
+
+              <input
+                type="text"
+                placeholder="Ваш номер телефона"
+                class="w-full text-brand-gray-100 outline-none border-none focus:outline-none focus:ring-2 focus:ring-brand-blue rounded-20 placeholder:text-brand-gray-100 p-5"
+              />
+
+              <div class="flex items-center gap-2.5">
+                <input
+                  id="default-checkbox"
+                  type="checkbox"
+                  value=""
+                  class="size-5 rounded-md bg-white focus:bg-brand-blue focus:ring-brand-blue border-none"
+                />
+                <label
+                  for="default-checkbox"
+                  class="text-sm leading-4 text-brand-gray-100"
+                  >Я согласен (-на) с политикой конфиденциальности</label
+                >
+              </div>
+
+              <button
+                class="w-full bg-brand-blue text-white text-xl leading-5 border-4 border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-blue hover:border-dashed transition-all duration-300 p-5"
+              >
+                Записаться на пробный урок
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <!-- Top -->
+      <div
+        class="max-w-base mx-auto flex justify-between border-t border-brand-blue-norm py-60px px-2.5"
+      >
+        <!-- Logo & Socials -->
+        <div class="space-y-60px">
+          <!-- Logo -->
+          <a href="#" class="w-56 h-[70px]">
+            <img
+              src="./assets/images/logo.png"
+              alt="Logo"
+              class="w-56 h-[70px]"
+            />
+          </a>
+
+          <!-- Socials -->
+          <div class="flex items-center gap-5">
+            <a href="#">
+              <img src="./assets/images/icon-vkontakte.svg" alt="Vkontakte" />
+            </a>
+            <a href="#">
+              <img src="./assets/images/icon-whatsapp.svg" alt="Vkontakte" />
+            </a>
+            <a href="#">
+              <img src="./assets/images/icon-telegram.svg" alt="Vkontakte" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div class="flex gap-[90px] leading-5">
+          <!-- Links 1 -->
+          <div class="space-y-5">
+            <h3 class="text-2xl font-semibold leading-30px">Меню</h3>
+
+            <ul class="space-y-5">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Главная</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >О центре</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Цены</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Расписание</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Вопрос-ответ</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Новости</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Статьи</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Отзывы</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Links 1 -->
+          <div class="space-y-5">
+            <h3 class="text-2xl font-semibold leading-30px">Направления</h3>
+
+            <ul class="space-y-5">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Робототехника</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Программирование</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Подготовка к школе</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Техника чтения</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Логопед</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >ИЗО</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Лепка</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Шахматы</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Комиксы</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Настольные игры</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Занятия «Мама + Ребёнок»</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Подготовка к ОГЭ</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Каллиграфия</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Links 1 -->
+          <div class="space-y-5">
+            <h3 class="text-2xl font-semibold leading-30px">Филиалы</h3>
+
+            <ul class="space-y-5">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Уралмаш</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Эльмаш</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Садовый</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Завокзальный</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Широкая речка</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Links 1 -->
+          <div class="space-y-5">
+            <h3 class="text-2xl font-semibold leading-30px">
+              Группы по возрасту
+            </h3>
+
+            <ul class="space-y-5">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >5-7 лет</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >8-11 лет</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >12-15 лет</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="bg-brand-yellow-100">
+        <div
+          class="max-w-base mx-auto flex justify-between text-sm leading-4 text-brand-gray py-30px px-2.5"
+        >
+          <div class="space-y-2.5">
+            <p class="max-w-xl pr-10">
+              Вы принимаете условия политики в отношении обработки персональных
+              данных и пользовательского соглашения каждый раз, когда оставляете
+              свои данные в любой форме обратной связи на сайте Умник66.ру
+            </p>
+            <p>© 2024. Академия интеллекта «Умник»</p>
+          </div>
+
+          <a href="#">Дизайн и разработка сайта: Swift Marketing</a>
+        </div>
+      </div>
+    </footer>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
