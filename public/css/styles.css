@@ -1097,10 +1097,6 @@ input:checked + .toggle-bg {
   margin-left: auto;
   margin-right: auto;
 }
-.-mx-8 {
-  margin-left: -2rem;
-  margin-right: -2rem;
-}
 .-ml-5 {
   margin-left: -1.25rem;
 }
@@ -1115,9 +1111,6 @@ input:checked + .toggle-bg {
 }
 .mt-2 {
   margin-top: 0.5rem;
-}
-.ml-auto {
-  margin-left: auto;
 }
 .block {
   display: block;
@@ -1873,9 +1866,6 @@ input:checked + .toggle-bg {
 .underline {
   text-decoration-line: underline;
 }
-.underline-offset-2 {
-  text-underline-offset: 2px;
-}
 .underline-offset-4 {
   text-underline-offset: 4px;
 }
@@ -1940,12 +1930,12 @@ input:checked + .toggle-bg {
 
 @font-face {
   font-family: "Gilroy";
-  src: url("/public/assets/fonts/gilroy/Gilroy-Bold.eot");
-  src: url("/public/assets/fonts/gilroy/Gilroy-Bold.eot?#iefix")
+  src: url("/assets/fonts/gilroy/Gilroy-Bold.eot");
+  src: url("/assets/fonts/gilroy/Gilroy-Bold.eot?#iefix")
       format("embedded-opentype"),
-    url("/public/assets/fonts/gilroy/Gilroy-Bold.woff2") format("woff2"),
-    url("/public/assets/fonts/gilroy/Gilroy-Bold.woff") format("woff"),
-    url("/public/assets/fonts/gilroy/Gilroy-Bold.ttf") format("truetype");
+    url("/assets/fonts/gilroy/Gilroy-Bold.woff2") format("woff2"),
+    url("/assets/fonts/gilroy/Gilroy-Bold.woff") format("woff"),
+    url("/assets/fonts/gilroy/Gilroy-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -1953,12 +1943,12 @@ input:checked + .toggle-bg {
 
 @font-face {
   font-family: "Gilroy";
-  src: url("/public/assets/fonts/gilroy/Gilroy-SemiBold.eot");
-  src: url("/public/assets/fonts/gilroy/Gilroy-SemiBold.eot?#iefix")
+  src: url("/assets/fonts/gilroy/Gilroy-SemiBold.eot");
+  src: url("/assets/fonts/gilroy/Gilroy-SemiBold.eot?#iefix")
       format("embedded-opentype"),
-    url("/public/assets/fonts/gilroy/Gilroy-SemiBold.woff2") format("woff2"),
-    url("/public/assets/fonts/gilroy/Gilroy-SemiBold.woff") format("woff"),
-    url("/public/assets/fonts/gilroy/Gilroy-SemiBold.ttf") format("truetype");
+    url("/assets/fonts/gilroy/Gilroy-SemiBold.woff2") format("woff2"),
+    url("/assets/fonts/gilroy/Gilroy-SemiBold.woff") format("woff"),
+    url("/assets/fonts/gilroy/Gilroy-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -1966,12 +1956,12 @@ input:checked + .toggle-bg {
 
 @font-face {
   font-family: "Gilroy";
-  src: url("/public/assets/fonts/gilroy/Gilroy-Medium.eot");
-  src: url("/public/assets/fonts/gilroy/Gilroy-Medium.eot?#iefix")
+  src: url("/assets/fonts/gilroy/Gilroy-Medium.eot");
+  src: url("/assets/fonts/gilroy/Gilroy-Medium.eot?#iefix")
       format("embedded-opentype"),
-    url("/public/assets/fonts/gilroy/Gilroy-Medium.woff2") format("woff2"),
-    url("/public/assets/fonts/gilroy/Gilroy-Medium.woff") format("woff"),
-    url("/public/assets/fonts/gilroy/Gilroy-Medium.ttf") format("truetype");
+    url("/assets/fonts/gilroy/Gilroy-Medium.woff2") format("woff2"),
+    url("/assets/fonts/gilroy/Gilroy-Medium.woff") format("woff"),
+    url("/assets/fonts/gilroy/Gilroy-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
