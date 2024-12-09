@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/public/assets/fonts/gilroy/Gilroy-Bold.eot");
+  src: url("/public/assets/fonts/gilroy/Gilroy-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/public/assets/fonts/gilroy/Gilroy-Bold.woff2") format("woff2"),
+    url("/public/assets/fonts/gilroy/Gilroy-Bold.woff") format("woff"),
+    url("/public/assets/fonts/gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/public/assets/fonts/gilroy/Gilroy-SemiBold.eot");
+  src: url("/public/assets/fonts/gilroy/Gilroy-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/public/assets/fonts/gilroy/Gilroy-SemiBold.woff2") format("woff2"),
+    url("/public/assets/fonts/gilroy/Gilroy-SemiBold.woff") format("woff"),
+    url("/public/assets/fonts/gilroy/Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/public/assets/fonts/gilroy/Gilroy-Medium.eot");
+  src: url("/public/assets/fonts/gilroy/Gilroy-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("/public/assets/fonts/gilroy/Gilroy-Medium.woff2") format("woff2"),
+    url("/public/assets/fonts/gilroy/Gilroy-Medium.woff") format("woff"),
+    url("/public/assets/fonts/gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  body {
+    @apply font-gilroy;
+  }
+
+  h1,
+  h2 {
+    @apply font-semibold;
+  }
+
+  h1,
+  h2 {
+    @apply text-40 leading-[48px];
+  }
+
+  section {
+    @apply pb-[120px];
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.2s ease-in-out forwards, scaleIn 0.2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
