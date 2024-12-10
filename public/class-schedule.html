@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" cosntent="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Umnik</title>
   </head>
@@ -317,567 +322,129 @@
 
     <!-- MAIN -->
     <main>
-      <!-- Categories -->
-      <section id="categories">
-        <div class="max-w-base mx-auto space-y-60px pt-60px px-2.5">
-          <h2 class="text-center">
-            Выберите программу обучения для вашего ребенка
-          </h2>
+      <!-- Branches -->
+      <section id="branches" class="pt-60px">
+        <div class="max-w-base mx-auto space-y-60px px-2.5">
+          <div class="space-y-30px text-center">
+            <h2>Расписание занятий</h2>
+            <p class="text-brand-gray text-2xl leading-[30px]">
+              Выберите филиал
+            </p>
+          </div>
 
-          <!-- Categories -->
-          <div class="grid grid-cols-6 gap-5">
-            <!-- Category 1 -->
+          <!-- Branches -->
+          <div class="grid grid-cols-3 gap-5">
+            <!-- Branch 1 -->
             <div
-              class="col-span-3 relative flex flex-col justify-between gap-20 bg-brand-blue-norm rounded-2xl p-8"
+              class="relative flex flex-col justify-between gap-14 bg-brand-blue-norm rounded-2xl overflow-hidden p-30px"
             >
-              <!-- Info -->
-              <div class="space-y-8">
-                <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-blue-light rounded-2xl px-3.5"
-                  >
-                    5-10 лет
-                  </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-blue-light rounded-2xl px-3.5"
-                  >
-                    группы до 8 чел
-                  </div>
-                </div>
-
-                <!-- Title & Text -->
-                <div class="space-y-2.5">
-                  <h2>Робототехника</h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
-                    Конструирование и программирование настоящих роботов из LEGO
-                  </p>
-                </div>
+              <div class="space-y-2.5">
+                <h3 class="text-2xl font-semibold leading-8">Уралмаш</h3>
+                <p class="text-brand-gray leading-5">
+                  ул. Бакинских Комиссаров, 107
+                </p>
               </div>
 
-              <button
+              <img
+                src="./assets/images/img-map-pings.png"
+                alt="Map Pings"
+                class="absolute right-0 top-16"
+              />
+
+              <a
+                href="#"
                 class="h-50px w-fit flex items-center bg-brand-blue text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-blue transition-all duration-300 hover px-10"
               >
-                Подробнее →
-              </button>
-
-              <!-- Image -->
-              <img
-                src="./assets/images/img-category-1.png"
-                alt="Image"
-                class="absolute bottom-0 right-0"
-              />
+                Перейти →
+              </a>
             </div>
-            <!-- Category 2 -->
+            <!-- Branch 2 -->
             <div
-              class="col-span-3 relative flex flex-col justify-between gap-20 bg-brand-purple-light rounded-2xl p-8"
+              class="relative flex flex-col justify-between gap-14 bg-brand-blue-norm rounded-2xl overflow-hidden p-30px"
             >
-              <!-- Info -->
-              <div class="space-y-8">
-                <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-purple-100 rounded-2xl px-3.5"
-                  >
-                    5-15 лет
-                  </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-purple-100 rounded-2xl px-3.5"
-                  >
-                    группы до 6 чел
-                  </div>
-                </div>
-
-                <!-- Title & Text -->
-                <div class="space-y-2.5">
-                  <h2>Программирование</h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
-                    Краткое описание программы, раскрывающее ценности
-                  </p>
-                </div>
+              <div class="space-y-2.5">
+                <h3 class="text-2xl font-semibold leading-8">Эльмаш</h3>
+                <p class="text-brand-gray leading-5">ул. Совхозная, 2</p>
               </div>
 
-              <button
-                class="h-50px w-fit flex items-center bg-brand-purple text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-purple transition-all duration-300 hover px-10"
-              >
-                Подробнее →
-              </button>
-
-              <!-- Image -->
               <img
-                src="./assets/images/img-category-2.png"
-                alt="Image"
-                class="absolute bottom-0 right-0"
+                src="./assets/images/img-map-pings.png"
+                alt="Map Pings"
+                class="absolute right-0 top-16"
               />
-            </div>
-            <!-- Category 3 -->
-            <div
-              class="col-span-2 relative flex flex-col justify-between gap-20 bg-brand-green-light rounded-2xl p-8"
-            >
-              <!-- Info -->
-              <div class="space-y-8">
-                <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
-                  >
-                    5-15 лет
-                  </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
-                  >
-                    индивидуально
-                  </div>
-                </div>
 
-                <!-- Title & Text -->
-                <div class="space-y-2.5">
-                  <h2>Логопед</h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
-                    Краткое описание программы, раскрывающее ценности
-                  </p>
-                </div>
-              </div>
-
-              <button
-                class="h-50px w-fit flex items-center bg-brand-green text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-green transition-all duration-300 hover px-10"
-              >
-                Подробнее →
-              </button>
-
-              <!-- Image -->
-              <img
-                src="./assets/images/img-category-3.png"
-                alt="Image"
-                class="absolute bottom-0 right-0"
-              />
-            </div>
-            <!-- Category 4 -->
-            <div
-              class="col-span-2 relative flex flex-col justify-between gap-20 bg-brand-yellow-light rounded-2xl p-8"
-            >
-              <!-- Info -->
-              <div class="space-y-8">
-                <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-yellow-100 rounded-2xl px-3.5"
-                  >
-                    5-15 лет
-                  </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-yellow-100 rounded-2xl px-3.5"
-                  >
-                    группы по уровню
-                  </div>
-                </div>
-
-                <!-- Title & Text -->
-                <div class="space-y-2.5">
-                  <h2>ИЗО</h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
-                    Краткое описание программы, раскрывающее ценности
-                  </p>
-                </div>
-              </div>
-
-              <button
-                class="h-50px w-fit flex items-center bg-brand-yellow border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-yellow transition-all duration-300 hover px-10"
-              >
-                Подробнее →
-              </button>
-
-              <!-- Image -->
-              <img
-                src="./assets/images/img-category-4.png"
-                alt="Image"
-                class="absolute bottom-0 right-0"
-              />
-            </div>
-            <!-- Category 5 -->
-            <div
-              class="col-span-2 relative flex flex-col justify-between gap-20 bg-brand-green-light rounded-2xl p-8"
-            >
-              <!-- Info -->
-              <div class="space-y-8">
-                <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
-                  >
-                    5-15 лет
-                  </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
-                  >
-                    группы до 6 чел
-                  </div>
-                </div>
-
-                <!-- Title & Text -->
-                <div class="space-y-2.5">
-                  <h2>Лепка</h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
-                    Краткое описание программы, раскрывающее ценности
-                  </p>
-                </div>
-              </div>
-
-              <button
-                class="h-50px w-fit flex items-center bg-brand-green text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-green transition-all duration-300 hover px-10"
-              >
-                Подробнее →
-              </button>
-
-              <!-- Image -->
-              <img
-                src="./assets/images/img-category-5.png"
-                alt="Image"
-                class="absolute bottom-0 right-0"
-              />
-            </div>
-            <!-- Category 6 -->
-            <div
-              class="col-span-3 relative flex flex-col justify-between gap-20 bg-brand-blue-norm rounded-2xl p-8"
-            >
-              <!-- Info -->
-              <div class="space-y-8">
-                <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-blue-light rounded-2xl px-3.5"
-                  >
-                    5-7 лет
-                  </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-blue-light rounded-2xl px-3.5"
-                  >
-                    группы до 6 чел
-                  </div>
-                </div>
-
-                <!-- Title & Text -->
-                <div class="space-y-2.5">
-                  <h2>Подготовка к школе</h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
-                    Конструирование и программирование настоящих роботов из LEGO
-                  </p>
-                </div>
-              </div>
-
-              <button
+              <a
+                href="#"
                 class="h-50px w-fit flex items-center bg-brand-blue text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-blue transition-all duration-300 hover px-10"
               >
-                Подробнее →
-              </button>
-
-              <!-- Image -->
-              <img
-                src="./assets/images/img-category-6.png"
-                alt="Image"
-                class="absolute bottom-0 right-0"
-              />
+                Перейти →
+              </a>
             </div>
-            <!-- Category 7 -->
+            <!-- Branch 3 -->
             <div
-              class="col-span-3 relative flex flex-col justify-between gap-20 bg-brand-purple-light rounded-2xl p-8"
+              class="relative flex flex-col justify-between gap-14 bg-brand-blue-norm rounded-2xl overflow-hidden p-30px"
             >
-              <!-- Info -->
-              <div class="space-y-8">
-                <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-purple-100 rounded-2xl px-3.5"
-                  >
-                    8-11 лет
-                  </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-purple-100 rounded-2xl px-3.5"
-                  >
-                    группы до 6 чел
-                  </div>
-                </div>
-
-                <!-- Title & Text -->
-                <div class="space-y-2.5">
-                  <h2>Техника чтения</h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
-                    Краткое описание программы, раскрывающее ценности
-                  </p>
-                </div>
+              <div class="space-y-2.5">
+                <h3 class="text-2xl font-semibold leading-8">Садовый</h3>
+                <p class="text-brand-gray leading-5">ул. Земская, 2</p>
               </div>
 
-              <button
-                class="h-50px w-fit flex items-center bg-brand-purple text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-purple transition-all duration-300 hover px-10"
-              >
-                Подробнее →
-              </button>
-
-              <!-- Image -->
               <img
-                src="./assets/images/img-category-7.png"
-                alt="Image"
-                class="absolute bottom-0 right-0"
+                src="./assets/images/img-map-pings.png"
+                alt="Map Pings"
+                class="absolute right-0 top-16"
               />
-            </div>
-            <!-- Category 8 -->
-            <div
-              class="col-span-2 relative flex flex-col justify-between gap-20 bg-brand-yellow-light rounded-2xl p-8"
-            >
-              <!-- Info -->
-              <div class="space-y-8">
-                <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-yellow-100 rounded-2xl px-3.5"
-                  >
-                    5-7 лет
-                  </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-yellow-100 rounded-2xl px-3.5"
-                  >
-                    для новичков
-                  </div>
-                </div>
 
-                <!-- Title & Text -->
-                <div class="space-y-2.5">
-                  <h2>Шахматы</h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
-                    Краткое описание программы, раскрывающее ценности
-                  </p>
-                </div>
+              <a
+                href="#"
+                class="h-50px w-fit flex items-center bg-brand-blue text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-blue transition-all duration-300 hover px-10"
+              >
+                Перейти →
+              </a>
+            </div>
+            <!-- Branch 4 -->
+            <div
+              class="relative flex flex-col justify-between gap-14 bg-brand-blue-norm rounded-2xl overflow-hidden p-30px"
+            >
+              <div class="space-y-2.5">
+                <h3 class="text-2xl font-semibold leading-8">Завокзальный</h3>
+                <p class="text-brand-gray leading-5">пер. Полимерный, 13</p>
               </div>
 
-              <button
-                class="h-50px w-fit flex items-center bg-brand-yellow border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-yellow transition-all duration-300 hover px-10"
-              >
-                Подробнее →
-              </button>
-
-              <!-- Image -->
               <img
-                src="./assets/images/img-category-8.png"
-                alt="Image"
-                class="absolute bottom-0 right-0"
+                src="./assets/images/img-map-pings.png"
+                alt="Map Pings"
+                class="absolute right-0 top-16"
               />
-            </div>
-            <!-- Category 9 -->
-            <div
-              class="col-span-2 relative flex flex-col justify-between gap-20 bg-brand-yellow-light rounded-2xl p-8"
-            >
-              <!-- Info -->
-              <div class="space-y-8">
-                <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-yellow-100 rounded-2xl px-3.5"
-                  >
-                    11-15 лет
-                  </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-yellow-100 rounded-2xl px-3.5"
-                  >
-                    новинка
-                  </div>
-                </div>
 
-                <!-- Title & Text -->
-                <div class="space-y-2.5">
-                  <h2>Комиксы</h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
-                    Краткое описание программы, раскрывающее ценности
-                  </p>
-                </div>
+              <a
+                href="#"
+                class="h-50px w-fit flex items-center bg-brand-blue text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-blue transition-all duration-300 hover px-10"
+              >
+                Перейти →
+              </a>
+            </div>
+            <!-- Branch 5 -->
+            <div
+              class="relative flex flex-col justify-between gap-14 bg-brand-blue-norm rounded-2xl overflow-hidden p-30px"
+            >
+              <div class="space-y-2.5">
+                <h3 class="text-2xl font-semibold leading-8">Широкая речка</h3>
+                <p class="text-brand-gray leading-5">ул. Соболева, 19</p>
               </div>
 
-              <button
-                class="h-50px w-fit flex items-center bg-brand-yellow border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-yellow transition-all duration-300 hover px-10"
-              >
-                Подробнее →
-              </button>
-
-              <!-- Image -->
               <img
-                src="./assets/images/img-category-9.png"
-                alt="Image"
-                class="absolute bottom-0 right-0"
+                src="./assets/images/img-map-pings.png"
+                alt="Map Pings"
+                class="absolute right-0 top-16"
               />
-            </div>
-            <!-- Category 10 -->
-            <div
-              class="col-span-2 relative flex flex-col justify-between gap-20 bg-brand-yellow-light rounded-2xl p-8"
-            >
-              <!-- Info -->
-              <div class="space-y-8">
-                <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-yellow-100 rounded-2xl px-3.5"
-                  >
-                    5-15 лет
-                  </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-yellow-100 rounded-2xl px-3.5"
-                  >
-                    группы до 6 чел
-                  </div>
-                </div>
 
-                <!-- Title & Text -->
-                <div class="space-y-2.5">
-                  <h2>
-                    Настольные <br />
-                    игры
-                  </h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
-                    Краткое описание программы, раскрывающее ценности
-                  </p>
-                </div>
-              </div>
-
-              <button
-                class="h-50px w-fit flex items-center bg-brand-yellow border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-yellow transition-all duration-300 hover px-10"
+              <a
+                href="#"
+                class="h-50px w-fit flex items-center bg-brand-blue text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-blue transition-all duration-300 hover px-10"
               >
-                Подробнее →
-              </button>
-
-              <!-- Image -->
-              <img
-                src="./assets/images/img-category-10.png"
-                alt="Image"
-                class="absolute bottom-0 right-0"
-              />
-            </div>
-            <!-- Category 11 -->
-            <div
-              class="col-span-2 relative flex flex-col justify-between gap-20 bg-brand-green-light rounded-2xl p-8"
-            >
-              <!-- Info -->
-              <div class="space-y-8">
-                <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
-                  >
-                    5-15 лет
-                  </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
-                  >
-                    «Мама + <br />
-                    Ребёнок»
-                  </div>
-                </div>
-
-                <!-- Title & Text -->
-                <div class="space-y-2.5">
-                  <h2>Логопед</h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
-                    Краткое описание программы, раскрывающее ценности
-                  </p>
-                </div>
-              </div>
-
-              <button
-                class="h-50px w-fit flex items-center bg-brand-green text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-green transition-all duration-300 hover px-10"
-              >
-                Подробнее →
-              </button>
-
-              <!-- Image -->
-              <img
-                src="./assets/images/img-category-11.png"
-                alt="Image"
-                class="absolute bottom-0 right-0"
-              />
-            </div>
-            <!-- Category 12 -->
-            <div
-              class="col-span-2 relative flex flex-col justify-between gap-20 bg-brand-green-light rounded-2xl p-8"
-            >
-              <!-- Info -->
-              <div class="space-y-8">
-                <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
-                  >
-                    12-15 лет
-                  </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
-                  >
-                    занятия в группах
-                  </div>
-                </div>
-
-                <!-- Title & Text -->
-                <div class="space-y-2.5">
-                  <h2>
-                    Подготовка <br />
-                    к ОГЭ
-                  </h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
-                    Краткое описание программы, раскрывающее ценности
-                  </p>
-                </div>
-              </div>
-
-              <button
-                class="h-50px w-fit flex items-center bg-brand-green text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-green transition-all duration-300 hover px-10"
-              >
-                Подробнее →
-              </button>
-
-              <!-- Image -->
-              <img
-                src="./assets/images/img-category-12.png"
-                alt="Image"
-                class="absolute bottom-0 right-0"
-              />
-            </div>
-            <!-- Category 13 -->
-            <div
-              class="col-span-2 relative flex flex-col justify-between gap-20 bg-brand-green-light rounded-2xl p-8"
-            >
-              <!-- Info -->
-              <div class="space-y-8">
-                <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
-                  >
-                    8-11 лет
-                  </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
-                  >
-                    группы до 6 чел
-                  </div>
-                </div>
-
-                <!-- Title & Text -->
-                <div class="space-y-2.5">
-                  <h2>Каллиграфия</h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
-                    Краткое описание программы, раскрывающее ценности
-                  </p>
-                </div>
-              </div>
-
-              <button
-                class="h-50px w-fit flex items-center bg-brand-green text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-green transition-all duration-300 hover px-10"
-              >
-                Подробнее →
-              </button>
-
-              <!-- Image -->
-              <img
-                src="./assets/images/img-category-13.png"
-                alt="Image"
-                class="absolute bottom-0 right-0"
-              />
+                Перейти →
+              </a>
             </div>
           </div>
         </div>
@@ -1335,5 +902,7 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="../node_modules/preline/dist/preline.js"></script>
   </body>
 </html>

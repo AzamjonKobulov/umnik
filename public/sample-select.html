@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" cosntent="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Umnik</title>
   </head>
@@ -321,49 +326,50 @@
       <section id="categories">
         <div class="max-w-base mx-auto space-y-60px pt-60px px-2.5">
           <h2 class="text-center">
-            Выберите программу обучения для вашего ребенка
+            Программы для взрослых детей <br />
+            от 12 до 15 лет
           </h2>
 
           <!-- Categories -->
           <div class="grid grid-cols-6 gap-5">
             <!-- Category 1 -->
             <div
-              class="col-span-3 relative flex flex-col justify-between gap-20 bg-brand-blue-norm rounded-2xl p-8"
+              class="col-span-3 relative flex flex-col justify-between gap-20 bg-brand-green-light rounded-2xl p-8"
             >
               <!-- Info -->
               <div class="space-y-8">
                 <!-- Stats -->
                 <div class="flex items-center gap-2.5">
                   <div
-                    class="h-9 grid place-content-center bg-brand-blue-light rounded-2xl px-3.5"
+                    class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
                   >
-                    5-10 лет
+                    12-15 лет
                   </div>
                   <div
-                    class="h-9 grid place-content-center bg-brand-blue-light rounded-2xl px-3.5"
+                    class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
                   >
-                    группы до 8 чел
+                    занятия в группах
                   </div>
                 </div>
 
                 <!-- Title & Text -->
                 <div class="space-y-2.5">
-                  <h2>Робототехника</h2>
+                  <h2>Подготовка к ОГЭ</h2>
                   <p class="max-w-64 text-brand-gray leading-5">
-                    Конструирование и программирование настоящих роботов из LEGO
+                    Краткое описание программы, раскрывающее ценности
                   </p>
                 </div>
               </div>
 
               <button
-                class="h-50px w-fit flex items-center bg-brand-blue text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-blue transition-all duration-300 hover px-10"
+                class="h-50px w-fit flex items-center bg-brand-green text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-green transition-all duration-300 hover px-10"
               >
                 Подробнее →
               </button>
 
               <!-- Image -->
               <img
-                src="./assets/images/img-category-1.png"
+                src="./assets/images/img-category-12.png"
                 alt="Image"
                 class="absolute bottom-0 right-0"
               />
@@ -538,133 +544,7 @@
             </div>
             <!-- Category 6 -->
             <div
-              class="col-span-3 relative flex flex-col justify-between gap-20 bg-brand-blue-norm rounded-2xl p-8"
-            >
-              <!-- Info -->
-              <div class="space-y-8">
-                <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-blue-light rounded-2xl px-3.5"
-                  >
-                    5-7 лет
-                  </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-blue-light rounded-2xl px-3.5"
-                  >
-                    группы до 6 чел
-                  </div>
-                </div>
-
-                <!-- Title & Text -->
-                <div class="space-y-2.5">
-                  <h2>Подготовка к школе</h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
-                    Конструирование и программирование настоящих роботов из LEGO
-                  </p>
-                </div>
-              </div>
-
-              <button
-                class="h-50px w-fit flex items-center bg-brand-blue text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-blue transition-all duration-300 hover px-10"
-              >
-                Подробнее →
-              </button>
-
-              <!-- Image -->
-              <img
-                src="./assets/images/img-category-6.png"
-                alt="Image"
-                class="absolute bottom-0 right-0"
-              />
-            </div>
-            <!-- Category 7 -->
-            <div
-              class="col-span-3 relative flex flex-col justify-between gap-20 bg-brand-purple-light rounded-2xl p-8"
-            >
-              <!-- Info -->
-              <div class="space-y-8">
-                <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-purple-100 rounded-2xl px-3.5"
-                  >
-                    8-11 лет
-                  </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-purple-100 rounded-2xl px-3.5"
-                  >
-                    группы до 6 чел
-                  </div>
-                </div>
-
-                <!-- Title & Text -->
-                <div class="space-y-2.5">
-                  <h2>Техника чтения</h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
-                    Краткое описание программы, раскрывающее ценности
-                  </p>
-                </div>
-              </div>
-
-              <button
-                class="h-50px w-fit flex items-center bg-brand-purple text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-purple transition-all duration-300 hover px-10"
-              >
-                Подробнее →
-              </button>
-
-              <!-- Image -->
-              <img
-                src="./assets/images/img-category-7.png"
-                alt="Image"
-                class="absolute bottom-0 right-0"
-              />
-            </div>
-            <!-- Category 8 -->
-            <div
-              class="col-span-2 relative flex flex-col justify-between gap-20 bg-brand-yellow-light rounded-2xl p-8"
-            >
-              <!-- Info -->
-              <div class="space-y-8">
-                <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-yellow-100 rounded-2xl px-3.5"
-                  >
-                    5-7 лет
-                  </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-yellow-100 rounded-2xl px-3.5"
-                  >
-                    для новичков
-                  </div>
-                </div>
-
-                <!-- Title & Text -->
-                <div class="space-y-2.5">
-                  <h2>Шахматы</h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
-                    Краткое описание программы, раскрывающее ценности
-                  </p>
-                </div>
-              </div>
-
-              <button
-                class="h-50px w-fit flex items-center bg-brand-yellow border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-yellow transition-all duration-300 hover px-10"
-              >
-                Подробнее →
-              </button>
-
-              <!-- Image -->
-              <img
-                src="./assets/images/img-category-8.png"
-                alt="Image"
-                class="absolute bottom-0 right-0"
-              />
-            </div>
-            <!-- Category 9 -->
-            <div
-              class="col-span-2 relative flex flex-col justify-between gap-20 bg-brand-yellow-light rounded-2xl p-8"
+              class="col-span-3 relative flex flex-col justify-between gap-20 bg-brand-yellow-light rounded-2xl p-8"
             >
               <!-- Info -->
               <div class="space-y-8">
@@ -704,9 +584,9 @@
                 class="absolute bottom-0 right-0"
               />
             </div>
-            <!-- Category 10 -->
+            <!-- Category 7 -->
             <div
-              class="col-span-2 relative flex flex-col justify-between gap-20 bg-brand-yellow-light rounded-2xl p-8"
+              class="col-span-3 relative flex flex-col justify-between gap-20 bg-brand-yellow-light rounded-2xl p-8"
             >
               <!-- Info -->
               <div class="space-y-8">
@@ -726,10 +606,7 @@
 
                 <!-- Title & Text -->
                 <div class="space-y-2.5">
-                  <h2>
-                    Настольные <br />
-                    игры
-                  </h2>
+                  <h2>Настольные игры</h2>
                   <p class="max-w-64 text-brand-gray leading-5">
                     Краткое описание программы, раскрывающее ценности
                   </p>
@@ -745,136 +622,6 @@
               <!-- Image -->
               <img
                 src="./assets/images/img-category-10.png"
-                alt="Image"
-                class="absolute bottom-0 right-0"
-              />
-            </div>
-            <!-- Category 11 -->
-            <div
-              class="col-span-2 relative flex flex-col justify-between gap-20 bg-brand-green-light rounded-2xl p-8"
-            >
-              <!-- Info -->
-              <div class="space-y-8">
-                <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
-                  >
-                    5-15 лет
-                  </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
-                  >
-                    «Мама + <br />
-                    Ребёнок»
-                  </div>
-                </div>
-
-                <!-- Title & Text -->
-                <div class="space-y-2.5">
-                  <h2>Логопед</h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
-                    Краткое описание программы, раскрывающее ценности
-                  </p>
-                </div>
-              </div>
-
-              <button
-                class="h-50px w-fit flex items-center bg-brand-green text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-green transition-all duration-300 hover px-10"
-              >
-                Подробнее →
-              </button>
-
-              <!-- Image -->
-              <img
-                src="./assets/images/img-category-11.png"
-                alt="Image"
-                class="absolute bottom-0 right-0"
-              />
-            </div>
-            <!-- Category 12 -->
-            <div
-              class="col-span-2 relative flex flex-col justify-between gap-20 bg-brand-green-light rounded-2xl p-8"
-            >
-              <!-- Info -->
-              <div class="space-y-8">
-                <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
-                  >
-                    12-15 лет
-                  </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
-                  >
-                    занятия в группах
-                  </div>
-                </div>
-
-                <!-- Title & Text -->
-                <div class="space-y-2.5">
-                  <h2>
-                    Подготовка <br />
-                    к ОГЭ
-                  </h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
-                    Краткое описание программы, раскрывающее ценности
-                  </p>
-                </div>
-              </div>
-
-              <button
-                class="h-50px w-fit flex items-center bg-brand-green text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-green transition-all duration-300 hover px-10"
-              >
-                Подробнее →
-              </button>
-
-              <!-- Image -->
-              <img
-                src="./assets/images/img-category-12.png"
-                alt="Image"
-                class="absolute bottom-0 right-0"
-              />
-            </div>
-            <!-- Category 13 -->
-            <div
-              class="col-span-2 relative flex flex-col justify-between gap-20 bg-brand-green-light rounded-2xl p-8"
-            >
-              <!-- Info -->
-              <div class="space-y-8">
-                <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
-                  >
-                    8-11 лет
-                  </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
-                  >
-                    группы до 6 чел
-                  </div>
-                </div>
-
-                <!-- Title & Text -->
-                <div class="space-y-2.5">
-                  <h2>Каллиграфия</h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
-                    Краткое описание программы, раскрывающее ценности
-                  </p>
-                </div>
-              </div>
-
-              <button
-                class="h-50px w-fit flex items-center bg-brand-green text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-green transition-all duration-300 hover px-10"
-              >
-                Подробнее →
-              </button>
-
-              <!-- Image -->
-              <img
-                src="./assets/images/img-category-13.png"
                 alt="Image"
                 class="absolute bottom-0 right-0"
               />
@@ -1335,5 +1082,7 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="../node_modules/preline/dist/preline.js"></script>
   </body>
 </html>
