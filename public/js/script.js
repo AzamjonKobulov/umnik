@@ -43,6 +43,7 @@ var swiper = new Swiper(".reviesSwiper", {
     nextEl: ".slider-reviews-next",
     prevEl: ".slider-reviews-prev",
   },
+  loop: true,
   breakpoints: {
     640: {
       slidesPerView: 2,
@@ -65,6 +66,7 @@ var swiper = new Swiper(".articlesSwiper", {
     nextEl: ".slider-articles-next",
     prevEl: ".slider-articles-prev",
   },
+  loop: true,
   breakpoints: {
     640: {
       slidesPerView: 2,
@@ -76,6 +78,52 @@ var swiper = new Swiper(".articlesSwiper", {
     },
     1024: {
       slidesPerView: 4,
+      spaceBetween: 20,
+    },
+  },
+});
+
+// Other Programs
+var swiper = new Swiper(".otherProgramsSwiper", {
+  navigation: {
+    nextEl: ".slider-programs-next",
+    prevEl: ".slider-programs-prev",
+  },
+  loop: true,
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  },
+});
+
+// News
+var swiper = new Swiper(".newsSwiper", {
+  navigation: {
+    nextEl: ".slider-news-next",
+    prevEl: ".slider-news-prev",
+  },
+  loop: true,
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
       spaceBetween: 20,
     },
   },

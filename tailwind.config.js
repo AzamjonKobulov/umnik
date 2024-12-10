@@ -49,6 +49,7 @@ module.exports = {
             DEFAULT: "#4A4A4A",
             100: "#606060",
             200: "#CDCDCD",
+            300: "#f9f9f9",
           },
         },
       },
@@ -61,6 +62,7 @@ module.exports = {
         "60px": "60px",
       },
       borderRadius: {
+        10: "10px",
         20: "20px",
         30: "30px",
       },

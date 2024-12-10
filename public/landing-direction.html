@@ -1,0 +1,3340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" cosntent="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Umnik</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <!-- Top Pin -->
+      <div
+        class="relative bg-brand-blue text-center font-medium text-white text-xs sm:text-base xl:text-xl rounded-b-20 py-3.5"
+      >
+        Новогодние скидки на обучение до 31 декабря!
+
+        <!-- X button -->
+        <button class="absolute top-2.5 right-2.5">
+          <svg
+            width="16"
+            height="15"
+            viewBox="0 0 16 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="0.707031"
+              width="20"
+              height="1"
+              transform="rotate(45 0.707031 0)"
+              fill="white"
+            />
+            <rect
+              width="20"
+              height="1"
+              transform="matrix(-0.707107 0.707107 0.707107 0.707107 14.3828 0)"
+              fill="white"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Navbar -->
+      <nav class="">
+        <!-- Nav Top -->
+        <div class="border-b py-3.5">
+          <div class="max-w-base mx-auto px-2.5 grid grid-cols-2 gap-[73px]">
+            <!-- Left -->
+            <div class="flex items-center justify-between">
+              <!-- Logo & Location -->
+              <div class="flex items-center gap-14">
+                <!-- Logo -->
+                <a href="#" class="w-40 h-10">
+                  <img src="./assets/images/logo.png" alt="Logo" />
+                </a>
+
+                <!-- Location -->
+                <a href="#" class="flex items-center gap-2">
+                  <svg
+                    width="12"
+                    height="15"
+                    viewBox="0 0 12 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6 15C7.32443 15 12 9.055 12 5.83334C12 2.61167 9.31371 0 6 0C2.68629 0 0 2.61167 0 5.83334C0 9.055 4.67557 15 6 15ZM6 8.33334C7.42016 8.33334 8.57141 7.21405 8.57141 5.83334C8.57141 4.45262 7.42016 3.33334 6 3.33334C4.57984 3.33334 3.42859 4.45262 3.42859 5.83334C3.42859 7.21405 4.57984 8.33334 6 8.33334Z"
+                      fill="#3FA2F6"
+                    />
+
+                    <span class="">Екатеринбург</span>
+                  </svg>
+                </a>
+              </div>
+
+              <!-- Socials -->
+              <div class="flex items-center gap-5">
+                <a href="#">
+                  <img
+                    src="./assets/images/icon-vkontakte.svg"
+                    alt="Vkontakte"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="./assets/images/icon-whatsapp.svg"
+                    alt="Vkontakte"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="./assets/images/icon-telegram.svg"
+                    alt="Vkontakte"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <!-- Right -->
+            <div class="flex items-center justify-between">
+              <div>
+                <a
+                  href="tel:+7 (343) 219-00-33"
+                  class="font-bold text-brand-blue text-2xl leading-10"
+                >
+                  +7 (343) 219-00-33
+                </a>
+                <p class="text-sm">ежедневно с 8:00 до 20:00</p>
+              </div>
+
+              <button
+                class="h-50px bg-brand-yellow border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:border-brand-yellow transition-all duration-300 px-5"
+              >
+                Записаться на пробный урок
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nav Bottom -->
+        <div class="max-w-base mx-auto py-5 px-2.5">
+          <ul class="flex justify-between">
+            <li>
+              <a
+                href="#"
+                class="hover:text-brand-blue transition-all duration-300"
+                >Главная
+              </a>
+            </li>
+            <!-- Dropdown 1 -->
+            <li>
+              <button
+                href="#"
+                class="group flex items-center gap-1.5 hover:text-brand-blue transition-all duration-300"
+              >
+                <span>Обучение</span>
+                <svg
+                  width="12"
+                  height="13"
+                  viewBox="0 0 12 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-black group-hover:fill-brand-blue transition-all duration-300"
+                >
+                  <g clip-path="url(#clip0_173_5240)">
+                    <g clip-path="url(#clip1_173_5240)">
+                      <path
+                        d="M1.45346 5.23674C1.45347 5.16721 1.47411 5.09924 1.51276 5.04143C1.5514 4.98362 1.60632 4.93857 1.67057 4.91198C1.73482 4.88539 1.80551 4.87844 1.87371 4.89203C1.94191 4.90562 2.00454 4.93912 2.05369 4.9883L6.13862 9.07323L10.2235 4.9883C10.2898 4.92426 10.3786 4.88883 10.4708 4.88963C10.563 4.89043 10.6512 4.9274 10.7164 4.99259C10.7815 5.05777 10.8185 5.14595 10.8193 5.23812C10.8201 5.3303 10.7847 5.41911 10.7206 5.48541L6.38705 9.81901C6.32113 9.88491 6.23172 9.92194 6.1385 9.92194C6.04528 9.92194 5.95587 9.88491 5.88995 9.81901L1.55635 5.48541C1.52371 5.45275 1.49782 5.41398 1.48017 5.37131C1.46252 5.32864 1.45344 5.28292 1.45346 5.23674Z"
+                      />
+                    </g>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_173_5240">
+                      <rect
+                        width="12"
+                        height="12"
+                        fill="white"
+                        transform="matrix(0 1 -1 0 12 0.5)"
+                      />
+                    </clipPath>
+                    <clipPath id="clip1_173_5240">
+                      <rect
+                        width="12"
+                        height="12"
+                        fill="white"
+                        transform="matrix(0 1 -1 0 12 0.5)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+            </li>
+            <!-- Dropdown 2 -->
+            <li>
+              <button
+                href="#"
+                class="group flex items-center gap-1.5 hover:text-brand-blue transition-all duration-300"
+              >
+                <span>Филиалы</span>
+                <svg
+                  width="12"
+                  height="13"
+                  viewBox="0 0 12 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-black group-hover:fill-brand-blue transition-all duration-300"
+                >
+                  <g clip-path="url(#clip0_173_5240)">
+                    <g clip-path="url(#clip1_173_5240)">
+                      <path
+                        d="M1.45346 5.23674C1.45347 5.16721 1.47411 5.09924 1.51276 5.04143C1.5514 4.98362 1.60632 4.93857 1.67057 4.91198C1.73482 4.88539 1.80551 4.87844 1.87371 4.89203C1.94191 4.90562 2.00454 4.93912 2.05369 4.9883L6.13862 9.07323L10.2235 4.9883C10.2898 4.92426 10.3786 4.88883 10.4708 4.88963C10.563 4.89043 10.6512 4.9274 10.7164 4.99259C10.7815 5.05777 10.8185 5.14595 10.8193 5.23812C10.8201 5.3303 10.7847 5.41911 10.7206 5.48541L6.38705 9.81901C6.32113 9.88491 6.23172 9.92194 6.1385 9.92194C6.04528 9.92194 5.95587 9.88491 5.88995 9.81901L1.55635 5.48541C1.52371 5.45275 1.49782 5.41398 1.48017 5.37131C1.46252 5.32864 1.45344 5.28292 1.45346 5.23674Z"
+                      />
+                    </g>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_173_5240">
+                      <rect
+                        width="12"
+                        height="12"
+                        fill="white"
+                        transform="matrix(0 1 -1 0 12 0.5)"
+                      />
+                    </clipPath>
+                    <clipPath id="clip1_173_5240">
+                      <rect
+                        width="12"
+                        height="12"
+                        fill="white"
+                        transform="matrix(0 1 -1 0 12 0.5)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-brand-blue transition-all duration-300"
+                >Дошколятам
+              </a>
+              <span class="block text-brand-green text-center text-sm"
+                >5-7 лет</span
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-brand-blue transition-all duration-300"
+                >Школьникам
+              </a>
+              <span class="block text-brand-blue text-center text-sm"
+                >8-11 лет</span
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-brand-blue transition-all duration-300"
+                >Взрослым детям
+              </a>
+              <span class="block text-brand-purple text-center text-sm"
+                >12-15 лет</span
+              >
+            </li>
+            <!-- Dropdown 3 -->
+            <li>
+              <button
+                href="#"
+                class="group flex items-center gap-1.5 hover:text-brand-blue transition-all duration-300"
+              >
+                <span>О центре</span>
+                <svg
+                  width="12"
+                  height="13"
+                  viewBox="0 0 12 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-black group-hover:fill-brand-blue transition-all duration-300"
+                >
+                  <g clip-path="url(#clip0_173_5240)">
+                    <g clip-path="url(#clip1_173_5240)">
+                      <path
+                        d="M1.45346 5.23674C1.45347 5.16721 1.47411 5.09924 1.51276 5.04143C1.5514 4.98362 1.60632 4.93857 1.67057 4.91198C1.73482 4.88539 1.80551 4.87844 1.87371 4.89203C1.94191 4.90562 2.00454 4.93912 2.05369 4.9883L6.13862 9.07323L10.2235 4.9883C10.2898 4.92426 10.3786 4.88883 10.4708 4.88963C10.563 4.89043 10.6512 4.9274 10.7164 4.99259C10.7815 5.05777 10.8185 5.14595 10.8193 5.23812C10.8201 5.3303 10.7847 5.41911 10.7206 5.48541L6.38705 9.81901C6.32113 9.88491 6.23172 9.92194 6.1385 9.92194C6.04528 9.92194 5.95587 9.88491 5.88995 9.81901L1.55635 5.48541C1.52371 5.45275 1.49782 5.41398 1.48017 5.37131C1.46252 5.32864 1.45344 5.28292 1.45346 5.23674Z"
+                      />
+                    </g>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_173_5240">
+                      <rect
+                        width="12"
+                        height="12"
+                        fill="white"
+                        transform="matrix(0 1 -1 0 12 0.5)"
+                      />
+                    </clipPath>
+                    <clipPath id="clip1_173_5240">
+                      <rect
+                        width="12"
+                        height="12"
+                        fill="white"
+                        transform="matrix(0 1 -1 0 12 0.5)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-brand-blue transition-all duration-300"
+                >Цены
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-brand-blue transition-all duration-300"
+                >Расписание
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-brand-blue transition-all duration-300"
+                >Контакты
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- Robotics -->
+      <section id="robotics">
+        <div class="max-w-base mx-auto mt-60px px-2.5">
+          <div
+            class="relative flex items-center justify-between bg-brand-blue-light rounded-30 p-60px"
+          >
+            <!-- Left Texts -->
+            <div class="w-1/2 flex flex-col justify-between space-y-[90px]">
+              <div class="space-y-8">
+                <h1>
+                  Занятия по
+                  <span
+                    class="bg-white border-2 border-dashed border-brand-blue rounded-20 py-0.5 px-2"
+                    >робототехнике</span
+                  >
+                  <br />
+                  на Уралмаше для детей <br />
+                  от 5 до 10 лет
+                </h1>
+                <p class="max-w-[388px] text-xl leading-6">
+                  Конструирование и программирование настоящих роботов по
+                  образовательной программе LEGO Education
+                </p>
+              </div>
+
+              <!-- Buttons -->
+              <div class="flex items-center gap-5">
+                <button
+                  class="h-60px flex items-center gap-9 bg-brand-blue text-white text-xl border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:border-brand-blubg-brand-blue hover:text-black transition-all duration-300 px-10"
+                >
+                  Записаться на пробный урок
+                </button>
+
+                <div class="space-y-1">
+                  <p class="text-xl font-semibold leading-6">Ближайшая дата:</p>
+                  <p class="leading-5">завтра, в 18:00</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Image -->
+            <div class="rounded-20 overflow-hidden">
+              <img
+                src="./assets/images/img-landing-direction.png"
+                alt="Image"
+                class="size-full"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Shcedule -->
+      <section id="schedule">
+        <div class="max-w-base mx-auto space-y-60px px-2.5">
+          <div class="space-y-30px text-center">
+            <h2>Расписание занятий</h2>
+            <p class="text-brand-gray-100 text-2xl leading-[30px]">
+              Выбрать месяц и дату
+            </p>
+
+            <!-- Select Container -->
+            <div
+              class="max-w-[335px] mx-auto relative select text-xl leading-6"
+            >
+              <!-- Select Button -->
+              <button
+                class="select-button w-full flex items-center justify-between bg-white border border-brand-blue focus:outline-none focus:ring-2 focus:ring-brand-blue rounded-20 p-5"
+              >
+                <span class="select-label">Выберите месяц</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="select-icon w-5 h-5 transition-transform"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 8.25L12 15.75L4.5 8.25"
+                  />
+                </svg>
+              </button>
+
+              <!-- Select List -->
+              <ul
+                class="select-list fade-in absolute mt-2 bg-white rounded-20 shadow-lg w-full overflow-hidden hidden z-10"
+              >
+                <li
+                  class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                  data-value="Ноябрь"
+                >
+                  Январь
+                </li>
+                <li
+                  class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                  data-value="Февраль"
+                >
+                  Февраль
+                </li>
+                <li
+                  class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                  data-value="Март"
+                >
+                  Март
+                </li>
+                <li
+                  class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                  data-value="Апрель"
+                >
+                  Апрель
+                </li>
+                <li
+                  class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                  data-value="Май"
+                >
+                  Май
+                </li>
+                <li
+                  class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                  data-value="Июнь"
+                >
+                  Июнь
+                </li>
+                <li
+                  class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                  data-value="Июль"
+                >
+                  Июль
+                </li>
+                <li
+                  class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                  data-value="Август"
+                >
+                  Август
+                </li>
+                <li
+                  class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                  data-value="Сентябрь"
+                >
+                  Сентябрь
+                </li>
+                <li
+                  class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                  data-value="Октябрь"
+                >
+                  Октябрь
+                </li>
+                <li
+                  class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                  data-value="Ноябрь"
+                >
+                  Ноябрь
+                </li>
+                <li
+                  class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                  data-value="Декабрь"
+                >
+                  Декабрь
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="max-w-[1061px] flex justify-between mx-auto">
+            <table
+              class="table-auto w-full text-center text-xl text-brand-gray-100"
+            >
+              <thead>
+                <tr>
+                  <td>ПН</td>
+                  <td>ВТ</td>
+                  <td>СР</td>
+                  <td>ЧТ</td>
+                  <td>ПТ</td>
+                  <td>СБ</td>
+                  <td>ВС</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="pt-5">
+                    <button
+                      class="size-11 shrink-0 text-white bg-brand-gray-100 rounded-full hover:bg-brand-gray-100 hover:text-white"
+                    >
+                      1
+                    </button>
+                  </td>
+                  <td class="pt-5">
+                    <button
+                      class="size-11 shrink-0 text-black rounded-full hover:bg-brand-gray-100 hover:text-white"
+                    >
+                      2
+                    </button>
+                  </td>
+                  <td class="pt-5">
+                    <button
+                      class="size-11 shrink-0 text-black rounded-full hover:bg-brand-gray-100 hover:text-white"
+                    >
+                      3
+                    </button>
+                  </td>
+                  <td class="pt-5">
+                    <button
+                      class="size-11 shrink-0 text-black rounded-full hover:bg-brand-gray-100 hover:text-white"
+                    >
+                      4
+                    </button>
+                  </td>
+                  <td class="pt-5">
+                    <button
+                      class="size-11 shrink-0 text-white bg-brand-gray-100 rounded-full hover:bg-brand-gray-100 hover:text-white"
+                    >
+                      5
+                    </button>
+                  </td>
+                  <td class="pt-5">
+                    <button
+                      class="size-11 shrink-0 text-black rounded-full hover:bg-brand-gray-100 hover:text-white"
+                    >
+                      6
+                    </button>
+                  </td>
+                  <td class="pt-5">
+                    <button
+                      class="size-11 shrink-0 text-black rounded-full hover:bg-brand-gray-100 hover:text-white"
+                    >
+                      7
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pt-30px">
+                    <button
+                      class="size-11 shrink-0 text-white bg-brand-gray-100 rounded-full hover:bg-brand-gray-100 hover:text-white"
+                    >
+                      8
+                    </button>
+                  </td>
+                  <td class="pt-30px">
+                    <button
+                      class="size-11 shrink-0 text-black rounded-full hover:bg-brand-gray-100 hover:text-white"
+                    >
+                      9
+                    </button>
+                  </td>
+                  <td class="pt-30px">
+                    <button
+                      class="size-11 shrink-0 text-black rounded-full hover:bg-brand-gray-100 hover:text-white"
+                    >
+                      10
+                    </button>
+                  </td>
+                  <td class="pt-30px">
+                    <button
+                      class="size-11 shrink-0 text-black rounded-full hover:bg-brand-gray-100 hover:text-white"
+                    >
+                      11
+                    </button>
+                  </td>
+                  <td class="pt-30px">
+                    <button
+                      class="size-11 shrink-0 text-white bg-brand-gray-100 rounded-full hover:bg-brand-gray-100 hover:text-white"
+                    >
+                      12
+                    </button>
+                  </td>
+                  <td class="pt-30px">
+                    <button
+                      class="size-11 shrink-0 text-black rounded-full hover:bg-brand-gray-100 hover:text-white"
+                    >
+                      13
+                    </button>
+                  </td>
+                  <td class="pt-30px">
+                    <button
+                      class="size-11 shrink-0 text-black rounded-full hover:bg-brand-gray-100 hover:text-white"
+                    >
+                      14
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pt-30px">
+                    <button
+                      class="size-11 shrink-0 text-white bg-brand-gray-100 rounded-full hover:bg-brand-gray-100 hover:text-white"
+                    >
+                      15
+                    </button>
+                  </td>
+                  <td class="pt-30px">
+                    <button
+                      class="size-11 shrink-0 text-black rounded-full hover:bg-brand-gray-100 hover:text-white"
+                    >
+                      16
+                    </button>
+                  </td>
+                  <td class="pt-30px">
+                    <button
+                      class="size-11 shrink-0 text-black rounded-full hover:bg-brand-gray-100 hover:text-white"
+                    >
+                      17
+                    </button>
+                  </td>
+                  <td class="pt-30px">
+                    <button
+                      class="size-11 shrink-0 text-black rounded-full hover:bg-brand-gray-100 hover:text-white"
+                    >
+                      18
+                    </button>
+                  </td>
+                  <td class="pt-30px">
+                    <button
+                      class="size-11 shrink-0 text-white bg-brand-gray-100 rounded-full hover:bg-brand-gray-100 hover:text-white"
+                    >
+                      19
+                    </button>
+                  </td>
+                  <td class="pt-30px">
+                    <button
+                      class="size-11 shrink-0 text-black rounded-full hover:bg-brand-gray-100 hover:text-white"
+                    >
+                      20
+                    </button>
+                  </td>
+                  <td class="pt-30px">
+                    <button
+                      class="size-11 shrink-0 text-black rounded-full hover:bg-brand-gray-100 hover:text-white"
+                    >
+                      21
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pt-30px">
+                    <button
+                      class="size-11 shrink-0 text-white bg-brand-gray-100 rounded-full hover:bg-brand-gray-100 hover:text-white"
+                    >
+                      22
+                    </button>
+                  </td>
+                  <td class="pt-30px">
+                    <button
+                      class="size-11 shrink-0 text-black rounded-full hover:bg-brand-gray-100 hover:text-white"
+                    >
+                      23
+                    </button>
+                  </td>
+                  <td class="pt-30px">
+                    <button
+                      class="size-11 shrink-0 text-black rounded-full hover:bg-brand-gray-100 hover:text-white"
+                    >
+                      24
+                    </button>
+                  </td>
+                  <td class="pt-30px">
+                    <button
+                      class="size-11 shrink-0 text-black rounded-full hover:bg-brand-gray-100 hover:text-white"
+                    >
+                      25
+                    </button>
+                  </td>
+                  <td class="pt-30px">
+                    <button
+                      class="size-11 shrink-0 text-white bg-brand-gray-100 rounded-full hover:bg-brand-gray-100 hover:text-white"
+                    >
+                      26
+                    </button>
+                  </td>
+                  <td class="pt-30px">
+                    <button
+                      class="size-11 shrink-0 text-black rounded-full hover:bg-brand-gray-100 hover:text-white"
+                    >
+                      27
+                    </button>
+                  </td>
+                  <td class="pt-30px">
+                    <button
+                      class="size-11 shrink-0 text-black rounded-full hover:bg-brand-gray-100 hover:text-white"
+                    >
+                      28
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pt-30px">
+                    <button
+                      class="size-11 shrink-0 text-white bg-brand-gray-100 rounded-full hover:bg-brand-gray-100 hover:text-white"
+                    >
+                      29
+                    </button>
+                  </td>
+                  <td class="pt-30px">
+                    <button
+                      class="size-11 shrink-0 text-black rounded-full hover:bg-brand-gray-100 hover:text-white"
+                    >
+                      30
+                    </button>
+                  </td>
+                  <td class="pt-30px">
+                    <button
+                      class="size-11 shrink-0 text-black rounded-full hover:bg-brand-gray-100 hover:text-white"
+                    >
+                      31
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Problems -->
+      <section id="problems" class="relative">
+        <div class="max-w-base mx-auto px-2.5">
+          <div class="space-y-60px">
+            <h2 class="text-center">
+              Проблемы, который могут появляться у детей
+            </h2>
+
+            <!-- Problems -->
+            <div
+              class="relative z-10 grid grid-cols-5 gap-5 text-center text-xl leding-6"
+            >
+              <!-- Problem 1 -->
+              <div class="space-y-5">
+                <!-- Image -->
+                <div class="">
+                  <div class="h-[200px] rounded-10 overflow-hidden">
+                    <img
+                      src="./assets/images/img-problems-1.png"
+                      alt="Image"
+                      class="size-full object-cover"
+                    />
+                  </div>
+
+                  <div
+                    class="size-50px shrink-0 relative z-10 grid place-content-center text-white text-2xl bg-brand-green rounded-full mx-auto -mt-6"
+                  >
+                    1
+                  </div>
+                </div>
+
+                <p>ребёнок не усидчивый и постоянно бездельничает?</p>
+              </div>
+              <!-- Problem 2 -->
+              <div class="space-y-5">
+                <!-- Image -->
+                <div class="">
+                  <div class="h-[200px] rounded-10 overflow-hidden">
+                    <img
+                      src="./assets/images/img-problems-2.png"
+                      alt="Image"
+                      class="size-full object-cover"
+                    />
+                  </div>
+
+                  <div
+                    class="size-50px shrink-0 relative z-10 grid place-content-center text-white text-2xl bg-brand-green rounded-full mx-auto -mt-6"
+                  >
+                    2
+                  </div>
+                </div>
+
+                <p>нет интереса к учебе?</p>
+              </div>
+              <!-- Problem 3 -->
+              <div class="space-y-5">
+                <!-- Image -->
+                <div class="">
+                  <div class="h-[200px] rounded-10 overflow-hidden">
+                    <img
+                      src="./assets/images/img-problems-3.png"
+                      alt="Image"
+                      class="size-full object-cover"
+                    />
+                  </div>
+
+                  <div
+                    class="size-50px shrink-0 relative z-10 grid place-content-center text-white text-2xl bg-brand-green rounded-full mx-auto -mt-6"
+                  >
+                    3
+                  </div>
+                </div>
+
+                <p>часто скучает и ему нечем заняться?</p>
+              </div>
+              <!-- Problem 4 -->
+              <div class="space-y-5">
+                <!-- Image -->
+                <div class="">
+                  <div class="h-[200px] rounded-10 overflow-hidden">
+                    <img
+                      src="./assets/images/img-problems-4.png"
+                      alt="Image"
+                      class="size-full object-cover"
+                    />
+                  </div>
+
+                  <div
+                    class="size-50px shrink-0 relative z-10 grid place-content-center text-white text-2xl bg-brand-green rounded-full mx-auto -mt-6"
+                  >
+                    4
+                  </div>
+                </div>
+
+                <p>появляются любимые занятия, но мотивация пропадает?</p>
+              </div>
+              <!-- Problem 5 -->
+              <div class="space-y-5">
+                <!-- Image -->
+                <div class="">
+                  <div class="h-[200px] rounded-10 overflow-hidden">
+                    <img
+                      src="./assets/images/img-problems-5.png"
+                      alt="Image"
+                      class="size-full object-cover"
+                    />
+                  </div>
+
+                  <div
+                    class="size-50px shrink-0 relative z-10 grid place-content-center text-white text-2xl bg-brand-green rounded-full mx-auto -mt-6"
+                  >
+                    5
+                  </div>
+                </div>
+
+                <p>хотите больше свободного времени для себя и для ребенка?</p>
+              </div>
+            </div>
+
+            <!-- Border -->
+            <div
+              class="h-80 w-[1370px] absolute left-1/2 -translate-x-1/2 top-44 border border-brand-green"
+            ></div>
+
+            <!-- Box -->
+            <div
+              class="relative z-10 bg-white border-2 border-brand-green border-dashed rounded-20 p-9"
+            >
+              <p class="max-w-[860px] mx-auto text-center text-xl leading-6">
+                Через робототехнику он будет изучать математику,
+                программирование, физику, инженерию, биологию, историю и
+                географию
+              </p>
+
+              <!-- Star Icon -->
+              <img
+                src="./assets/images/icon-star-problems.jpg"
+                alt="Star"
+                class="absolute -top-10 right-20"
+              />
+            </div>
+          </div>
+
+          <div
+            class="relative flex items-center justify-between bg-brand-blue-norm rounded-30 mt-32 p-60px"
+          >
+            <!-- Left Image -->
+            <div class="rounded-20 overflow-hidden">
+              <img
+                src="./assets/images/img-problem-lego.png"
+                alt="Image"
+                class="size-full"
+              />
+            </div>
+
+            <!-- Right Texts -->
+            <div class="w-1/2 flex flex-col justify-between space-y-[90px]">
+              <div class="space-y-8">
+                <h3 class="max-w-[465px] text-2xl font-semibold leading-[30px]">
+                  Занятия по робототехнике проводятся на специализированных
+                  конструкторах LEGO Wedo
+                </h3>
+
+                <div class="grid grid-cols-2 gap-5">
+                  <!-- 1 -->
+                  <div
+                    class="space-y-1 bg-brand-blue-light text-brand-blue leading-4 rounded-20 py-5 px-30px"
+                  >
+                    <p class="">5-10 лет</p>
+                    <p class="text-black">
+                      рекомендованный <br />
+                      возраст для детей
+                    </p>
+                  </div>
+                  <!-- 2 -->
+                  <div
+                    class="space-y-1 grid place-content-center bg-brand-blue-light text-brand-blue leading-4 rounded-20 py-5 px-30px"
+                  >
+                    <p class="text-black">
+                      У каждого ребенка свой набор робототехники
+                    </p>
+                  </div>
+                  <!-- 3 -->
+                  <div
+                    class="space-y-1 grid place-content-center bg-brand-blue-light text-brand-blue leading-4 rounded-20 py-5 px-30px"
+                  >
+                    <p class="text-black">
+                      Все группы распределены по уровню и возрасту детей
+                    </p>
+                  </div>
+                  <!-- 4 -->
+                  <div
+                    class="space-y-1 grid place-content-center bg-brand-blue-light text-brand-blue leading-4 rounded-20 py-5 px-30px"
+                  >
+                    <p class="text-black">
+                      С собой нужно взять только сменку. Всё остальное выдаёт
+                      учитель
+                    </p>
+                  </div>
+                </div>
+
+                <button
+                  class="h-60px w-full flex items-center gap-9 text-center bg-brand-blue text-white text-xl border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:border-brand-blubg-brand-blue hover:text-black transition-all duration-300 px-10"
+                >
+                  Записаться на пробный урок
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews -->
+      <section id="reviews" class="space-y-60px">
+        <div
+          class="max-w-base mx-auto flex items-center justify-between px-2.5"
+        >
+          <h2>Отзывы родителей</h2>
+          <!-- Slider Navigation Buttons -->
+          <div class="flex items-center gap-5">
+            <!-- Prev -->
+            <button
+              class="slider-reviews-prev size-60px shrink-0 group grid place-content-center bg-brand-blue-norm border-2 border-transparent rounded-full hover:bg-white hover:border-brand-blue hover:border-dashed transition-all duration-300"
+            >
+              <svg
+                width="17"
+                height="30"
+                viewBox="0 0 17 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.0591 1L2 15.059L16.0591 29.1179"
+                  stroke="#3FA2F6"
+                  stroke-width="1.87777"
+                />
+              </svg>
+            </button>
+            <!-- Next -->
+            <button
+              class="slider-reviews-next size-60px shrink-0 group grid place-content-center bg-brand-blue-norm border-2 border-transparent rounded-full hover:bg-white hover:border-brand-blue hover:border-dashed transition-all duration-300"
+            >
+              <svg
+                width="17"
+                height="30"
+                viewBox="0 0 17 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.940915 1L15 15.059L0.940915 29.1179"
+                  stroke="#3FA2F6"
+                  stroke-width="1.87777"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="relative">
+          <!-- Swiper -->
+          <div class="max-w-base mx-auto">
+            <div class="swiper reviesSwiper w-full px-2.5">
+              <div class="swiper-wrapper">
+                <!-- Review 1 -->
+                <div class="swiper-slide">
+                  <div class="space-y-8">
+                    <!-- Parent -->
+                    <div class="flex items-center gap-5">
+                      <div
+                        class="size-20 shrink-0 bg-brand-blue rounded-full"
+                      ></div>
+                      <div class="space-y-1">
+                        <h3 class="text-2xl font-semibold">Людмила</h3>
+                        <a
+                          href="#"
+                          class="text-brand-blue text-sm underline underline-offset-4"
+                          >ссылка на отзыв</a
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Review -->
+                    <div class="bg-brand-blue-norm rounded-20 p-30px">
+                      Отличная школа, отдал ребенка 5 лет на робототехнику, он
+                      там то-то, я доволен.... Отличная школа, отдал ребенка 5
+                      лет на робототехнику, он там то-то, я доволен....Отличная
+                      школа, отдал ребенка 5 лет на робототехнику, он там то-то,
+                      я доволен....
+                    </div>
+                  </div>
+                </div>
+                <!-- Review 2 -->
+                <div class="swiper-slide">
+                  <div class="space-y-8">
+                    <!-- Parent -->
+                    <div class="flex items-center gap-5">
+                      <div
+                        class="size-20 shrink-0 bg-brand-green rounded-full"
+                      ></div>
+                      <div class="space-y-1">
+                        <h3 class="text-2xl font-semibold">Георгий</h3>
+                        <a
+                          href="#"
+                          class="text-brand-green text-sm underline underline-offset-4"
+                          >ссылка на отзыв</a
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Review -->
+                    <div class="bg-brand-green-light rounded-20 p-30px">
+                      Добрый день, хотим поблагодарить за урок Александра, дает
+                      задание читабельно, не торопится, детям интересно. Аня
+                      занималась сегодня с удовольствием, я присутствовала на
+                      занятии. Надеемся, что следующий урок будет проводить
+                      Александр), или другой преподаватель в таком же формате.
+                      Спасибо.
+                    </div>
+                  </div>
+                </div>
+                <!-- Review 3 -->
+                <div class="swiper-slide">
+                  <div class="space-y-8">
+                    <!-- Parent -->
+                    <div class="flex items-center gap-5">
+                      <div
+                        class="size-20 shrink-0 bg-brand-purple rounded-full"
+                      ></div>
+                      <div class="space-y-1">
+                        <h3 class="text-2xl font-semibold">Анастасия</h3>
+                        <a
+                          href="#"
+                          class="text-brand-purple text-sm underline underline-offset-4"
+                          >ссылка на отзыв</a
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Review -->
+                    <div class="bg-brand-purple-light rounded-20 p-30px">
+                      Да, преподавателем очень довольны. Даша сказала, что это
+                      лучший учитель по программированию из всех, что у нее
+                      были)
+                    </div>
+                  </div>
+                </div>
+                <!-- Review 4 -->
+                <div class="swiper-slide">
+                  <div class="space-y-8">
+                    <!-- Parent -->
+                    <div class="flex items-center gap-5">
+                      <div
+                        class="size-20 shrink-0 bg-brand-yellow rounded-full"
+                      ></div>
+                      <div class="space-y-1">
+                        <h3 class="text-2xl font-semibold">Сергей</h3>
+                        <a
+                          href="#"
+                          class="text-brand-yellow text-sm underline underline-offset-4"
+                          >ссылка на отзыв</a
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Review -->
+                    <div class="bg-brand-yellow-light rounded-20 p-30px">
+                      Отличная школа, отдал ребенка 5 лет на робототехнику, он
+                      там то-то, я доволен.... Отличная школа, отдал ребенка 5
+                      лет на робототехнику, он там то-то, я доволен....Отличная
+                      школа, отдал ребенка 5 лет на робототехнику, он там то-то,
+                      я доволен....
+                    </div>
+                  </div>
+                </div>
+                <!-- Review 5 -->
+                <div class="swiper-slide">
+                  <div class="space-y-8">
+                    <!-- Parent -->
+                    <div class="flex items-center gap-5">
+                      <div
+                        class="size-20 shrink-0 bg-brand-blue rounded-full"
+                      ></div>
+                      <div class="space-y-1">
+                        <h3 class="text-2xl font-semibold">Людмила</h3>
+                        <a
+                          href="#"
+                          class="text-brand-blue text-sm underline underline-offset-4"
+                          >ссылка на отзыв</a
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Review -->
+                    <div class="bg-brand-blue-norm rounded-20 p-30px">
+                      Отличная школа, отдал ребенка 5 лет на робототехнику, он
+                      там то-то, я доволен.... Отличная школа, отдал ребенка 5
+                      лет на робототехнику, он там то-то, я доволен....Отличная
+                      школа, отдал ребенка 5 лет на робототехнику, он там то-то,
+                      я доволен....
+                    </div>
+                  </div>
+                </div>
+                <!-- Review 6 -->
+                <div class="swiper-slide">
+                  <div class="space-y-8">
+                    <!-- Parent -->
+                    <div class="flex items-center gap-5">
+                      <div
+                        class="size-20 shrink-0 bg-brand-green rounded-full"
+                      ></div>
+                      <div class="space-y-1">
+                        <h3 class="text-2xl font-semibold">Георгий</h3>
+                        <a
+                          href="#"
+                          class="text-brand-green text-sm underline underline-offset-4"
+                          >ссылка на отзыв</a
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Review -->
+                    <div class="bg-brand-green-light rounded-20 p-30px">
+                      Добрый день, хотим поблагодарить за урок Александра, дает
+                      задание читабельно, не торопится, детям интересно. Аня
+                      занималась сегодня с удовольствием, я присутствовала на
+                      занятии. Надеемся, что следующий урок будет проводить
+                      Александр), или другой преподаватель в таком же формате.
+                      Спасибо.
+                    </div>
+                  </div>
+                </div>
+                <!-- Review 7 -->
+                <div class="swiper-slide">
+                  <div class="space-y-8">
+                    <!-- Parent -->
+                    <div class="flex items-center gap-5">
+                      <div
+                        class="size-20 shrink-0 bg-brand-purple rounded-full"
+                      ></div>
+                      <div class="space-y-1">
+                        <h3 class="text-2xl font-semibold">Анастасия</h3>
+                        <a
+                          href="#"
+                          class="text-brand-purple text-sm underline underline-offset-4"
+                          >ссылка на отзыв</a
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Review -->
+                    <div class="bg-brand-purple-light rounded-20 p-30px">
+                      Да, преподавателем очень довольны. Даша сказала, что это
+                      лучший учитель по программированию из всех, что у нее
+                      были)
+                    </div>
+                  </div>
+                </div>
+                <!-- Review 8 -->
+                <div class="swiper-slide">
+                  <div class="space-y-8">
+                    <!-- Parent -->
+                    <div class="flex items-center gap-5">
+                      <div
+                        class="size-20 shrink-0 bg-brand-yellow rounded-full"
+                      ></div>
+                      <div class="space-y-1">
+                        <h3 class="text-2xl font-semibold">Сергей</h3>
+                        <a
+                          href="#"
+                          class="text-brand-yellow text-sm underline underline-offset-4"
+                          >ссылка на отзыв</a
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Review -->
+                    <div class="bg-brand-yellow-light rounded-20 p-30px">
+                      Отличная школа, отдал ребенка 5 лет на робототехнику, он
+                      там то-то, я доволен.... Отличная школа, отдал ребенка 5
+                      лет на робототехнику, он там то-то, я доволен....Отличная
+                      школа, отдал ребенка 5 лет на робототехнику, он там то-то,
+                      я доволен....
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Process Map -->
+      <section id="process-map">
+        <div class="max-w-base mx-auto px-2.5">
+          <div class="space-y-60px bg-brand-blue-norm rounded-20 px-16 py-14">
+            <h1 class="text-center">
+              <span
+                class="bg-white border-2 border-dashed border-brand-blue py-0.5 px-2"
+                >Карта учебного процесса,</span
+              >
+              которая приведет <br />
+              любого ребенка к высоким результатам в робототехнике
+            </h1>
+
+            <!-- Process Boxes -->
+            <div class="relative grid grid-cols-4 gap-x-10 gap-y-60px">
+              <!-- Box 1 -->
+              <div
+                class="h-[120px] relative z-10 bg-white border-2 border-brand-blue border-dashed rounded-2xl"
+              ></div>
+              <!-- Box 2 -->
+              <div
+                class="h-[120px] relative z-10 bg-white border-2 border-brand-blue border-dashed rounded-2xl"
+              ></div>
+              <!-- Box 3 -->
+              <div
+                class="h-[120px] relative z-10 bg-white border-2 border-brand-blue border-dashed rounded-2xl"
+              ></div>
+              <!-- Box 4 -->
+              <div
+                class="h-[120px] relative z-10 bg-white border-2 border-brand-blue border-dashed rounded-2xl"
+              ></div>
+              <!-- Box 5 -->
+              <div
+                class="h-[120px] relative z-10 bg-white border-2 border-brand-blue border-dashed rounded-2xl"
+              ></div>
+              <!-- Box 6 -->
+              <div
+                class="h-[120px] relative z-10 bg-white border-2 border-brand-blue border-dashed rounded-2xl"
+              ></div>
+              <!-- Box 7 -->
+              <div
+                class="h-[120px] relative z-10 bg-white border-2 border-brand-blue border-dashed rounded-2xl"
+              ></div>
+
+              <!-- Border Overlay Box -->
+              <div
+                class="w-[800px] h-[180px] absolute top-[20%] left-[20%] border-y-2 border-r-2 border-brand-blue"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- What Included ? -->
+      <section class="what-included">
+        <div class="max-w-base mx-auto space-y-60px px-2.5">
+          <div class="space-y-10">
+            <h2 class="text-center">Что входит в программу занятия?</h2>
+            <!-- Tab Buttons -->
+            <div
+              class="h-60px w-fit mx-auto flex gap-1.5 bg-brand-green-light rounded-full p-1.5"
+            >
+              <button class="min-w-[140px] bg-white h-full rounded-full px-5">
+                Теория
+              </button>
+              <button class="h-full hover:bg-white rounded-full px-5">
+                Конструирование
+              </button>
+              <button class="h-full hover:bg-white rounded-full px-5">
+                Программирование
+              </button>
+              <button class="h-full hover:bg-white rounded-full px-5">
+                Исследование
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="relative flex justify-between bg-brand-green-light rounded-30 mt-32 p-60px"
+          >
+            <!-- Left Image -->
+            <div class="rounded-20 overflow-hidden">
+              <img
+                src="./assets/images/img-theory.png"
+                alt="Image"
+                class="size-full"
+              />
+            </div>
+
+            <!-- Right Texts -->
+            <div class="w-1/2 space-y-30px">
+              <h2>Теория</h2>
+              <p class="text-xl leading-6">
+                Ребята смотрят учебную презентацию, демонстрирующую работу
+                модели, знакомятся с основами механики, конструирования,
+                с необходимыми для создания роботов элементами: мотор, датчик
+                движения, датчик наклона, большое коронное колесо, ремень
+                и т. д.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main Advantage -->
+      <section id="main-advantage">
+        <div class="max-w-base mx-auto space-y-16 px-2.5">
+          <h2 class="text-center">
+            Наша главное преимущество – <br />
+            легкая,
+            <span
+              class="inline-block bg-brand-yellow rounded-20 -rotate-1 py-0.5 px-5"
+              >игровая форма</span
+            >
+            обучения
+          </h2>
+
+          <div class="grid grid-cols-2 gap-5">
+            <div class="rounded-20 overflow-hidden">
+              <img
+                src="./assets/images/img-main-advantage.png"
+                alt="Image"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div class="space-y-5">
+              <div
+                class="space-y-2.5 text-center border-2 border-brand-blue border-dashed rounded-2xl p-8"
+              >
+                <h4 class="text-xl font-semibold leading-6">
+                  Процесс обучения составлен из занятий по 40 минут
+                </h4>
+                <p class="leading-5">Это позволяет детям:</p>
+              </div>
+
+              <!-- Items -->
+              <div class="grid grid-cols-2 gap-5 text-brand-green-100">
+                <!-- Item 1 -->
+                <div
+                  class="flex flex-col justify-between gap-14 bg-brand-blue-norm rounded-2xl p-6"
+                >
+                  <div
+                    class="size-50px shrink-0 grid place-content-center bg-white text-brand-blue text-4xl font-semibold rounded-full"
+                  >
+                    1
+                  </div>
+
+                  <p class="text-brand-gray-100 text-xl leading-6">
+                    Быстро усваивать материал
+                  </p>
+                </div>
+                <!-- Item 2 -->
+                <div
+                  class="flex flex-col justify-between gap-14 bg-brand-purple-light rounded-2xl p-6"
+                >
+                  <div
+                    class="size-50px shrink-0 grid place-content-center bg-white text-brand-purple text-4xl font-semibold rounded-full"
+                  >
+                    2
+                  </div>
+
+                  <p class="text-brand-gray-100 text-xl leading-6">
+                    Не уставать
+                  </p>
+                </div>
+                <!-- Item 3 -->
+                <div
+                  class="flex flex-col justify-between gap-14 bg-brand-green-light rounded-2xl p-6"
+                >
+                  <div
+                    class="size-50px shrink-0 grid place-content-center bg-white text-brand-green text-4xl font-semibold rounded-full"
+                  >
+                    3
+                  </div>
+
+                  <p class="text-brand-gray-100 text-xl leading-6">
+                    С лёгкостью переходить к следующим темам
+                  </p>
+                </div>
+                <!-- Item 4 -->
+                <div
+                  class="flex flex-col justify-between gap-14 bg-brand-yellow-light rounded-2xl p-6"
+                >
+                  <div
+                    class="size-50px shrink-0 grid place-content-center bg-white text-brand-yellow text-4xl font-semibold rounded-full"
+                  >
+                    4
+                  </div>
+
+                  <p class="text-brand-gray-100 text-xl leading-6">
+                    Быть довольными от своих ощутимых результатов
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Guarantee -->
+      <section id="guarantee">
+        <div class="max-w-base mx-auto px-2.5">
+          <!-- Sign up for first triel lesson -->
+          <div class="relative bg-brand-blue-norm rounded-30 p-60px">
+            <div class="max-w-2xl space-y-10">
+              <div class="space-y-5">
+                <h2>
+                  Гарантируем, что ваш ребёнок
+                  <span
+                    class="inline-block -rotate-1 bg-white border-2 border-dashed border-brand-blue rounded-20 -ml-5 py-0.5 px-4"
+                    >влюбится в наши занятия</span
+                  >
+                  и не потеряет интерес к следующим занятиям до конца курса
+                </h2>
+              </div>
+
+              <!-- Form -->
+              <form action="#" class="grid grid-cols-2 gap-x-2.5 gap-y-5">
+                <input
+                  type="text"
+                  placeholder="Ваше имя"
+                  class="text-brand-gray-100 outline-none border-none focus:outline-none focus:ring-2 focus:ring-brand-blue rounded-20 placeholder:text-brand-gray-100 p-5"
+                />
+                <input
+                  type="text"
+                  placeholder="Ваш номер телефона"
+                  class="text-brand-gray-100 outline-none border-none focus:outline-none focus:ring-2 focus:ring-brand-blue rounded-20 placeholder:text-brand-gray-100 p-5"
+                />
+
+                <div class="col-span-2 flex items-center gap-2.5">
+                  <input
+                    id="default-checkbox"
+                    type="checkbox"
+                    value=""
+                    class="size-5 rounded-md bg-white focus:bg-brand-blue focus:ring-brand-blue border-none"
+                  />
+                  <label
+                    for="default-checkbox"
+                    class="text-sm leading-4 text-brand-gray-100"
+                    >Я согласен (-на) с политикой конфиденциальности</label
+                  >
+                </div>
+
+                <button
+                  class="col-span-2 bg-brand-blue text-white text-xl leading-5 border-4 border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-blue hover:border-dashed transition-all duration-300 p-5"
+                >
+                  Записаться на пробный урок
+                </button>
+              </form>
+            </div>
+
+            <!-- Image -->
+            <img
+              src="./assets/images/img-guarantee.png"
+              alt="Image"
+              class="w-[40%] absolute right-0 bottom-0"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Us -->
+      <section id="choose-us">
+        <div class="max-w-base mx-auto space-y-60px px-2.5">
+          <h2 class="text-center">Почему вам стоит выбрать нас?</h2>
+
+          <!-- Reasons To Choose Us -->
+          <div class="grid grid-cols-3 gap-5">
+            <!-- Reason 1 -->
+            <div
+              class="h-[309px] relative space-y-4 bg-brand-gray-300 rounded-20 overflow-hidden p-30px"
+            >
+              <h3
+                class="text-2xl font-semibold text-brand-green leading-[30px]"
+              >
+                90% наших учеников
+              </h3>
+              <p class="max-w-[300px] text-xl leading-6">
+                заканчивают начальную и среднюю школы с отличием
+              </p>
+
+              <!-- Image -->
+              <img
+                src="./assets/images/icon-choose-us-1.svg"
+                alt="Icon"
+                class="absolute right-0 bottom-0"
+              />
+            </div>
+            <!-- Reason 2 -->
+            <div
+              class="h-[309px] relative space-y-4 bg-brand-gray-300 rounded-20 overflow-hidden p-30px"
+            >
+              <h3
+                class="text-2xl font-semibold text-brand-green leading-[30px]"
+              >
+                Более 2000 детей
+              </h3>
+              <p class="max-w-[300px] text-xl leading-6">
+                успешно прошли обучение и поступили в ведущие школы страны
+              </p>
+
+              <!-- Image -->
+              <img
+                src="./assets/images/icon-choose-us-2.svg"
+                alt="Icon"
+                class="absolute right-0 bottom-0"
+              />
+            </div>
+            <!-- Reason 1 -->
+            <div
+              class="h-[309px] relative space-y-4 bg-brand-gray-300 rounded-20 overflow-hidden p-30px"
+            >
+              <h3
+                class="text-2xl font-semibold text-brand-green leading-[30px]"
+              >
+                Наши педагоги
+              </h3>
+              <p class="max-w-[300px] text-xl leading-6">
+                регулярно проходят курсы повышения квалификации
+              </p>
+
+              <!-- Image -->
+              <img
+                src="./assets/images/icon-choose-us-3.svg"
+                alt="Icon"
+                class="absolute right-0 bottom-0"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Map -->
+      <section id="map">
+        <div class="max-w-base mx-auto space-y-60px px-2.5">
+          <h2 class="text-center">
+            Филиал находится по адресу ул. Бакинских Комиссаров, 107
+          </h2>
+
+          <div class="rounded-30 overflow-hidden">
+            <script
+              type="text/javascript"
+              charset="utf-8"
+              async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A12ebc7970c9232294763433d89b3a79e32671c0ac97a4fe59b482b944465f729&amp;width=100%25&amp;height=500&amp;lang=en_FR&amp;scroll=true"
+            ></script>
+          </div>
+        </div>
+      </section>
+
+      <!-- Other Programs -->
+      <section id="other-programs">
+        <div class="max-w-base mx-auto space-y-60px px-2.5">
+          <h2 class="text-center">
+            Другие программы нашей академии по <br />
+            адресу ул. Бакинских Комиссаров, 107
+          </h2>
+
+          <!-- Programs -->
+          <div class="relative">
+            <!-- Swiper -->
+            <div class="swiper otherProgramsSwiper">
+              <div class="swiper-wrapper">
+                <!-- Program 1 -->
+                <div class="swiper-slide">
+                  <div
+                    class="relative flex flex-col justify-between gap-20 bg-brand-green-light rounded-2xl overflow-hidden p-8"
+                  >
+                    <!-- Info -->
+                    <div class="space-y-8">
+                      <!-- Stats -->
+                      <div class="flex items-center gap-2.5">
+                        <div
+                          class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
+                        >
+                          5-15 лет
+                        </div>
+                        <div
+                          class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
+                        >
+                          индивидуально
+                        </div>
+                      </div>
+
+                      <!-- Title & Text -->
+                      <div class="space-y-2.5">
+                        <h2>Логопед</h2>
+                        <p class="max-w-64 text-brand-gray leading-5">
+                          Краткое описание программы, раскрывающее ценности
+                        </p>
+                      </div>
+                    </div>
+
+                    <button
+                      class="h-50px w-fit flex items-center bg-brand-green text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-green transition-all duration-300 hover px-10"
+                    >
+                      Подробнее →
+                    </button>
+
+                    <!-- Image -->
+                    <img
+                      src="./assets/images/img-category-3.png"
+                      alt="Image"
+                      class="absolute bottom-0 right-0"
+                    />
+                  </div>
+                </div>
+                <!-- Program 2 -->
+                <div class="swiper-slide">
+                  <div
+                    class="relative flex flex-col justify-between gap-20 bg-brand-yellow-light rounded-2xl overflow-hidden p-8"
+                  >
+                    <!-- Info -->
+                    <div class="space-y-8">
+                      <!-- Stats -->
+                      <div class="flex items-center gap-2.5">
+                        <div
+                          class="h-9 grid place-content-center bg-brand-yellow-100 rounded-2xl px-3.5"
+                        >
+                          5-15 лет
+                        </div>
+                        <div
+                          class="h-9 grid place-content-center bg-brand-yellow-100 rounded-2xl px-3.5"
+                        >
+                          группы по уровню
+                        </div>
+                      </div>
+
+                      <!-- Title & Text -->
+                      <div class="space-y-2.5">
+                        <h2>ИЗО</h2>
+                        <p class="max-w-64 text-brand-gray leading-5">
+                          Краткое описание программы, раскрывающее ценности
+                        </p>
+                      </div>
+                    </div>
+
+                    <button
+                      class="h-50px w-fit flex items-center bg-brand-yellow border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-yellow transition-all duration-300 hover px-10"
+                    >
+                      Подробнее →
+                    </button>
+
+                    <!-- Image -->
+                    <img
+                      src="./assets/images/img-category-4.png"
+                      alt="Image"
+                      class="absolute bottom-0 right-0"
+                    />
+                  </div>
+                </div>
+                <!-- Program 3 -->
+                <div class="swiper-slide">
+                  <div
+                    class="relative flex flex-col justify-between gap-20 bg-brand-green-light rounded-2xl overflow-hidden p-8"
+                  >
+                    <!-- Info -->
+                    <div class="space-y-8">
+                      <!-- Stats -->
+                      <div class="flex items-center gap-2.5">
+                        <div
+                          class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
+                        >
+                          5-15 лет
+                        </div>
+                        <div
+                          class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
+                        >
+                          группы до 6 чел
+                        </div>
+                      </div>
+
+                      <!-- Title & Text -->
+                      <div class="space-y-2.5">
+                        <h2>Лепка</h2>
+                        <p class="max-w-64 text-brand-gray leading-5">
+                          Краткое описание программы, раскрывающее ценности
+                        </p>
+                      </div>
+                    </div>
+
+                    <button
+                      class="h-50px w-fit flex items-center bg-brand-green text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-green transition-all duration-300 hover px-10"
+                    >
+                      Подробнее →
+                    </button>
+
+                    <!-- Image -->
+                    <img
+                      src="./assets/images/img-category-5.png"
+                      alt="Image"
+                      class="absolute bottom-0 right-0"
+                    />
+                  </div>
+                </div>
+
+                <!-- Program 1 -->
+                <div class="swiper-slide">
+                  <div
+                    class="relative flex flex-col justify-between gap-20 bg-brand-green-light rounded-2xl overflow-hidden p-8"
+                  >
+                    <!-- Info -->
+                    <div class="space-y-8">
+                      <!-- Stats -->
+                      <div class="flex items-center gap-2.5">
+                        <div
+                          class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
+                        >
+                          5-15 лет
+                        </div>
+                        <div
+                          class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
+                        >
+                          индивидуально
+                        </div>
+                      </div>
+
+                      <!-- Title & Text -->
+                      <div class="space-y-2.5">
+                        <h2>Логопед</h2>
+                        <p class="max-w-64 text-brand-gray leading-5">
+                          Краткое описание программы, раскрывающее ценности
+                        </p>
+                      </div>
+                    </div>
+
+                    <button
+                      class="h-50px w-fit flex items-center bg-brand-green text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-green transition-all duration-300 hover px-10"
+                    >
+                      Подробнее →
+                    </button>
+
+                    <!-- Image -->
+                    <img
+                      src="./assets/images/img-category-3.png"
+                      alt="Image"
+                      class="absolute bottom-0 right-0"
+                    />
+                  </div>
+                </div>
+                <!-- Program 2 -->
+                <div class="swiper-slide">
+                  <div
+                    class="relative flex flex-col justify-between gap-20 bg-brand-yellow-light rounded-2xl overflow-hidden p-8"
+                  >
+                    <!-- Info -->
+                    <div class="space-y-8">
+                      <!-- Stats -->
+                      <div class="flex items-center gap-2.5">
+                        <div
+                          class="h-9 grid place-content-center bg-brand-yellow-100 rounded-2xl px-3.5"
+                        >
+                          5-15 лет
+                        </div>
+                        <div
+                          class="h-9 grid place-content-center bg-brand-yellow-100 rounded-2xl px-3.5"
+                        >
+                          группы по уровню
+                        </div>
+                      </div>
+
+                      <!-- Title & Text -->
+                      <div class="space-y-2.5">
+                        <h2>ИЗО</h2>
+                        <p class="max-w-64 text-brand-gray leading-5">
+                          Краткое описание программы, раскрывающее ценности
+                        </p>
+                      </div>
+                    </div>
+
+                    <button
+                      class="h-50px w-fit flex items-center bg-brand-yellow border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-yellow transition-all duration-300 hover px-10"
+                    >
+                      Подробнее →
+                    </button>
+
+                    <!-- Image -->
+                    <img
+                      src="./assets/images/img-category-4.png"
+                      alt="Image"
+                      class="absolute bottom-0 right-0"
+                    />
+                  </div>
+                </div>
+                <!-- Program 3 -->
+                <div class="swiper-slide">
+                  <div
+                    class="relative flex flex-col justify-between gap-20 bg-brand-green-light rounded-2xl overflow-hidden p-8"
+                  >
+                    <!-- Info -->
+                    <div class="space-y-8">
+                      <!-- Stats -->
+                      <div class="flex items-center gap-2.5">
+                        <div
+                          class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
+                        >
+                          5-15 лет
+                        </div>
+                        <div
+                          class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
+                        >
+                          группы до 6 чел
+                        </div>
+                      </div>
+
+                      <!-- Title & Text -->
+                      <div class="space-y-2.5">
+                        <h2>Лепка</h2>
+                        <p class="max-w-64 text-brand-gray leading-5">
+                          Краткое описание программы, раскрывающее ценности
+                        </p>
+                      </div>
+                    </div>
+
+                    <button
+                      class="h-50px w-fit flex items-center bg-brand-green text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-green transition-all duration-300 hover px-10"
+                    >
+                      Подробнее →
+                    </button>
+
+                    <!-- Image -->
+                    <img
+                      src="./assets/images/img-category-5.png"
+                      alt="Image"
+                      class="absolute bottom-0 right-0"
+                    />
+                  </div>
+                </div>
+
+                <!-- Program 1 -->
+                <div class="swiper-slide">
+                  <div
+                    class="relative flex flex-col justify-between gap-20 bg-brand-green-light rounded-2xl overflow-hidden p-8"
+                  >
+                    <!-- Info -->
+                    <div class="space-y-8">
+                      <!-- Stats -->
+                      <div class="flex items-center gap-2.5">
+                        <div
+                          class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
+                        >
+                          5-15 лет
+                        </div>
+                        <div
+                          class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
+                        >
+                          индивидуально
+                        </div>
+                      </div>
+
+                      <!-- Title & Text -->
+                      <div class="space-y-2.5">
+                        <h2>Логопед</h2>
+                        <p class="max-w-64 text-brand-gray leading-5">
+                          Краткое описание программы, раскрывающее ценности
+                        </p>
+                      </div>
+                    </div>
+
+                    <button
+                      class="h-50px w-fit flex items-center bg-brand-green text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-green transition-all duration-300 hover px-10"
+                    >
+                      Подробнее →
+                    </button>
+
+                    <!-- Image -->
+                    <img
+                      src="./assets/images/img-category-3.png"
+                      alt="Image"
+                      class="absolute bottom-0 right-0"
+                    />
+                  </div>
+                </div>
+                <!-- Program 2 -->
+                <div class="swiper-slide">
+                  <div
+                    class="relative flex flex-col justify-between gap-20 bg-brand-yellow-light rounded-2xl overflow-hidden p-8"
+                  >
+                    <!-- Info -->
+                    <div class="space-y-8">
+                      <!-- Stats -->
+                      <div class="flex items-center gap-2.5">
+                        <div
+                          class="h-9 grid place-content-center bg-brand-yellow-100 rounded-2xl px-3.5"
+                        >
+                          5-15 лет
+                        </div>
+                        <div
+                          class="h-9 grid place-content-center bg-brand-yellow-100 rounded-2xl px-3.5"
+                        >
+                          группы по уровню
+                        </div>
+                      </div>
+
+                      <!-- Title & Text -->
+                      <div class="space-y-2.5">
+                        <h2>ИЗО</h2>
+                        <p class="max-w-64 text-brand-gray leading-5">
+                          Краткое описание программы, раскрывающее ценности
+                        </p>
+                      </div>
+                    </div>
+
+                    <button
+                      class="h-50px w-fit flex items-center bg-brand-yellow border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-yellow transition-all duration-300 hover px-10"
+                    >
+                      Подробнее →
+                    </button>
+
+                    <!-- Image -->
+                    <img
+                      src="./assets/images/img-category-4.png"
+                      alt="Image"
+                      class="absolute bottom-0 right-0"
+                    />
+                  </div>
+                </div>
+                <!-- Program 3 -->
+                <div class="swiper-slide">
+                  <div
+                    class="relative flex flex-col justify-between gap-20 bg-brand-green-light rounded-2xl overflow-hidden p-8"
+                  >
+                    <!-- Info -->
+                    <div class="space-y-8">
+                      <!-- Stats -->
+                      <div class="flex items-center gap-2.5">
+                        <div
+                          class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
+                        >
+                          5-15 лет
+                        </div>
+                        <div
+                          class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
+                        >
+                          группы до 6 чел
+                        </div>
+                      </div>
+
+                      <!-- Title & Text -->
+                      <div class="space-y-2.5">
+                        <h2>Лепка</h2>
+                        <p class="max-w-64 text-brand-gray leading-5">
+                          Краткое описание программы, раскрывающее ценности
+                        </p>
+                      </div>
+                    </div>
+
+                    <button
+                      class="h-50px w-fit flex items-center bg-brand-green text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-green transition-all duration-300 hover px-10"
+                    >
+                      Подробнее →
+                    </button>
+
+                    <!-- Image -->
+                    <img
+                      src="./assets/images/img-category-5.png"
+                      alt="Image"
+                      class="absolute bottom-0 right-0"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slider Navigation Buttons -->
+            <div
+              class="w-full absolute z-10 top-1/2 -translate-y-1/2 flex items-center justify-between"
+            >
+              <!-- Prev -->
+              <button
+                class="slider-programs-prev size-60px shrink-0 group grid place-content-center border-2 border-transparent rounded-full hover:bg-white hover:border-brand-blue hover:border-dashed transition-all duration-300 -ml-60px"
+              >
+                <svg
+                  width="17"
+                  height="30"
+                  viewBox="0 0 17 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.0591 1L2 15.059L16.0591 29.1179"
+                    stroke="#3FA2F6"
+                    stroke-width="1.87777"
+                  />
+                </svg>
+              </button>
+
+              <!-- Next -->
+              <button
+                class="slider-programs-next size-60px shrink-0 group grid place-content-center border-2 border-transparent rounded-full hover:bg-white hover:border-brand-blue hover:border-dashed transition-all duration-300 -mr-60px"
+              >
+                <svg
+                  width="17"
+                  height="30"
+                  viewBox="0 0 17 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.940915 1L15 15.059L0.940915 29.1179"
+                    stroke="#3FA2F6"
+                    stroke-width="1.87777"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Articles -->
+      <section id="articles">
+        <div class="max-w-base mx-auto space-y-60px px-2.5">
+          <div class="space-y-30px">
+            <h2 class="text-center">Статьи по курсу</h2>
+            <div
+              class="h-60px w-fit mx-auto grid place-content-center bg-brand-blue-light text-xl leading-6 rounded-20 px-10"
+            >
+              Робототехника
+            </div>
+          </div>
+
+          <!-- Articles -->
+          <div class="relative">
+            <!-- Swiper -->
+            <div class="swiper articlesSwiper text-center">
+              <div class="swiper-wrapper">
+                <!-- Article 1 -->
+                <div class="swiper-slide">
+                  <a href="" class="space-y-5">
+                    <div class="rounded-2xl overflow-hidden">
+                      <img
+                        src="./assets/images/img-article-1.png"
+                        alt="Image"
+                        class="size-full object-cover"
+                      />
+                    </div>
+
+                    <p class="text-2xl font-semibold leading-6">
+                      Робототехника для детского сада
+                    </p>
+                  </a>
+                </div>
+                <!-- Article 2 -->
+                <div class="swiper-slide">
+                  <a href="" class="space-y-5">
+                    <div class="rounded-2xl overflow-hidden">
+                      <img
+                        src="./assets/images/img-article-2.png"
+                        alt="Image"
+                        class="size-full object-cover"
+                      />
+                    </div>
+
+                    <p class="text-2xl font-semibold leading-6">
+                      Что такое робототехника?
+                    </p>
+                  </a>
+                </div>
+                <!-- Article 3 -->
+                <div class="swiper-slide">
+                  <a href="" class="space-y-5">
+                    <div class="rounded-2xl overflow-hidden">
+                      <img
+                        src="./assets/images/img-article-3.png"
+                        alt="Image"
+                        class="size-full object-cover"
+                      />
+                    </div>
+
+                    <p class="text-2xl font-semibold leading-6">
+                      Как развить мелкую моторику у ребенка?
+                    </p>
+                  </a>
+                </div>
+                <!-- Article 4 -->
+                <div class="swiper-slide">
+                  <a href="" class="space-y-5">
+                    <div class="rounded-2xl overflow-hidden">
+                      <img
+                        src="./assets/images/img-article-4.png"
+                        alt="Image"
+                        class="size-full object-cover"
+                      />
+                    </div>
+
+                    <p class="text-2xl font-semibold leading-6">
+                      LEGO Education: лучшая программа для детей
+                    </p>
+                  </a>
+                </div>
+
+                <!-- Article 1 -->
+                <div class="swiper-slide">
+                  <a href="" class="space-y-5">
+                    <div class="rounded-2xl overflow-hidden">
+                      <img
+                        src="./assets/images/img-article-1.png"
+                        alt="Image"
+                        class="size-full object-cover"
+                      />
+                    </div>
+
+                    <p class="text-2xl font-semibold leading-6">
+                      Робототехника для детского сада
+                    </p>
+                  </a>
+                </div>
+                <!-- Article 2 -->
+                <div class="swiper-slide">
+                  <a href="" class="space-y-5">
+                    <div class="rounded-2xl overflow-hidden">
+                      <img
+                        src="./assets/images/img-article-2.png"
+                        alt="Image"
+                        class="size-full object-cover"
+                      />
+                    </div>
+
+                    <p class="text-2xl font-semibold leading-6">
+                      Что такое робототехника?
+                    </p>
+                  </a>
+                </div>
+                <!-- Article 3 -->
+                <div class="swiper-slide">
+                  <a href="" class="space-y-5">
+                    <div class="rounded-2xl overflow-hidden">
+                      <img
+                        src="./assets/images/img-article-3.png"
+                        alt="Image"
+                        class="size-full object-cover"
+                      />
+                    </div>
+
+                    <p class="text-2xl font-semibold leading-6">
+                      Как развить мелкую моторику у ребенка?
+                    </p>
+                  </a>
+                </div>
+                <!-- Article 4 -->
+                <div class="swiper-slide">
+                  <a href="" class="space-y-5">
+                    <div class="rounded-2xl overflow-hidden">
+                      <img
+                        src="./assets/images/img-article-4.png"
+                        alt="Image"
+                        class="size-full object-cover"
+                      />
+                    </div>
+
+                    <p class="text-2xl font-semibold leading-6">
+                      LEGO Education: лучшая программа для детей
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slider Navigation Buttons -->
+            <div
+              class="w-full absolute z-10 top-1/2 -translate-y-1/2 flex items-center justify-between"
+            >
+              <!-- Prev -->
+              <button
+                class="slider-articles-prev size-60px shrink-0 group grid place-content-center bg-brand-blue-norm border-2 border-transparent rounded-full hover:bg-white hover:border-brand-blue hover:border-dashed transition-all duration-300 -ml-8"
+              >
+                <svg
+                  width="17"
+                  height="30"
+                  viewBox="0 0 17 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.0591 1L2 15.059L16.0591 29.1179"
+                    stroke="#3FA2F6"
+                    stroke-width="1.87777"
+                  />
+                </svg>
+              </button>
+
+              <!-- Next -->
+              <button
+                class="slider-articles-next size-60px shrink-0 group grid place-content-center bg-brand-blue-norm border-2 border-transparent rounded-full hover:bg-white hover:border-brand-blue hover:border-dashed transition-all duration-300 -mr-8"
+              >
+                <svg
+                  width="17"
+                  height="30"
+                  viewBox="0 0 17 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.940915 1L15 15.059L0.940915 29.1179"
+                    stroke="#3FA2F6"
+                    stroke-width="1.87777"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- News -->
+      <section id="news">
+        <div class="max-w-base mx-auto space-y-60px px-2.5">
+          <div class="space-y-30px">
+            <h2 class="text-center">Новости филиала</h2>
+            <div
+              class="h-60px w-fit mx-auto grid place-content-center bg-brand-blue-light text-xl leading-6 rounded-20 px-10"
+            >
+              Уралмаш
+            </div>
+          </div>
+
+          <!-- News -->
+          <div class="relative">
+            <!-- Swiper -->
+            <div class="swiper newsSwiper text-center">
+              <div class="swiper-wrapper">
+                <!-- News 1 -->
+                <div class="swiper-slide">
+                  <a href="" class="space-y-5">
+                    <div class="rounded-2xl overflow-hidden">
+                      <img
+                        src="./assets/images/img-news-1.png"
+                        alt="Image"
+                        class="size-full object-cover"
+                      />
+                    </div>
+
+                    <p class="text-2xl font-semibold leading-6">
+                      Робототехника для детского сада
+                    </p>
+                  </a>
+                </div>
+                <!-- News 2 -->
+                <div class="swiper-slide">
+                  <a href="" class="space-y-5">
+                    <div class="rounded-2xl overflow-hidden">
+                      <img
+                        src="./assets/images/img-news-2.png"
+                        alt="Image"
+                        class="size-full object-cover"
+                      />
+                    </div>
+
+                    <p class="text-2xl font-semibold leading-6">
+                      Что такое робототехника?
+                    </p>
+                  </a>
+                </div>
+                <!-- News 3 -->
+                <div class="swiper-slide">
+                  <a href="" class="space-y-5">
+                    <div class="rounded-2xl overflow-hidden">
+                      <img
+                        src="./assets/images/img-news-3.png"
+                        alt="Image"
+                        class="size-full object-cover"
+                      />
+                    </div>
+
+                    <p class="text-2xl font-semibold leading-6">
+                      Как развить мелкую моторику у ребенка?
+                    </p>
+                  </a>
+                </div>
+
+                <!-- News 1 -->
+                <div class="swiper-slide">
+                  <a href="" class="space-y-5">
+                    <div class="rounded-2xl overflow-hidden">
+                      <img
+                        src="./assets/images/img-news-1.png"
+                        alt="Image"
+                        class="size-full object-cover"
+                      />
+                    </div>
+
+                    <p class="text-2xl font-semibold leading-6">
+                      Робототехника для детского сада
+                    </p>
+                  </a>
+                </div>
+                <!-- News 2 -->
+                <div class="swiper-slide">
+                  <a href="" class="space-y-5">
+                    <div class="rounded-2xl overflow-hidden">
+                      <img
+                        src="./assets/images/img-news-2.png"
+                        alt="Image"
+                        class="size-full object-cover"
+                      />
+                    </div>
+
+                    <p class="text-2xl font-semibold leading-6">
+                      Что такое робототехника?
+                    </p>
+                  </a>
+                </div>
+                <!-- News 3 -->
+                <div class="swiper-slide">
+                  <a href="" class="space-y-5">
+                    <div class="rounded-2xl overflow-hidden">
+                      <img
+                        src="./assets/images/img-news-3.png"
+                        alt="Image"
+                        class="size-full object-cover"
+                      />
+                    </div>
+
+                    <p class="text-2xl font-semibold leading-6">
+                      Как развить мелкую моторику у ребенка?
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slider Navigation Buttons -->
+            <div
+              class="w-full absolute z-10 top-1/2 -translate-y-1/2 flex items-center justify-between"
+            >
+              <!-- Prev -->
+              <button
+                class="slider-news-prev size-60px shrink-0 group grid place-content-center bg-brand-blue-norm border-2 border-transparent rounded-full hover:bg-white hover:border-brand-blue hover:border-dashed transition-all duration-300 -ml-8"
+              >
+                <svg
+                  width="17"
+                  height="30"
+                  viewBox="0 0 17 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.0591 1L2 15.059L16.0591 29.1179"
+                    stroke="#3FA2F6"
+                    stroke-width="1.87777"
+                  />
+                </svg>
+              </button>
+
+              <!-- Next -->
+              <button
+                class="slider-news-next size-60px shrink-0 group grid place-content-center bg-brand-blue-norm border-2 border-transparent rounded-full hover:bg-white hover:border-brand-blue hover:border-dashed transition-all duration-300 -mr-8"
+              >
+                <svg
+                  width="17"
+                  height="30"
+                  viewBox="0 0 17 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.940915 1L15 15.059L0.940915 29.1179"
+                    stroke="#3FA2F6"
+                    stroke-width="1.87777"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq">
+        <div class="max-w-base mx-auto space-y-60px px-2.5">
+          <h2 class="text-center">Часто задаваемые вопросы</h2>
+
+          <!-- Accordion Items -->
+          <div class="hs-accordion-group max-w-4xl mx-auto space-y-5">
+            <!-- Accordion Item 1 -->
+            <div
+              class="hs-accordion active bg-brand-green-light rounded-20 p-5"
+              id="hs-basic-heading-1"
+            >
+              <button
+                class="hs-accordion-toggle hs-accordion-active:text-brand-green inline-flex items-center justify-between gap-3 w-full font-semibold text-start rounded-20"
+                aria-expanded="true"
+                aria-controls="hs-basic-collapse-1"
+              >
+                <span class="text-xl font-semibold leading-8"
+                  >Сколько стоит?</span
+                >
+                <div
+                  class="size-12 shrink-0 grid place-content-center bg-brand-green rounded-full"
+                >
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="hs-accordion-active:rotate-45 transition-all duration-300"
+                  >
+                    <path
+                      d="M8.64286 6.35714H15V8.64286H8.64286V15H6.35714V8.64286H0V6.35714H6.35714V0H8.64286V6.35714Z"
+                      fill="#E5EFDC"
+                    />
+                  </svg>
+                </div>
+              </button>
+              <div
+                id="hs-basic-collapse-1"
+                class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
+                role="region"
+                aria-labelledby="hs-basic-heading-1"
+              >
+                <p class="mt-3">
+                  This is the first item's accordion body. It is visible by
+                  default, until the collapse plugin adds the appropriate
+                  classes that we use to style each element.
+                </p>
+              </div>
+            </div>
+            <!-- Accordion Item 2 -->
+            <div
+              class="hs-accordion bg-brand-green-light rounded-20 p-5"
+              id="hs-basic-heading-2"
+            >
+              <button
+                class="hs-accordion-toggle hs-accordion-active:text-brand-green inline-flex items-center justify-between gap-3 w-full font-semibold text-start rounded-20"
+                aria-expanded="false"
+                aria-controls="hs-basic-collapse-2"
+              >
+                <span class="text-xl font-semibold leading-8"
+                  >Какое расписание занятий?</span
+                >
+                <div
+                  class="size-12 shrink-0 grid place-content-center bg-brand-green rounded-full"
+                >
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="hs-accordion-active:rotate-45 transition-all duration-300"
+                  >
+                    <path
+                      d="M8.64286 6.35714H15V8.64286H8.64286V15H6.35714V8.64286H0V6.35714H6.35714V0H8.64286V6.35714Z"
+                      fill="#E5EFDC"
+                    />
+                  </svg>
+                </div>
+              </button>
+              <div
+                id="hs-basic-collapse-2"
+                class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                role="region"
+                aria-labelledby="hs-basic-heading-2"
+              >
+                <p class="mt-3">
+                  This is the second item's accordion body. It is hidden by
+                  default, until the collapse plugin adds the appropriate
+                  classes that we use to style each element.
+                </p>
+              </div>
+            </div>
+            <!-- Accordion Item 3 -->
+            <div
+              class="hs-accordion bg-brand-green-light rounded-20 p-5"
+              id="hs-basic-heading-3"
+            >
+              <button
+                class="hs-accordion-toggle hs-accordion-active:text-brand-green inline-flex items-center justify-between gap-3 w-full font-semibold text-start rounded-20"
+                aria-expanded="false"
+                aria-controls="hs-basic-collapse-3"
+              >
+                <span class="text-xl font-semibold leading-8"
+                  >Сколько длится занятие?</span
+                >
+                <div
+                  class="size-12 shrink-0 grid place-content-center bg-brand-green rounded-full"
+                >
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="hs-accordion-active:rotate-45 transition-all duration-300"
+                  >
+                    <path
+                      d="M8.64286 6.35714H15V8.64286H8.64286V15H6.35714V8.64286H0V6.35714H6.35714V0H8.64286V6.35714Z"
+                      fill="#E5EFDC"
+                    />
+                  </svg>
+                </div>
+              </button>
+              <div
+                id="hs-basic-collapse-3"
+                class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                role="region"
+                aria-labelledby="hs-basic-heading-3"
+              >
+                <p class="mt-3">
+                  This is the second item's accordion body. It is hidden by
+                  default, until the collapse plugin adds the appropriate
+                  classes that we use to style each element.
+                </p>
+              </div>
+            </div>
+            <!-- Accordion Item 4 -->
+            <div
+              class="hs-accordion bg-brand-green-light rounded-20 p-5"
+              id="hs-basic-heading-4"
+            >
+              <button
+                class="hs-accordion-toggle hs-accordion-active:text-brand-green inline-flex items-center justify-between gap-3 w-full font-semibold text-start rounded-20"
+                aria-expanded="false"
+                aria-controls="hs-basic-collapse-4"
+              >
+                <span class="text-xl font-semibold leading-8"
+                  >В какое время проходят занятия?</span
+                >
+                <div
+                  class="size-12 shrink-0 grid place-content-center bg-brand-green rounded-full"
+                >
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="hs-accordion-active:rotate-45 transition-all duration-300"
+                  >
+                    <path
+                      d="M8.64286 6.35714H15V8.64286H8.64286V15H6.35714V8.64286H0V6.35714H6.35714V0H8.64286V6.35714Z"
+                      fill="#E5EFDC"
+                    />
+                  </svg>
+                </div>
+              </button>
+              <div
+                id="hs-basic-collapse-4"
+                class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                role="region"
+                aria-labelledby="hs-basic-heading-4"
+              >
+                <p class="mt-3">
+                  This is the second item's accordion body. It is hidden by
+                  default, until the collapse plugin adds the appropriate
+                  classes that we use to style each element.
+                </p>
+              </div>
+            </div>
+            <!-- Accordion Item 5 -->
+            <div
+              class="hs-accordion bg-brand-green-light rounded-20 p-5"
+              id="hs-basic-heading-5"
+            >
+              <button
+                class="hs-accordion-toggle hs-accordion-active:text-brand-green inline-flex items-center justify-between gap-3 w-full font-semibold text-start rounded-20"
+                aria-expanded="false"
+                aria-controls="hs-basic-collapse-5"
+              >
+                <span class="text-xl font-semibold leading-8"
+                  >Как проходят занятия?</span
+                >
+                <div
+                  class="size-12 shrink-0 grid place-content-center bg-brand-green rounded-full"
+                >
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="hs-accordion-active:rotate-45 transition-all duration-300"
+                  >
+                    <path
+                      d="M8.64286 6.35714H15V8.64286H8.64286V15H6.35714V8.64286H0V6.35714H6.35714V0H8.64286V6.35714Z"
+                      fill="#E5EFDC"
+                    />
+                  </svg>
+                </div>
+              </button>
+              <div
+                id="hs-basic-collapse-5"
+                class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                role="region"
+                aria-labelledby="hs-basic-heading-5"
+              >
+                <p class="mt-3">
+                  This is the second item's accordion body. It is hidden by
+                  default, until the collapse plugin adds the appropriate
+                  classes that we use to style each element.
+                </p>
+              </div>
+            </div>
+            <!-- Accordion Item 6 -->
+            <div
+              class="hs-accordion bg-brand-green-light rounded-20 p-5"
+              id="hs-basic-heading-6"
+            >
+              <button
+                class="hs-accordion-toggle hs-accordion-active:text-brand-green inline-flex items-center justify-between gap-3 w-full font-semibold text-start rounded-20"
+                aria-expanded="false"
+                aria-controls="hs-basic-collapse-6"
+              >
+                <span class="text-xl font-semibold leading-8"
+                  >Что принести с собой?</span
+                >
+                <div
+                  class="size-12 shrink-0 grid place-content-center bg-brand-green rounded-full"
+                >
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="hs-accordion-active:rotate-45 transition-all duration-300"
+                  >
+                    <path
+                      d="M8.64286 6.35714H15V8.64286H8.64286V15H6.35714V8.64286H0V6.35714H6.35714V0H8.64286V6.35714Z"
+                      fill="#E5EFDC"
+                    />
+                  </svg>
+                </div>
+              </button>
+              <div
+                id="hs-basic-collapse-6"
+                class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                role="region"
+                aria-labelledby="hs-basic-heading-6"
+              >
+                <p class="mt-3">
+                  This is the second item's accordion body. It is hidden by
+                  default, until the collapse plugin adds the appropriate
+                  classes that we use to style each element.
+                </p>
+              </div>
+            </div>
+            <!-- Accordion Item 7 -->
+            <div
+              class="hs-accordion bg-brand-green-light rounded-20 p-5"
+              id="hs-basic-heading-7"
+            >
+              <button
+                class="hs-accordion-toggle hs-accordion-active:text-brand-green inline-flex items-center justify-between gap-3 w-full font-semibold text-start rounded-20"
+                aria-expanded="false"
+                aria-controls="hs-basic-collapse-7"
+              >
+                <span class="text-xl font-semibold leading-8"
+                  >Сколько детей в группе?</span
+                >
+                <div
+                  class="size-12 shrink-0 grid place-content-center bg-brand-green rounded-full"
+                >
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="hs-accordion-active:rotate-45 transition-all duration-300"
+                  >
+                    <path
+                      d="M8.64286 6.35714H15V8.64286H8.64286V15H6.35714V8.64286H0V6.35714H6.35714V0H8.64286V6.35714Z"
+                      fill="#E5EFDC"
+                    />
+                  </svg>
+                </div>
+              </button>
+              <div
+                id="hs-basic-collapse-7"
+                class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                role="region"
+                aria-labelledby="hs-basic-heading-37"
+              >
+                <p class="mt-3">
+                  This is the second item's accordion body. It is hidden by
+                  default, until the collapse plugin adds the appropriate
+                  classes that we use to style each element.
+                </p>
+              </div>
+            </div>
+            <!-- Accordion Item 8 -->
+            <div
+              class="hs-accordion bg-brand-green-light rounded-20 p-5"
+              id="hs-basic-heading-8"
+            >
+              <button
+                class="hs-accordion-toggle hs-accordion-active:text-brand-green inline-flex items-center justify-between gap-3 w-full font-semibold text-start rounded-20"
+                aria-expanded="false"
+                aria-controls="hs-basic-collapse-8"
+              >
+                <span class="text-xl font-semibold leading-8"
+                  >Как часто нужно посещать занятия?</span
+                >
+                <div
+                  class="size-12 shrink-0 grid place-content-center bg-brand-green rounded-full"
+                >
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="hs-accordion-active:rotate-45 transition-all duration-300"
+                  >
+                    <path
+                      d="M8.64286 6.35714H15V8.64286H8.64286V15H6.35714V8.64286H0V6.35714H6.35714V0H8.64286V6.35714Z"
+                      fill="#E5EFDC"
+                    />
+                  </svg>
+                </div>
+              </button>
+              <div
+                id="hs-basic-collapse-8"
+                class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                role="region"
+                aria-labelledby="hs-basic-heading-8"
+              >
+                <p class="mt-3">
+                  This is the second item's accordion body. It is hidden by
+                  default, until the collapse plugin adds the appropriate
+                  classes that we use to style each element.
+                </p>
+              </div>
+            </div>
+            <!-- Accordion Item 9 -->
+            <div
+              class="hs-accordion bg-brand-green-light rounded-20 p-5"
+              id="hs-basic-heading-9"
+            >
+              <button
+                class="hs-accordion-toggle hs-accordion-active:text-brand-green inline-flex items-center justify-between gap-3 w-full font-semibold text-start rounded-20"
+                aria-expanded="false"
+                aria-controls="hs-basic-collapse-3"
+              >
+                <span class="text-xl font-semibold leading-8"
+                  >Ребенок заболел или не пришел, занятия пропадут?</span
+                >
+                <div
+                  class="size-12 shrink-0 grid place-content-center bg-brand-green rounded-full"
+                >
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="hs-accordion-active:rotate-45 transition-all duration-300"
+                  >
+                    <path
+                      d="M8.64286 6.35714H15V8.64286H8.64286V15H6.35714V8.64286H0V6.35714H6.35714V0H8.64286V6.35714Z"
+                      fill="#E5EFDC"
+                    />
+                  </svg>
+                </div>
+              </button>
+              <div
+                id="hs-basic-collapse-9"
+                class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                role="region"
+                aria-labelledby="hs-basic-heading-9"
+              >
+                <p class="mt-3">
+                  This is the second item's accordion body. It is hidden by
+                  default, until the collapse plugin adds the appropriate
+                  classes that we use to style each element.
+                </p>
+              </div>
+            </div>
+            <!-- Accordion Item 3 -->
+            <div
+              class="hs-accordion bg-brand-green-light rounded-20 p-5"
+              id="hs-basic-heading-10"
+            >
+              <button
+                class="hs-accordion-toggle hs-accordion-active:text-brand-green inline-flex items-center justify-between gap-3 w-full font-semibold text-start rounded-20"
+                aria-expanded="false"
+                aria-controls="hs-basic-collapse-10"
+              >
+                <span class="text-xl font-semibold leading-8"
+                  >Родители присутствуют на занятиях?</span
+                >
+                <div
+                  class="size-12 shrink-0 grid place-content-center bg-brand-green rounded-full"
+                >
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="hs-accordion-active:rotate-45 transition-all duration-300"
+                  >
+                    <path
+                      d="M8.64286 6.35714H15V8.64286H8.64286V15H6.35714V8.64286H0V6.35714H6.35714V0H8.64286V6.35714Z"
+                      fill="#E5EFDC"
+                    />
+                  </svg>
+                </div>
+              </button>
+              <div
+                id="hs-basic-collapse-10"
+                class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                role="region"
+                aria-labelledby="hs-basic-heading-10"
+              >
+                <p class="mt-3">
+                  This is the second item's accordion body. It is hidden by
+                  default, until the collapse plugin adds the appropriate
+                  classes that we use to style each element.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Start -->
+      <section id="start">
+        <div class="max-w-base mx-auto px-2.5">
+          <div
+            class="relative flex justify-between bg-brand-blue-norm rounded-30 overflow-hidden"
+          >
+            <div class="w-1/2 py-60px pl-60px">
+              <div class="space-y-10 relative z-10">
+                <h2>
+                  Начните <br />
+                  <span
+                    class="block bg-white border-2 border-dashed border-brand-blue rounded-20 mt-1 -ml-3 -rotate-2 py-0.5 px-4"
+                  >
+                    с вводного урока</span
+                  >
+                </h2>
+                <ul class="space-y-30px text-brand-gray leading-5">
+                  <li class="flex items-center gap-5">
+                    <div
+                      class="size-50px shrink-0 grid place-content-center text-brand-blue text-3xl font-semibold bg-white rounded-full"
+                    >
+                      1
+                    </div>
+                    <p>
+                      ребёнок познакомится <br />
+                      с преподавателем
+                    </p>
+                  </li>
+                  <li class="flex items-center gap-5">
+                    <div
+                      class="size-50px shrink-0 grid place-content-center text-brand-blue text-3xl font-semibold bg-white rounded-full"
+                    >
+                      2
+                    </div>
+                    <p>
+                      пройдёт лёгкую тему
+                      <br />
+                      в игровой форме
+                    </p>
+                  </li>
+                  <li class="flex items-center gap-5">
+                    <div
+                      class="size-50px shrink-0 grid place-content-center text-brand-blue text-3xl font-semibold bg-white rounded-full"
+                    >
+                      3
+                    </div>
+                    <p>
+                      вы поймёте для себя
+                      <br />
+                      подойдёт программа или нет?
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Image Rounds -->
+            <img
+              src="./assets/images/img-rounds.png"
+              alt="Image"
+              class="absolute left-0 bottom-0"
+            />
+
+            <!-- Image Girl -->
+            <img
+              src="./assets/images/img-girl-start.png"
+              alt="Image"
+              class="w-fit h-fit mt-auto mr-10"
+            />
+
+            <!-- Form -->
+            <form action="#" class="w-1/2 space-y-5 py-[90px] pr-60px">
+              <!-- Select Container -->
+              <div class="relative select">
+                <!-- Select Button -->
+                <button
+                  class="select-button w-full flex items-center justify-between bg-white text-brand-gray-100 focus:outline-none focus:ring-2 focus:ring-brand-blue rounded-20 p-5"
+                >
+                  <span class="select-label">Выберите филиал</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="select-icon w-5 h-5 transition-transform"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25L12 15.75L4.5 8.25"
+                    />
+                  </svg>
+                </button>
+
+                <!-- Select List -->
+                <ul
+                  class="select-list fade-in absolute mt-2 bg-white rounded-20 shadow-lg w-full hidden z-10"
+                >
+                  <li
+                    class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                    data-value="Уралмаш"
+                  >
+                    <img
+                      src="./assets/images/icon-location.svg"
+                      alt="Location Icon"
+                    />
+                    Уралмаш
+                  </li>
+                  <li
+                    class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                    data-value="Эльмаш"
+                  >
+                    <img
+                      src="./assets/images/icon-location.svg"
+                      alt="Location Icon"
+                    />
+                    Эльмаш
+                  </li>
+                  <li
+                    class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                    data-value="Садовый"
+                  >
+                    <img
+                      src="./assets/images/icon-location.svg"
+                      alt="Location Icon"
+                    />
+                    Садовый
+                  </li>
+                  <li
+                    class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                    data-value="Завокзальный"
+                  >
+                    <img
+                      src="./assets/images/icon-location.svg"
+                      alt="Location Icon"
+                    />
+                    Завокзальный
+                  </li>
+                  <li
+                    class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                    data-value="Широкая речка"
+                  >
+                    <img
+                      src="./assets/images/icon-location.svg"
+                      alt="Location Icon"
+                    />
+                    Широкая речка
+                  </li>
+                </ul>
+              </div>
+
+              <input
+                type="text"
+                placeholder="Ваше имя"
+                class="w-full text-brand-gray-100 outline-none border-none focus:outline-none focus:ring-2 focus:ring-brand-blue rounded-20 placeholder:text-brand-gray-100 p-5"
+              />
+
+              <input
+                type="text"
+                placeholder="Ваш номер телефона"
+                class="w-full text-brand-gray-100 outline-none border-none focus:outline-none focus:ring-2 focus:ring-brand-blue rounded-20 placeholder:text-brand-gray-100 p-5"
+              />
+
+              <div class="flex items-center gap-2.5">
+                <input
+                  id="default-checkbox"
+                  type="checkbox"
+                  value=""
+                  class="size-5 rounded-md bg-white focus:bg-brand-blue focus:ring-brand-blue border-none"
+                />
+                <label
+                  for="default-checkbox"
+                  class="text-sm leading-4 text-brand-gray-100"
+                  >Я согласен (-на) с политикой конфиденциальности</label
+                >
+              </div>
+
+              <button
+                class="w-full bg-brand-blue text-white text-xl leading-5 border-4 border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-blue hover:border-dashed transition-all duration-300 p-5"
+              >
+                Записаться на пробный урок
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <!-- Top -->
+      <div
+        class="max-w-base mx-auto flex justify-between border-t border-brand-blue-norm py-60px px-2.5"
+      >
+        <!-- Logo & Socials -->
+        <div class="space-y-60px">
+          <!-- Logo -->
+          <a href="#" class="w-56 h-[70px]">
+            <img
+              src="./assets/images/logo.png"
+              alt="Logo"
+              class="w-56 h-[70px]"
+            />
+          </a>
+
+          <!-- Socials -->
+          <div class="flex items-center gap-5">
+            <a href="#">
+              <img src="./assets/images/icon-vkontakte.svg" alt="Vkontakte" />
+            </a>
+            <a href="#">
+              <img src="./assets/images/icon-whatsapp.svg" alt="Vkontakte" />
+            </a>
+            <a href="#">
+              <img src="./assets/images/icon-telegram.svg" alt="Vkontakte" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div class="flex gap-[90px] leading-5">
+          <!-- Links 1 -->
+          <div class="space-y-5">
+            <h3 class="text-2xl font-semibold leading-30px">Меню</h3>
+
+            <ul class="space-y-5">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Главная</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >О центре</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Цены</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Расписание</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Вопрос-ответ</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Новости</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Статьи</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Отзывы</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Links 1 -->
+          <div class="space-y-5">
+            <h3 class="text-2xl font-semibold leading-30px">Направления</h3>
+
+            <ul class="space-y-5">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Робототехника</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Программирование</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Подготовка к школе</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Техника чтения</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Логопед</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >ИЗО</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Лепка</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Шахматы</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Комиксы</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Настольные игры</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Занятия «Мама + Ребёнок»</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Подготовка к ОГЭ</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Каллиграфия</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Links 1 -->
+          <div class="space-y-5">
+            <h3 class="text-2xl font-semibold leading-30px">Филиалы</h3>
+
+            <ul class="space-y-5">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Уралмаш</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Эльмаш</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Садовый</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Завокзальный</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >Широкая речка</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Links 1 -->
+          <div class="space-y-5">
+            <h3 class="text-2xl font-semibold leading-30px">
+              Группы по возрасту
+            </h3>
+
+            <ul class="space-y-5">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >5-7 лет</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >8-11 лет</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-brand-blue transition-all duration-300"
+                  >12-15 лет</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="bg-brand-yellow-100">
+        <div
+          class="max-w-base mx-auto flex justify-between text-sm leading-4 text-brand-gray py-30px px-2.5"
+        >
+          <div class="space-y-2.5">
+            <p class="max-w-xl pr-10">
+              Вы принимаете условия политики в отношении обработки персональных
+              данных и пользовательского соглашения каждый раз, когда оставляете
+              свои данные в любой форме обратной связи на сайте Умник66.ру
+            </p>
+            <p>© 2024. Академия интеллекта «Умник»</p>
+          </div>
+
+          <a href="#">Дизайн и разработка сайта: Swift Marketing</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
