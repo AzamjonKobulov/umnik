@@ -322,123 +322,136 @@
 
     <!-- MAIN -->
     <main>
-      <!-- Articles -->
-      <section id="articles">
-        <div class="max-w-base mx-auto space-y-60px pt-60px px-2.5">
+      <!-- Article -->
+      <section id="article">
+        <div class="max-w-5xl mx-auto space-y-60px pt-60px px-2.5">
+          <!-- Image -->
           <div class="space-y-30px">
-            <h2 class="text-center">Статьи</h2>
-            <!-- Select Container -->
+            <!-- Path -->
             <div
-              class="max-w-[335px] mx-auto relative select text-xl leading-6"
+              class="flex items-center flex-wrap whitespace-nowrap gap-2.5 text-xl leading-5 text-brand-gray-100"
             >
-              <!-- Select Button -->
-              <button
-                class="select-button w-full flex items-center justify-between bg-white border border-brand-blue focus:outline-none focus:ring-2 focus:ring-brand-blue rounded-20 p-5"
-              >
-                <span class="select-label">Все направления</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  class="select-icon w-5 h-5 transition-transform"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M19.5 8.25L12 15.75L4.5 8.25"
-                  />
-                </svg>
-              </button>
+              <span>Статьи</span> <span>/</span> <span>Робототехника</span>
+              <span>/</span>
+              <span class="text-black">Робототехника для детского сада </span>
+            </div>
 
-              <!-- Select List -->
-              <ul
-                class="select-list fade-in absolute mt-2 bg-white rounded-20 shadow-lg w-full overflow-hidden hidden z-10"
-              >
-                <li
-                  class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
-                  data-value="Ноябрь"
-                >
-                  Январь
-                </li>
-                <li
-                  class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
-                  data-value="Февраль"
-                >
-                  Февраль
-                </li>
-                <li
-                  class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
-                  data-value="Март"
-                >
-                  Март
-                </li>
-                <li
-                  class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
-                  data-value="Апрель"
-                >
-                  Апрель
-                </li>
-                <li
-                  class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
-                  data-value="Май"
-                >
-                  Май
-                </li>
-                <li
-                  class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
-                  data-value="Июнь"
-                >
-                  Июнь
-                </li>
-                <li
-                  class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
-                  data-value="Июль"
-                >
-                  Июль
-                </li>
-                <li
-                  class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
-                  data-value="Август"
-                >
-                  Август
-                </li>
-                <li
-                  class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
-                  data-value="Сентябрь"
-                >
-                  Сентябрь
-                </li>
-                <li
-                  class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
-                  data-value="Октябрь"
-                >
-                  Октябрь
-                </li>
-                <li
-                  class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
-                  data-value="Ноябрь"
-                >
-                  Ноябрь
-                </li>
-                <li
-                  class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
-                  data-value="Декабрь"
-                >
-                  Декабрь
-                </li>
-              </ul>
+            <div class="rounded-2xl overflow-hidden">
+              <img
+                src="./assets/images/img-child-article.png"
+                alt="Child Image"
+                class="size-full object-cover"
+              />
             </div>
           </div>
 
+          <!-- Robotics -->
+          <div class="space-y-30px">
+            <h2>Робототехника для детского сада</h2>
+            <p class="text-lg leading-5">
+              Современный мир стремительно меняется, и технологии занимают все
+              более важное место в нашей жизни. Введение робототехники в
+              образовательные программы для детей дошкольного возраста
+              становится не просто модным трендом, а необходимостью. Но как
+              робототехника может быть адаптирована для детского сада, и какие
+              преимущества она несет?
+            </p>
+
+            <div class="space-y-2.5">
+              <h3 class="text-2xl font-semibold leading-[48px]">
+                Зачем робототехника в детском саду?
+              </h3>
+              <p class="leading-5">
+                Раннее знакомство с технологиями позволяет детям развивать
+                критическое мышление, логику и творческие способности.
+                Программы, связанные с робототехникой, учат решать задачи,
+                работать в команде и адаптироваться к новым вызовам. Более того,
+                взаимодействие с простыми роботами помогает детям развивать
+                моторные навыки и координацию.
+              </p>
+            </div>
+
+            <div class="space-y-2.5">
+              <h3 class="text-2xl font-semibold leading-[48px]">
+                Как это выглядит?
+              </h3>
+              <p class="leading-5">
+                Для дошкольников робототехника должна быть простой, веселой и
+                безопасной. Основные компоненты таких программ:
+              </p>
+
+              <ul class="list-decimal pl-4">
+                <li>
+                  Интерактивные роботы. Дети работают с дружелюбными роботами,
+                  которые могут двигаться, издавать звуки или выполнять простые
+                  команды.
+                </li>
+                <li>
+                  Конструкторы. Например, LEGO Education или аналогичные наборы,
+                  где дети собирают свои первые "умные" устройства.
+                </li>
+                <li>
+                  Программирование через игры. Простейшие программы создаются
+                  через приложения с понятным интерфейсом, где команды задаются
+                  цветами, стрелками или картинками.
+                </li>
+              </ul>
+            </div>
+
+            <div class="space-y-30px">
+              <!-- Image Banner -->
+              <div
+                class="h-[400px] bg-brand-gray-600 rounded-2xl overflow-hidden"
+              ></div>
+
+              <div class="space-y-2.5">
+                <h3 class="text-2xl font-semibold leading-[48px]">
+                  Заключение
+                </h3>
+                <p class="leading-5">
+                  Робототехника в детском саду — это не только тренд, но и
+                  эффективный способ подготовки детей к будущему. Через игру и
+                  творчество дошкольники учатся понимать основы технологий, что
+                  дает им возможность лучше адаптироваться к современному миру и
+                  вдохновляет на дальнейшее развитие.
+                </p>
+              </div>
+            </div>
+
+            <button
+              class="h-50px ml-auto w-fit group flex items-center gap-2.5 bg-brand-blue text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-blue transition-all duration-300 hover px-10"
+            >
+              Поделиться статьей
+              <svg
+                width="23"
+                height="24"
+                viewBox="0 0 23 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="stroke-white group-hover:stroke-black transition-all duration-300"
+              >
+                <path
+                  d="M19.1673 12.9583V17.7499C19.1673 18.8085 18.3092 19.6666 17.2507 19.6666H5.75065C4.6921 19.6666 3.83398 18.8085 3.83398 17.7499V12.9583M15.334 8.16659L11.5007 4.33325M11.5007 4.33325L7.66732 8.16659M11.5007 4.33325V15.8333"
+                  stroke-width="1.4375"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Articles -->
+      <section id="articles">
+        <div class="max-w-base mx-auto space-y-60px px-2.5">
           <!-- Articles -->
           <div>
             <div class="grid grid-cols-3 gap-x-5 gap-y-60px relative">
               <!-- Article 1 -->
               <div class="swiper-slide">
                 <a href="" class="space-y-5">
-                  <div class="aspect-square rounded-2xl overflow-hidden">
+                  <div class="rounded-2xl overflow-hidden">
                     <img
                       src="./assets/images/img-article-1.png"
                       alt="Image"
@@ -454,7 +467,7 @@
               <!-- Article 2 -->
               <div class="swiper-slide">
                 <a href="" class="space-y-5">
-                  <div class="aspect-square rounded-2xl overflow-hidden">
+                  <div class="rounded-2xl overflow-hidden">
                     <img
                       src="./assets/images/img-article-4.png"
                       alt="Image"
@@ -470,7 +483,7 @@
               <!-- Article 3 -->
               <div class="swiper-slide">
                 <a href="" class="space-y-5">
-                  <div class="aspect-square rounded-2xl overflow-hidden">
+                  <div class="rounded-2xl overflow-hidden">
                     <img
                       src="./assets/images/img-article-2.png"
                       alt="Image"
@@ -483,123 +496,6 @@
                   </p>
                 </a>
               </div>
-
-              <!-- Article 1 -->
-              <div class="swiper-slide">
-                <a href="" class="space-y-5">
-                  <div class="aspect-square rounded-2xl overflow-hidden">
-                    <img
-                      src="./assets/images/img-article-1.png"
-                      alt="Image"
-                      class="size-full object-cover"
-                    />
-                  </div>
-
-                  <p class="text-2xl font-semibold leading-6">
-                    Робототехника для детского сада
-                  </p>
-                </a>
-              </div>
-              <!-- Article 2 -->
-              <div class="swiper-slide">
-                <a href="" class="space-y-5">
-                  <div class="aspect-square rounded-2xl overflow-hidden">
-                    <img
-                      src="./assets/images/img-article-4.png"
-                      alt="Image"
-                      class="size-full object-cover"
-                    />
-                  </div>
-
-                  <p class="text-2xl font-semibold leading-6">
-                    LEGO Education: лучшая программа для детей
-                  </p>
-                </a>
-              </div>
-              <!-- Article 3 -->
-              <div class="swiper-slide">
-                <a href="" class="space-y-5">
-                  <div class="aspect-square rounded-2xl overflow-hidden">
-                    <img
-                      src="./assets/images/img-article-2.png"
-                      alt="Image"
-                      class="size-full object-cover"
-                    />
-                  </div>
-
-                  <p class="text-2xl font-semibold leading-6">
-                    Что такое робототехника?
-                  </p>
-                </a>
-              </div>
-
-              <!-- Article 1 -->
-              <div class="swiper-slide">
-                <a href="" class="space-y-5">
-                  <div class="aspect-square rounded-2xl overflow-hidden">
-                    <img
-                      src="./assets/images/img-article-1.png"
-                      alt="Image"
-                      class="size-full object-cover"
-                    />
-                  </div>
-
-                  <p class="text-2xl font-semibold leading-6">
-                    Робототехника для детского сада
-                  </p>
-                </a>
-              </div>
-              <!-- Article 2 -->
-              <div class="swiper-slide">
-                <a href="" class="space-y-5">
-                  <div class="aspect-square rounded-2xl overflow-hidden">
-                    <img
-                      src="./assets/images/img-article-4.png"
-                      alt="Image"
-                      class="size-full object-cover"
-                    />
-                  </div>
-
-                  <p class="text-2xl font-semibold leading-6">
-                    LEGO Education: лучшая программа для детей
-                  </p>
-                </a>
-              </div>
-              <!-- Article 3 -->
-              <div class="swiper-slide">
-                <a href="" class="space-y-5">
-                  <div class="aspect-square rounded-2xl overflow-hidden">
-                    <img
-                      src="./assets/images/img-article-2.png"
-                      alt="Image"
-                      class="size-full object-cover"
-                    />
-                  </div>
-
-                  <p class="text-2xl font-semibold leading-6">
-                    Что такое робототехника?
-                  </p>
-                </a>
-              </div>
-            </div>
-
-            <!-- Pagination -->
-            <div class="flex justify-center items-center gap-2.5 mt-[120px]">
-              <a
-                href="#"
-                class="size-50px grid place-content-center shrink-0 text-xl leading-6 text-white bg-brand-blue border border-transparent rounded-md hover:bg-brand-blue hover:text-white transition-all duration-300"
-                >1</a
-              >
-              <a
-                href="#"
-                class="size-50px grid place-content-center shrink-0 text-xl leading-6 text-brand-gray-500 border border-brand-blue rounded-md hover:bg-brand-blue hover:text-white transition-all duration-300"
-                >2</a
-              >
-              <a
-                href="#"
-                class="size-50px grid place-content-center shrink-0 text-xl leading-6 text-brand-gray-500 border border-brand-blue rounded-md hover:bg-brand-blue hover:text-white transition-all duration-300"
-                >3</a
-              >
             </div>
           </div>
         </div>
