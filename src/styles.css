@@ -93,3 +93,11 @@
 .accordion-item.open .accordion-icon {
   transform: rotate(45deg);
 }
+
+/* input[type="radio"]:checked + label div {
+  @apply border-brand-red;
+} */
+
+input[type="radio"]:checked + label div span {
+  @apply block;
+}
