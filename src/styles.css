@@ -75,3 +75,21 @@
     transform: scale(1);
   }
 }
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.accordion-item.open .accordion-body {
+  max-height: 500px; /* Set a high enough max-height to accommodate your content */
+}
+
+.accordion-icon {
+  transition: transform 0.3s ease;
+}
+
+.accordion-item.open .accordion-icon {
+  transform: rotate(45deg);
+}

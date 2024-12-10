@@ -35,7 +35,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-var swiper = new Swiper(".mySwiper", {
+// Swipers
+
+// Reviews Swiper
+var swiper = new Swiper(".reviesSwiper", {
   navigation: {
     nextEl: ".slider-reviews-next",
     prevEl: ".slider-reviews-prev",
@@ -51,6 +54,28 @@ var swiper = new Swiper(".mySwiper", {
     },
     1024: {
       slidesPerView: 3.5,
+      spaceBetween: 20,
+    },
+  },
+});
+
+// Articles Swiper
+var swiper = new Swiper(".articlesSwiper", {
+  navigation: {
+    nextEl: ".slider-articles-next",
+    prevEl: ".slider-articles-prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 4,
       spaceBetween: 20,
     },
   },
