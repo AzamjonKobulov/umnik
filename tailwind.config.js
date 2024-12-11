@@ -63,11 +63,16 @@ module.exports = {
         "30px": "30px",
         "50px": "50px",
         "60px": "60px",
+        "120px": "120px",
+        "140px": "140px",
       },
       borderRadius: {
         10: "10px",
         20: "20px",
         30: "30px",
+      },
+      lineHeight: {
+        "30px": "30px",
       },
     },
   },

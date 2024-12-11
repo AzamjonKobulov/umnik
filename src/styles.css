@@ -57,7 +57,7 @@
   }
 
   section {
-    @apply pb-[120px];
+    @apply pb-120px;
   }
 }
 

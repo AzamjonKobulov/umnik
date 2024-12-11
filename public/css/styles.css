@@ -1191,6 +1191,9 @@ input:checked + .toggle-bg {
 .ml-2 {
   margin-left: 0.5rem;
 }
+.ml-auto {
+  margin-left: auto;
+}
 .mr-10 {
   margin-right: 2.5rem;
 }
@@ -1202,6 +1205,9 @@ input:checked + .toggle-bg {
 }
 .mt-1 {
   margin-top: 0.25rem;
+}
+.mt-120px {
+  margin-top: 120px;
 }
 .mt-2 {
   margin-top: 0.5rem;
@@ -1215,14 +1221,8 @@ input:checked + .toggle-bg {
 .mt-60px {
   margin-top: 60px;
 }
-.mt-\[120px\] {
-  margin-top: 120px;
-}
 .mt-auto {
   margin-top: auto;
-}
-.ml-auto {
-  margin-left: auto;
 }
 .block {
   display: block;
@@ -1315,6 +1315,9 @@ input:checked + .toggle-bg {
 .h-11 {
   height: 2.75rem;
 }
+.h-120px {
+  height: 120px;
+}
 .h-14 {
   height: 3.5rem;
 }
@@ -1342,9 +1345,6 @@ input:checked + .toggle-bg {
 .h-9 {
   height: 2.25rem;
 }
-.h-\[120px\] {
-  height: 120px;
-}
 .h-\[180px\] {
   height: 180px;
 }
@@ -1360,6 +1360,9 @@ input:checked + .toggle-bg {
 .h-\[380px\] {
   height: 380px;
 }
+.h-\[400px\] {
+  height: 400px;
+}
 .h-\[570px\] {
   height: 570px;
 }
@@ -1372,9 +1375,6 @@ input:checked + .toggle-bg {
 }
 .h-full {
   height: 100%;
-}
-.h-\[400px\] {
-  height: 400px;
 }
 .\!w-2\.5 {
   width: 0.625rem !important;
@@ -1428,7 +1428,7 @@ input:checked + .toggle-bg {
 .w-full {
   width: 100%;
 }
-.min-w-\[140px\] {
+.min-w-140px {
   min-width: 140px;
 }
 .max-w-2xl {
@@ -2007,6 +2007,10 @@ input:checked + .toggle-bg {
   --tw-bg-opacity: 1;
   background-color: rgb(249 249 249 / var(--tw-bg-opacity, 1));
 }
+.bg-brand-gray-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 217 217 / var(--tw-bg-opacity, 1));
+}
 .bg-brand-green {
   --tw-bg-opacity: 1;
   background-color: rgb(116 177 60 / var(--tw-bg-opacity, 1));
@@ -2068,10 +2072,6 @@ input:checked + .toggle-bg {
 }
 .bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
-}
-.bg-brand-gray-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(217 217 217 / var(--tw-bg-opacity, 1));
 }
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
@@ -2221,6 +2221,9 @@ input:checked + .toggle-bg {
   padding-top: 90px;
   padding-bottom: 90px;
 }
+.pl-4 {
+  padding-left: 1rem;
+}
 .pl-5 {
   padding-left: 1.25rem;
 }
@@ -2256,12 +2259,6 @@ input:checked + .toggle-bg {
 }
 .pt-60px {
   padding-top: 60px;
-}
-.pl-3 {
-  padding-left: 0.75rem;
-}
-.pl-4 {
-  padding-left: 1rem;
 }
 .text-center {
   text-align: center;
@@ -2333,6 +2330,9 @@ input:checked + .toggle-bg {
 }
 .leading-10 {
   line-height: 2.5rem;
+}
+.leading-30px {
+  line-height: 30px;
 }
 .leading-4 {
   line-height: 1rem;
