@@ -2349,9 +2349,6 @@ input:checked + .toggle-bg {
 .leading-9 {
   line-height: 2.25rem;
 }
-.leading-\[30px\] {
-  line-height: 30px;
-}
 .leading-\[48px\] {
   line-height: 48px;
 }
