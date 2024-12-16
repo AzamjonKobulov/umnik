@@ -47,21 +47,21 @@
       </div>
 
       <!-- Navbar -->
-      <nav class="">
+      <nav>
         <!-- Nav Top -->
         <div class="border-b py-3.5">
           <div class="max-w-base mx-auto px-2.5 grid grid-cols-2 gap-[73px]">
             <!-- Left -->
             <div class="flex items-center justify-between">
               <!-- Logo & Location -->
-              <div class="flex items-center gap-14">
+              <div class="flex items-center gap-8 xl:gap-14">
                 <!-- Logo -->
-                <a href="#" class="w-40 h-10">
+                <a href="#" class="w-32 h-9 xl:w-40 xl:h-10">
                   <img src="./assets/images/logo.png" alt="Logo" />
                 </a>
 
                 <!-- Location -->
-                <a href="#" class="flex items-center gap-2">
+                <a href="#" class="hidden lg:flex items-center gap-2">
                   <svg
                     width="12"
                     height="15"
@@ -82,52 +82,62 @@
               </div>
 
               <!-- Socials -->
-              <div class="flex items-center gap-5">
+              <div class="hidden lg:flex items-center gap-3.5 xl:gap-5">
                 <a href="#">
                   <img
                     src="./assets/images/icon-vkontakte.svg"
                     alt="Vkontakte"
+                    class="size-8 xl:size-10 shrink-0"
                   />
                 </a>
                 <a href="#">
                   <img
                     src="./assets/images/icon-whatsapp.svg"
                     alt="Vkontakte"
+                    class="size-8 xl:size-10 shrink-0"
                   />
                 </a>
                 <a href="#">
                   <img
                     src="./assets/images/icon-telegram.svg"
                     alt="Vkontakte"
+                    class="size-8 xl:size-10 shrink-0"
                   />
                 </a>
               </div>
             </div>
 
             <!-- Right -->
-            <div class="flex items-center justify-between">
+            <div class="hidden lg:flex items-center justify-between">
               <div>
                 <a
                   href="tel:+7 (343) 219-00-33"
-                  class="font-bold text-brand-blue text-2xl leading-10"
+                  class="font-bold text-brand-blue text-xl xl:text-2xl leading-5 xl:leading-10"
                 >
                   +7 (343) 219-00-33
                 </a>
-                <p class="text-sm">ежедневно с 8:00 до 20:00</p>
+                <p class="text-xs xl:text-sm">ежедневно с 8:00 до 20:00</p>
               </div>
 
               <button
-                class="h-50px bg-brand-yellow border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:border-brand-yellow transition-all duration-300 px-5"
+                class="h-10 xl:h-50px bg-brand-yellow text-sm xl:text-base border-4 border-dashed border-transparent rounded-2xl xl:rounded-20 hover:bg-white hover:border-brand-yellow transition-all duration-300 px-3.5 xl:px-5"
               >
                 Записаться на пробный урок
               </button>
             </div>
+            <!-- Menu Btn -->
+            <button class="lg:hidden ml-auto">
+              <img
+                src="./assets/images/icon-hamburger.svg"
+                alt="Hamburger icon"
+              />
+            </button>
           </div>
         </div>
 
         <!-- Nav Bottom -->
-        <div class="max-w-base mx-auto py-5 px-2.5">
-          <ul class="flex justify-between">
+        <div class="max-w-base mx-auto lg:py-5 px-2.5">
+          <ul class="hidden lg:flex justify-between text-sm xl:text-base">
             <li>
               <a
                 href="#"
@@ -323,47 +333,53 @@
     <!-- MAIN -->
     <main>
       <!-- Robotics -->
-      <section id="robotics" class="pt-60px">
-        <div class="max-w-base mx-auto space-y-60px px-2.5">
+      <section id="robotics">
+        <div
+          class="max-w-base mx-auto space-y-30px md:space-y-10 xl:space-y-60px pt-30px lg:pt-60px px-2.5"
+        >
           <div class="space-y-30px text-center">
             <h2>Робототехника в Екатеринбурге</h2>
             <div class="space-y-2.5">
-              <h3 class="text-2xl font-semibold leading-[48px]">
+              <h3
+                class="text-lg lg:text-2xl font-semibold leading-5 lg:leading-[48px]"
+              >
                 Зачем выбирать филиал?
               </h3>
-              <p class="text-xl leading-6">В филиалах нашей сети разные:</p>
+              <p class="text-sm lg:text-xl leading-4 lg:leading-6">
+                В филиалах нашей сети разные:
+              </p>
             </div>
 
             <!-- Buttons -->
             <div
-              class="max-w-2xl mx-auto flex flex-wrap items-center justify-center gap-x-2.5 gap-y-5 text-xl leading-6"
+              class="max-w-2xl mx-auto grid grid-cols-2 md:flex flex-wrap items-center justify-center gap-1.5 lg:gap-x-2.5 lg:gap-y-5 text-sm sm:text-xl leading-4 sm:leading-6"
             >
               <div
-                class="h-11 group flex items-center gap-2.5 border border-brand-blue rounded-2xl px-5"
+                class="h-10 lg:h-11 col-span-2 group flex items-center justify-center gap-2.5 border border-brand-blue rounded-2xl px-5"
               >
                 <img src="./assets/images/icon-branch-1.svg" alt="Icon" />
                 возрастные группы детей
               </div>
               <div
-                class="h-11 group flex items-center gap-2.5 border border-brand-blue rounded-2xl px-5"
+                class="h-10 lg:h-11 col-span-2 group flex items-center justify-center gap-2.5 border border-brand-blue rounded-2xl px-5"
               >
                 <img src="./assets/images/icon-branch-2.svg" alt="Icon" />
                 стоимость занятий
               </div>
               <div
-                class="h-11 group flex items-center gap-2.5 border border-brand-blue rounded-2xl px-5"
+                class="h-10 lg:h-11 col-span-2 group flex items-center justify-center gap-2.5 border border-brand-blue rounded-2xl px-5"
               >
                 <img src="./assets/images/icon-branch-3.svg" alt="Icon" />
                 расписание
               </div>
               <div
-                class="h-11 group flex items-center gap-2.5 border border-brand-blue rounded-2xl px-5"
+                class="h-10 lg:h-11 group flex items-center justify-center gap-2.5 border border-brand-blue rounded-2xl px-5"
               >
                 <img src="./assets/images/icon-branch-4.svg" alt="Icon" />
                 преподаватели
               </div>
               <div
-                class="h-11 group flex items-center gap-2.5 border border-brand-blue rounded-2xl px-5"
+                class="h-10 lg:h-11 group flex items-center justify-center gap-2.5 border border-brand-blue rounded-2xl px-5"
               >
                 <img src="./assets/images/icon-branch-5.svg" alt="Icon" />
                 время занятий
@@ -372,14 +388,20 @@
           </div>
 
           <!-- Branches -->
-          <div class="grid grid-cols-3 gap-5">
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             <!-- Branch 1 -->
             <div
               class="relative flex flex-col justify-between gap-14 bg-brand-blue-norm rounded-2xl overflow-hidden p-30px"
             >
-              <div class="space-y-2.5">
-                <h3 class="text-2xl font-semibold leading-8">Уралмаш</h3>
-                <p class="text-brand-gray leading-5">
+              <div class="space-y-1.5 lg:space-y-2.5">
+                <h3
+                  class="text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px"
+                >
+                  Уралмаш
+                </h3>
+                <p
+                  class="text-sm lg:text-base text-brand-gray leading-4 lg:leading-5"
+                >
                   ул. Бакинских Комиссаров, 107
                 </p>
               </div>
@@ -401,9 +423,17 @@
             <div
               class="relative flex flex-col justify-between gap-14 bg-brand-blue-norm rounded-2xl overflow-hidden p-30px"
             >
-              <div class="space-y-2.5">
-                <h3 class="text-2xl font-semibold leading-8">Эльмаш</h3>
-                <p class="text-brand-gray leading-5">ул. Совхозная, 2</p>
+              <div class="space-y-1.5 lg:space-y-2.5">
+                <h3
+                  class="text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px"
+                >
+                  Эльмаш
+                </h3>
+                <p
+                  class="text-sm lg:text-base text-brand-gray leading-4 lg:leading-5"
+                >
+                  ул. Совхозная, 2
+                </p>
               </div>
 
               <img
@@ -423,9 +453,17 @@
             <div
               class="relative flex flex-col justify-between gap-14 bg-brand-blue-norm rounded-2xl overflow-hidden p-30px"
             >
-              <div class="space-y-2.5">
-                <h3 class="text-2xl font-semibold leading-8">Садовый</h3>
-                <p class="text-brand-gray leading-5">ул. Земская, 2</p>
+              <div class="space-y-1.5 lg:space-y-2.5">
+                <h3
+                  class="text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px"
+                >
+                  Садовый
+                </h3>
+                <p
+                  class="text-sm lg:text-base text-brand-gray leading-4 lg:leading-5"
+                >
+                  ул. Земская, 2
+                </p>
               </div>
 
               <img
@@ -445,9 +483,17 @@
             <div
               class="relative flex flex-col justify-between gap-14 bg-brand-blue-norm rounded-2xl overflow-hidden p-30px"
             >
-              <div class="space-y-2.5">
-                <h3 class="text-2xl font-semibold leading-8">Завокзальный</h3>
-                <p class="text-brand-gray leading-5">пер. Полимерный, 13</p>
+              <div class="space-y-1.5 lg:space-y-2.5">
+                <h3
+                  class="text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px"
+                >
+                  Завокзальный
+                </h3>
+                <p
+                  class="text-sm lg:text-base text-brand-gray leading-4 lg:leading-5"
+                >
+                  пер. Полимерный, 13
+                </p>
               </div>
 
               <img
@@ -468,8 +514,16 @@
               class="relative flex flex-col justify-between gap-14 bg-brand-blue-norm rounded-2xl overflow-hidden p-30px"
             >
               <div class="space-y-2.5">
-                <h3 class="text-2xl font-semibold leading-8">Широкая речка</h3>
-                <p class="text-brand-gray leading-5">ул. Соболева, 19</p>
+                <h3
+                  class="text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px"
+                >
+                  Широкая речка
+                </h3>
+                <p
+                  class="text-sm lg:text-base text-brand-gray leading-4 lg:leading-5"
+                >
+                  ул. Соболева, 19
+                </p>
               </div>
 
               <img
@@ -491,10 +545,12 @@
 
       <!-- Map -->
       <section id="map">
-        <div class="max-w-base mx-auto space-y-60px px-2.5">
+        <div class="max-w-base mx-auto space-y-30px lg:space-y-60px px-2.5">
           <h2 class="text-center">Все филиалы на карте</h2>
 
-          <div class="rounded-30 overflow-hidden">
+          <div
+            class="aspect-square sm:aspect-auto rounded-20 lg:rounded-30 overflow-hidden"
+          >
             <script
               type="text/javascript"
               charset="utf-8"
@@ -507,11 +563,11 @@
 
       <!-- Articles -->
       <section id="articles">
-        <div class="max-w-base mx-auto space-y-60px px-2.5">
-          <div class="space-y-30px">
+        <div class="max-w-base mx-auto space-y-30px lg:space-y-60px">
+          <div class="space-y-30px px-2.5">
             <h2 class="text-center">Статьи по курсу</h2>
             <div
-              class="h-60px w-fit mx-auto grid place-content-center bg-brand-blue-light text-xl leading-6 rounded-20 px-10"
+              class="h-50px lg:h-60px w-fit mx-auto grid place-content-center bg-brand-blue-light text-base lg:text-xl leading-4 lg:leading-6 rounded-20 px-10"
             >
               Робототехника
             </div>
@@ -520,11 +576,11 @@
           <!-- Articles -->
           <div class="relative">
             <!-- Swiper -->
-            <div class="swiper articlesSwiper text-center">
+            <div class="swiper articlesSwiper text-center px-2.5">
               <div class="swiper-wrapper">
                 <!-- Article 1 -->
                 <div class="swiper-slide">
-                  <a href="" class="space-y-5">
+                  <div class="space-y-5">
                     <div class="rounded-2xl overflow-hidden">
                       <img
                         src="./assets/images/img-article-1.png"
@@ -533,14 +589,17 @@
                       />
                     </div>
 
-                    <p class="text-2xl font-semibold leading-6">
+                    <a
+                      href="#"
+                      class="inline-block text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px hover:text-brand-blue transition-all duration-300"
+                    >
                       Робототехника для детского сада
-                    </p>
-                  </a>
+                    </a>
+                  </div>
                 </div>
                 <!-- Article 2 -->
                 <div class="swiper-slide">
-                  <a href="" class="space-y-5">
+                  <div class="space-y-5">
                     <div class="rounded-2xl overflow-hidden">
                       <img
                         src="./assets/images/img-article-2.png"
@@ -549,14 +608,17 @@
                       />
                     </div>
 
-                    <p class="text-2xl font-semibold leading-6">
+                    <a
+                      href="#"
+                      class="inline-block text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px hover:text-brand-blue transition-all duration-300"
+                    >
                       Что такое робототехника?
-                    </p>
-                  </a>
+                    </a>
+                  </div>
                 </div>
                 <!-- Article 3 -->
                 <div class="swiper-slide">
-                  <a href="" class="space-y-5">
+                  <div class="space-y-5">
                     <div class="rounded-2xl overflow-hidden">
                       <img
                         src="./assets/images/img-article-3.png"
@@ -565,14 +627,17 @@
                       />
                     </div>
 
-                    <p class="text-2xl font-semibold leading-6">
+                    <a
+                      href="#"
+                      class="inline-block text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px hover:text-brand-blue transition-all duration-300"
+                    >
                       Как развить мелкую моторику у ребенка?
-                    </p>
-                  </a>
+                    </a>
+                  </div>
                 </div>
                 <!-- Article 4 -->
                 <div class="swiper-slide">
-                  <a href="" class="space-y-5">
+                  <div class="space-y-5">
                     <div class="rounded-2xl overflow-hidden">
                       <img
                         src="./assets/images/img-article-4.png"
@@ -581,15 +646,18 @@
                       />
                     </div>
 
-                    <p class="text-2xl font-semibold leading-6">
+                    <a
+                      href="#"
+                      class="inline-block text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px hover:text-brand-blue transition-all duration-300"
+                    >
                       LEGO Education: лучшая программа для детей
-                    </p>
-                  </a>
+                    </a>
+                  </div>
                 </div>
 
                 <!-- Article 1 -->
                 <div class="swiper-slide">
-                  <a href="" class="space-y-5">
+                  <div class="space-y-5">
                     <div class="rounded-2xl overflow-hidden">
                       <img
                         src="./assets/images/img-article-1.png"
@@ -598,14 +666,17 @@
                       />
                     </div>
 
-                    <p class="text-2xl font-semibold leading-6">
+                    <a
+                      href="#"
+                      class="inline-block text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px hover:text-brand-blue transition-all duration-300"
+                    >
                       Робототехника для детского сада
-                    </p>
-                  </a>
+                    </a>
+                  </div>
                 </div>
                 <!-- Article 2 -->
                 <div class="swiper-slide">
-                  <a href="" class="space-y-5">
+                  <div class="space-y-5">
                     <div class="rounded-2xl overflow-hidden">
                       <img
                         src="./assets/images/img-article-2.png"
@@ -614,14 +685,17 @@
                       />
                     </div>
 
-                    <p class="text-2xl font-semibold leading-6">
+                    <a
+                      href="#"
+                      class="inline-block text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px hover:text-brand-blue transition-all duration-300"
+                    >
                       Что такое робототехника?
-                    </p>
-                  </a>
+                    </a>
+                  </div>
                 </div>
                 <!-- Article 3 -->
                 <div class="swiper-slide">
-                  <a href="" class="space-y-5">
+                  <div class="space-y-5">
                     <div class="rounded-2xl overflow-hidden">
                       <img
                         src="./assets/images/img-article-3.png"
@@ -630,14 +704,17 @@
                       />
                     </div>
 
-                    <p class="text-2xl font-semibold leading-6">
+                    <a
+                      href="#"
+                      class="inline-block text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px hover:text-brand-blue transition-all duration-300"
+                    >
                       Как развить мелкую моторику у ребенка?
-                    </p>
-                  </a>
+                    </a>
+                  </div>
                 </div>
                 <!-- Article 4 -->
                 <div class="swiper-slide">
-                  <a href="" class="space-y-5">
+                  <div class="space-y-5">
                     <div class="rounded-2xl overflow-hidden">
                       <img
                         src="./assets/images/img-article-4.png"
@@ -646,17 +723,20 @@
                       />
                     </div>
 
-                    <p class="text-2xl font-semibold leading-6">
+                    <a
+                      href="#"
+                      class="inline-block text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px hover:text-brand-blue transition-all duration-300"
+                    >
                       LEGO Education: лучшая программа для детей
-                    </p>
-                  </a>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
 
             <!-- Slider Navigation Buttons -->
             <div
-              class="w-full absolute z-10 top-1/2 -translate-y-1/2 flex items-center justify-between"
+              class="w-full absolute z-10 top-1/2 -translate-y-1/2 hidden lg:flex items-center justify-between"
             >
               <!-- Prev -->
               <button
@@ -702,14 +782,16 @@
 
       <!-- FAQ -->
       <section id="faq">
-        <div class="max-w-base mx-auto space-y-60px px-2.5">
+        <div class="max-w-base mx-auto space-y-30px lg:space-y-60px px-2.5">
           <h2 class="text-center">Часто задаваемые вопросы</h2>
 
           <!-- Accordion Items -->
-          <div class="hs-accordion-group max-w-4xl mx-auto space-y-5">
+          <div
+            class="hs-accordion-group max-w-4xl mx-auto space-y-2.5 lg:space-y-5"
+          >
             <!-- Accordion Item 1 -->
             <div
-              class="hs-accordion active bg-brand-green-light rounded-20 p-5"
+              class="hs-accordion active bg-brand-green-light rounded-20 p-3.5 lg:p-5"
               id="hs-basic-heading-1"
             >
               <button
@@ -717,11 +799,11 @@
                 aria-expanded="true"
                 aria-controls="hs-basic-collapse-1"
               >
-                <span class="text-xl font-semibold leading-8"
+                <span class="text-sm lg:text-xl font-semibold leading-8"
                   >Сколько стоит?</span
                 >
                 <div
-                  class="size-12 shrink-0 grid place-content-center bg-brand-green rounded-full"
+                  class="size-10 lg:size-12 shrink-0 grid place-content-center bg-brand-green rounded-full"
                 >
                   <svg
                     width="15"
@@ -753,7 +835,7 @@
             </div>
             <!-- Accordion Item 2 -->
             <div
-              class="hs-accordion bg-brand-green-light rounded-20 p-5"
+              class="hs-accordion bg-brand-green-light rounded-20 p-3.5 lg:p-5"
               id="hs-basic-heading-2"
             >
               <button
@@ -761,11 +843,11 @@
                 aria-expanded="false"
                 aria-controls="hs-basic-collapse-2"
               >
-                <span class="text-xl font-semibold leading-8"
+                <span class="text-sm lg:text-xl font-semibold leading-8"
                   >Какое расписание занятий?</span
                 >
                 <div
-                  class="size-12 shrink-0 grid place-content-center bg-brand-green rounded-full"
+                  class="size-10 lg:size-12 shrink-0 grid place-content-center bg-brand-green rounded-full"
                 >
                   <svg
                     width="15"
@@ -797,7 +879,7 @@
             </div>
             <!-- Accordion Item 3 -->
             <div
-              class="hs-accordion bg-brand-green-light rounded-20 p-5"
+              class="hs-accordion bg-brand-green-light rounded-20 p-3.5 lg:p-5"
               id="hs-basic-heading-3"
             >
               <button
@@ -805,11 +887,11 @@
                 aria-expanded="false"
                 aria-controls="hs-basic-collapse-3"
               >
-                <span class="text-xl font-semibold leading-8"
+                <span class="text-sm lg:text-xl font-semibold leading-8"
                   >Сколько длится занятие?</span
                 >
                 <div
-                  class="size-12 shrink-0 grid place-content-center bg-brand-green rounded-full"
+                  class="size-10 lg:size-12 shrink-0 grid place-content-center bg-brand-green rounded-full"
                 >
                   <svg
                     width="15"
@@ -841,7 +923,7 @@
             </div>
             <!-- Accordion Item 4 -->
             <div
-              class="hs-accordion bg-brand-green-light rounded-20 p-5"
+              class="hs-accordion bg-brand-green-light rounded-20 p-3.5 lg:p-5"
               id="hs-basic-heading-4"
             >
               <button
@@ -849,11 +931,11 @@
                 aria-expanded="false"
                 aria-controls="hs-basic-collapse-4"
               >
-                <span class="text-xl font-semibold leading-8"
+                <span class="text-sm lg:text-xl font-semibold leading-8"
                   >В какое время проходят занятия?</span
                 >
                 <div
-                  class="size-12 shrink-0 grid place-content-center bg-brand-green rounded-full"
+                  class="size-10 lg:size-12 shrink-0 grid place-content-center bg-brand-green rounded-full"
                 >
                   <svg
                     width="15"
@@ -885,7 +967,7 @@
             </div>
             <!-- Accordion Item 5 -->
             <div
-              class="hs-accordion bg-brand-green-light rounded-20 p-5"
+              class="hs-accordion bg-brand-green-light rounded-20 p-3.5 lg:p-5"
               id="hs-basic-heading-5"
             >
               <button
@@ -893,11 +975,11 @@
                 aria-expanded="false"
                 aria-controls="hs-basic-collapse-5"
               >
-                <span class="text-xl font-semibold leading-8"
+                <span class="text-sm lg:text-xl font-semibold leading-8"
                   >Как проходят занятия?</span
                 >
                 <div
-                  class="size-12 shrink-0 grid place-content-center bg-brand-green rounded-full"
+                  class="size-10 lg:size-12 shrink-0 grid place-content-center bg-brand-green rounded-full"
                 >
                   <svg
                     width="15"
@@ -929,7 +1011,7 @@
             </div>
             <!-- Accordion Item 6 -->
             <div
-              class="hs-accordion bg-brand-green-light rounded-20 p-5"
+              class="hs-accordion bg-brand-green-light rounded-20 p-3.5 lg:p-5"
               id="hs-basic-heading-6"
             >
               <button
@@ -937,11 +1019,11 @@
                 aria-expanded="false"
                 aria-controls="hs-basic-collapse-6"
               >
-                <span class="text-xl font-semibold leading-8"
+                <span class="text-sm lg:text-xl font-semibold leading-8"
                   >Что принести с собой?</span
                 >
                 <div
-                  class="size-12 shrink-0 grid place-content-center bg-brand-green rounded-full"
+                  class="size-10 lg:size-12 shrink-0 grid place-content-center bg-brand-green rounded-full"
                 >
                   <svg
                     width="15"
@@ -973,7 +1055,7 @@
             </div>
             <!-- Accordion Item 7 -->
             <div
-              class="hs-accordion bg-brand-green-light rounded-20 p-5"
+              class="hs-accordion bg-brand-green-light rounded-20 p-3.5 lg:p-5"
               id="hs-basic-heading-7"
             >
               <button
@@ -981,11 +1063,11 @@
                 aria-expanded="false"
                 aria-controls="hs-basic-collapse-7"
               >
-                <span class="text-xl font-semibold leading-8"
+                <span class="text-sm lg:text-xl font-semibold leading-8"
                   >Сколько детей в группе?</span
                 >
                 <div
-                  class="size-12 shrink-0 grid place-content-center bg-brand-green rounded-full"
+                  class="size-10 lg:size-12 shrink-0 grid place-content-center bg-brand-green rounded-full"
                 >
                   <svg
                     width="15"
@@ -1017,7 +1099,7 @@
             </div>
             <!-- Accordion Item 8 -->
             <div
-              class="hs-accordion bg-brand-green-light rounded-20 p-5"
+              class="hs-accordion bg-brand-green-light rounded-20 p-3.5 lg:p-5"
               id="hs-basic-heading-8"
             >
               <button
@@ -1025,11 +1107,11 @@
                 aria-expanded="false"
                 aria-controls="hs-basic-collapse-8"
               >
-                <span class="text-xl font-semibold leading-8"
+                <span class="text-sm lg:text-xl font-semibold leading-8"
                   >Как часто нужно посещать занятия?</span
                 >
                 <div
-                  class="size-12 shrink-0 grid place-content-center bg-brand-green rounded-full"
+                  class="size-10 lg:size-12 shrink-0 grid place-content-center bg-brand-green rounded-full"
                 >
                   <svg
                     width="15"
@@ -1061,7 +1143,7 @@
             </div>
             <!-- Accordion Item 9 -->
             <div
-              class="hs-accordion bg-brand-green-light rounded-20 p-5"
+              class="hs-accordion bg-brand-green-light rounded-20 p-3.5 lg:p-5"
               id="hs-basic-heading-9"
             >
               <button
@@ -1069,11 +1151,11 @@
                 aria-expanded="false"
                 aria-controls="hs-basic-collapse-3"
               >
-                <span class="text-xl font-semibold leading-8"
+                <span class="text-sm lg:text-xl font-semibold leading-8"
                   >Ребенок заболел или не пришел, занятия пропадут?</span
                 >
                 <div
-                  class="size-12 shrink-0 grid place-content-center bg-brand-green rounded-full"
+                  class="size-10 lg:size-12 shrink-0 grid place-content-center bg-brand-green rounded-full"
                 >
                   <svg
                     width="15"
@@ -1105,7 +1187,7 @@
             </div>
             <!-- Accordion Item 3 -->
             <div
-              class="hs-accordion bg-brand-green-light rounded-20 p-5"
+              class="hs-accordion bg-brand-green-light rounded-20 p-3.5 lg:p-5"
               id="hs-basic-heading-10"
             >
               <button
@@ -1113,11 +1195,11 @@
                 aria-expanded="false"
                 aria-controls="hs-basic-collapse-10"
               >
-                <span class="text-xl font-semibold leading-8"
+                <span class="text-sm lg:text-xl font-semibold leading-8"
                   >Родители присутствуют на занятиях?</span
                 >
                 <div
-                  class="size-12 shrink-0 grid place-content-center bg-brand-green rounded-full"
+                  class="size-10 lg:size-12 shrink-0 grid place-content-center bg-brand-green rounded-full"
                 >
                   <svg
                     width="15"
@@ -1155,37 +1237,42 @@
       <section id="start">
         <div class="max-w-base mx-auto px-2.5">
           <div
-            class="relative flex justify-between bg-brand-blue-norm rounded-30 overflow-hidden"
+            class="relative flex flex-col lg:flex-row justify-between bg-brand-blue-norm rounded-30 overflow-hidden"
           >
-            <div class="w-1/2 py-60px pl-60px">
-              <div class="space-y-10 relative z-10">
+            <div
+              class="lg:w-1/2 space-y-30px lg:space-y-10 mb-30px lg:mb-60px px-5 pb-5 pt-30px lg:p-60px"
+            >
+              <div
+                class="lg:max-w-xl mx-auto lg:mx-0 space-y-30px relative text-center lg:text-start z-10"
+              >
                 <h2>
                   Начните <br />
                   <span
-                    class="block bg-white border-2 border-dashed border-brand-blue rounded-20 mt-1 -ml-3 -rotate-2 py-0.5 px-4"
-                  >
-                    с вводного урока</span
+                    class="bg-white border-2 border-dashed border-brand-blue rounded-20 mt-2 -ml-5 py-0.5 px-4"
+                    >с вводного урока</span
                   >
                 </h2>
-                <ul class="space-y-30px text-brand-gray leading-5">
+                <ul
+                  class="space-y-5 lg:space-y-30px text-sm lg:text-base text-start text-brand-gray leading-4 lg:leading-5"
+                >
                   <li class="flex items-center gap-5">
                     <div
-                      class="size-50px shrink-0 grid place-content-center text-brand-blue text-3xl font-semibold bg-white rounded-full"
+                      class="size-10 lg:size-50px shrink-0 grid place-content-center text-brand-blue text-xl lg:text-3xl font-semibold bg-white rounded-full leading-[48px]"
                     >
                       1
                     </div>
-                    <p>
+                    <p class="text-sm lg:text-base leading-4 lg:leading-5">
                       ребёнок познакомится <br />
                       с преподавателем
                     </p>
                   </li>
                   <li class="flex items-center gap-5">
                     <div
-                      class="size-50px shrink-0 grid place-content-center text-brand-blue text-3xl font-semibold bg-white rounded-full"
+                      class="size-10 lg:size-50px shrink-0 grid place-content-center text-brand-blue text-xl lg:text-3xl font-semibold bg-white rounded-full leading-[48px]"
                     >
                       2
                     </div>
-                    <p>
+                    <p class="text-sm lg:text-base leading-4 lg:leading-5">
                       пройдёт лёгкую тему
                       <br />
                       в игровой форме
@@ -1193,11 +1280,11 @@
                   </li>
                   <li class="flex items-center gap-5">
                     <div
-                      class="size-50px shrink-0 grid place-content-center text-brand-blue text-3xl font-semibold bg-white rounded-full"
+                      class="size-10 lg:size-50px shrink-0 grid place-content-center text-brand-blue text-xl lg:text-3xl font-semibold bg-white rounded-full leading-[48px]"
                     >
                       3
                     </div>
-                    <p>
+                    <p class="text-sm lg:text-base leading-4 lg:leading-5">
                       вы поймёте для себя
                       <br />
                       подойдёт программа или нет?
@@ -1211,109 +1298,114 @@
             <img
               src="./assets/images/img-rounds.png"
               alt="Image"
-              class="absolute left-0 bottom-0"
+              class="hidden lg:block absolute left-0 bottom-0"
             />
 
             <!-- Image Girl -->
             <img
               src="./assets/images/img-girl-start.png"
               alt="Image"
-              class="w-fit h-fit mt-auto mr-10"
+              class="hidden absolute bottom-0 left-1/2 -translate-x-1/2 lg:block w-fit h-fit mt-auto"
             />
 
             <!-- Form -->
-            <form action="#" class="w-1/2 space-y-5 py-[90px] pr-60px">
-              <!-- Select Container -->
-              <div class="relative select">
-                <!-- Select Button -->
-                <button
-                  class="select-button w-full flex items-center justify-between bg-white text-brand-gray-100 focus:outline-none focus:ring-2 focus:ring-brand-blue rounded-20 p-5"
-                >
-                  <span class="select-label">Выберите филиал</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    class="select-icon w-5 h-5 transition-transform"
+            <form
+              action="#"
+              class="lg:max-w-[460px] w-full relative z-10 lg:w-1/2 space-y-5 pb-5 px-4 lg:py-[90px] lg:pr-60px"
+            >
+              <div class="grid xs:grid-cols-2 lg:grid-cols-1 gap-2.5 sm:gap-5">
+                <!-- Select Container -->
+                <div class="xs:col-span-2 lg:col-span-1 relative select">
+                  <!-- Select Button -->
+                  <button
+                    class="select-button h-50px xs:h-60px w-full flex items-center justify-between bg-white text-brand-gray-100 focus:outline-none focus:ring-2 focus:ring-brand-blue rounded-20 px-5"
                   >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M19.5 8.25L12 15.75L4.5 8.25"
-                    />
-                  </svg>
-                </button>
+                    <span class="select-label">Выберите филиал</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      class="select-icon w-5 h-5 transition-transform"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19.5 8.25L12 15.75L4.5 8.25"
+                      />
+                    </svg>
+                  </button>
 
-                <!-- Select List -->
-                <ul
-                  class="select-list fade-in absolute mt-2 bg-white rounded-20 shadow-lg w-full hidden z-10"
-                >
-                  <li
-                    class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
-                    data-value="Уралмаш"
+                  <!-- Select List -->
+                  <ul
+                    class="select-list fade-in absolute mt-2 bg-white rounded-20 shadow-lg w-full hidden z-10"
                   >
-                    <img
-                      src="./assets/images/icon-location.svg"
-                      alt="Location Icon"
-                    />
-                    Уралмаш
-                  </li>
-                  <li
-                    class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
-                    data-value="Эльмаш"
-                  >
-                    <img
-                      src="./assets/images/icon-location.svg"
-                      alt="Location Icon"
-                    />
-                    Эльмаш
-                  </li>
-                  <li
-                    class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
-                    data-value="Садовый"
-                  >
-                    <img
-                      src="./assets/images/icon-location.svg"
-                      alt="Location Icon"
-                    />
-                    Садовый
-                  </li>
-                  <li
-                    class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
-                    data-value="Завокзальный"
-                  >
-                    <img
-                      src="./assets/images/icon-location.svg"
-                      alt="Location Icon"
-                    />
-                    Завокзальный
-                  </li>
-                  <li
-                    class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
-                    data-value="Широкая речка"
-                  >
-                    <img
-                      src="./assets/images/icon-location.svg"
-                      alt="Location Icon"
-                    />
-                    Широкая речка
-                  </li>
-                </ul>
+                    <li
+                      class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                      data-value="Уралмаш"
+                    >
+                      <img
+                        src="./assets/images/icon-location.svg"
+                        alt="Location Icon"
+                      />
+                      Уралмаш
+                    </li>
+                    <li
+                      class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                      data-value="Эльмаш"
+                    >
+                      <img
+                        src="./assets/images/icon-location.svg"
+                        alt="Location Icon"
+                      />
+                      Эльмаш
+                    </li>
+                    <li
+                      class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                      data-value="Садовый"
+                    >
+                      <img
+                        src="./assets/images/icon-location.svg"
+                        alt="Location Icon"
+                      />
+                      Садовый
+                    </li>
+                    <li
+                      class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                      data-value="Завокзальный"
+                    >
+                      <img
+                        src="./assets/images/icon-location.svg"
+                        alt="Location Icon"
+                      />
+                      Завокзальный
+                    </li>
+                    <li
+                      class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                      data-value="Широкая речка"
+                    >
+                      <img
+                        src="./assets/images/icon-location.svg"
+                        alt="Location Icon"
+                      />
+                      Широкая речка
+                    </li>
+                  </ul>
+                </div>
+
+                <input
+                  type="text"
+                  placeholder="Ваше имя"
+                  class="w-full text-brand-gray-100 outline-none border-none focus:outline-none focus:ring-2 focus:ring-brand-blue rounded-20 placeholder:text-brand-gray-100 p-5"
+                />
+
+                <input
+                  type="text"
+                  placeholder="Ваш номер телефона"
+                  class="w-full text-brand-gray-100 outline-none border-none focus:outline-none focus:ring-2 focus:ring-brand-blue rounded-20 placeholder:text-brand-gray-100 p-5"
+                />
               </div>
-
-              <input
-                type="text"
-                placeholder="Ваше имя"
-                class="w-full text-brand-gray-100 outline-none border-none focus:outline-none focus:ring-2 focus:ring-brand-blue rounded-20 placeholder:text-brand-gray-100 p-5"
-              />
-
-              <input
-                type="text"
-                placeholder="Ваш номер телефона"
-                class="w-full text-brand-gray-100 outline-none border-none focus:outline-none focus:ring-2 focus:ring-brand-blue rounded-20 placeholder:text-brand-gray-100 p-5"
-              />
 
               <div class="flex items-center gap-2.5">
                 <input
@@ -1330,11 +1422,25 @@
               </div>
 
               <button
-                class="w-full bg-brand-blue text-white text-xl leading-5 border-4 border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-blue hover:border-dashed transition-all duration-300 p-5"
+                class="w-full h-50px sm:h-60px bg-brand-blue text-white sm:text-xl leading-5 sm:leading-6 border-2 lg:border-4 border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-blue hover:border-dashed transition-all duration-300 px-5"
               >
                 Записаться на пробный урок
               </button>
             </form>
+
+            <!-- Image Rounds Mobile -->
+            <img
+              src="./assets/images/img-rounds-mobile.png"
+              alt="Image"
+              class="absolute top-0 right-0 lg:hidden"
+            />
+
+            <!-- Image Girl Mobile 2 -->
+            <img
+              src="./assets/images/img-rounds-mobile-2.png"
+              alt="Image"
+              class="w-20 lg:hidden ml-[30%]"
+            />
           </div>
         </div>
       </section>
@@ -1344,21 +1450,21 @@
     <footer id="footer">
       <!-- Top -->
       <div
-        class="max-w-base mx-auto flex justify-between border-t border-brand-blue-norm py-60px px-2.5"
+        class="max-w-base mx-auto flex flex-col xl:flex-row justify-between gap-30px border-t border-brand-blue-norm py-30px lg:py-60px px-2.5"
       >
         <!-- Logo & Socials -->
-        <div class="space-y-60px">
+        <div class="mx-auto space-y-30px lg:space-y-60px">
           <!-- Logo -->
-          <a href="#" class="w-56 h-[70px]">
+          <a href="#" class="">
             <img
               src="./assets/images/logo.png"
               alt="Logo"
-              class="w-56 h-[70px]"
+              class="w-[171px] h-[53px] sm:w-56 sm:h-[70px]"
             />
           </a>
 
           <!-- Socials -->
-          <div class="flex items-center gap-5">
+          <div class="flex items-center justify-center gap-5">
             <a href="#">
               <img src="./assets/images/icon-vkontakte.svg" alt="Vkontakte" />
             </a>
@@ -1372,10 +1478,16 @@
         </div>
 
         <!-- Links -->
-        <div class="flex gap-[90px] leading-5">
+        <div
+          class="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 xl:flex flex-wrap gap-10 lggap-16 xl:gap-[90px] text-sm xl:text-base leading-4 xl:leading-5"
+        >
           <!-- Links 1 -->
           <div class="space-y-5">
-            <h3 class="text-2xl font-semibold leading-30px">Меню</h3>
+            <h3
+              class="text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px"
+            >
+              Меню
+            </h3>
 
             <ul class="space-y-5">
               <li>
@@ -1445,7 +1557,11 @@
           </div>
           <!-- Links 1 -->
           <div class="space-y-5">
-            <h3 class="text-2xl font-semibold leading-30px">Направления</h3>
+            <h3
+              class="text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px"
+            >
+              Направления
+            </h3>
 
             <ul class="space-y-5">
               <li>
@@ -1543,7 +1659,11 @@
           </div>
           <!-- Links 1 -->
           <div class="space-y-5">
-            <h3 class="text-2xl font-semibold leading-30px">Филиалы</h3>
+            <h3
+              class="text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px"
+            >
+              Филиалы
+            </h3>
 
             <ul class="space-y-5">
               <li>
@@ -1585,7 +1705,9 @@
           </div>
           <!-- Links 1 -->
           <div class="space-y-5">
-            <h3 class="text-2xl font-semibold leading-30px">
+            <h3
+              class="text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px"
+            >
               Группы по возрасту
             </h3>
 
@@ -1619,13 +1741,14 @@
       <!-- Bottom -->
       <div class="bg-brand-yellow-100">
         <div
-          class="max-w-base mx-auto flex justify-between text-sm leading-4 text-brand-gray py-30px px-2.5"
+          class="max-w-base mx-auto flex flex-col-reverse lg:flex-row justify-between gap-2.5 text-xs sm:text-sm leading-[14px] sm:leading-4 text-brand-gray py-30px px-2.5"
         >
           <div class="space-y-2.5">
             <p class="max-w-xl pr-10">
               Вы принимаете условия политики в отношении обработки персональных
-              данных и пользовательского соглашения каждый раз, когда оставляете
-              свои данные в любой форме обратной связи на сайте Умник66.ру
+              данных и пользовательского соглашения кажд ый раз, когда
+              оставляете свои данные в любой форме обратной связи на сайте
+              Умник66.ру
             </p>
             <p>© 2024. Академия интеллекта «Умник»</p>
           </div>

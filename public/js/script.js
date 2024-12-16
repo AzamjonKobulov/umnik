@@ -45,15 +45,15 @@ var swiper = new Swiper(".reviesSwiper", {
   },
   loop: true,
   breakpoints: {
+    0: {
+      slidesPerView: 1.5,
+      spaceBetween: 10,
+    },
     640: {
-      slidesPerView: 2,
-      spaceBetween: 20,
+      slidesPerView: 2.5,
+      spaceBetween: 10,
     },
     768: {
-      slidesPerView: 4,
-      spaceBetween: 20,
-    },
-    1024: {
       slidesPerView: 3.5,
       spaceBetween: 20,
     },
@@ -68,13 +68,21 @@ var swiper = new Swiper(".articlesSwiper", {
   },
   loop: true,
   breakpoints: {
+    0: {
+      slidesPerView: 1.2,
+      spaceBetween: 10,
+    },
+    480: {
+      slidesPerView: 2.2,
+      spaceBetween: 10,
+    },
     640: {
-      slidesPerView: 2,
-      spaceBetween: 20,
+      slidesPerView: 2.6,
+      spaceBetween: 10,
     },
     768: {
-      slidesPerView: 4,
-      spaceBetween: 20,
+      slidesPerView: 3.2,
+      spaceBetween: 10,
     },
     1024: {
       slidesPerView: 4,

@@ -48,16 +48,11 @@
 
   h1,
   h2 {
-    @apply font-semibold;
-  }
-
-  h1,
-  h2 {
-    @apply text-40 leading-[48px];
+    @apply font-semibold text-[25px] sm:text-3xl xl:text-40 leading-30px sm:leading-9 xl:leading-[48px];
   }
 
   section {
-    @apply pb-120px;
+    @apply pb-60px md:pb-20 xl:pb-120px;
   }
 }
 
@@ -100,4 +95,12 @@
 
 input[type="radio"]:checked + label div span {
   @apply block;
+}
+
+input {
+  @apply h-50px xs:h-60px;
+}
+
+.no-scroll::-webkit-scrollbar {
+  @apply size-0;
 }
