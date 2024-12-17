@@ -1202,6 +1202,10 @@ input:checked + .toggle-bg {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
+.mx-2\.5 {
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
+}
 .\!me-1 {
   margin-inline-end: 0.25rem !important;
 }
@@ -1550,8 +1554,18 @@ input:checked + .toggle-bg {
 .w-1\/4 {
   width: 25%;
 }
+.w-screen {
+  width: 100vw;
+}
+.w-\[calc\(100vw-20px\)\] {
+  width: calc(100vw - 20px);
+}
 .min-w-140px {
   min-width: 140px;
+}
+.min-w-max {
+  min-width: -moz-max-content;
+  min-width: max-content;
 }
 .max-w-2xl {
   max-width: 42rem;
@@ -1618,6 +1632,10 @@ input:checked + .toggle-bg {
 }
 .max-w-96 {
   max-width: 24rem;
+}
+.max-w-min {
+  max-width: -moz-min-content;
+  max-width: min-content;
 }
 .flex-1 {
   flex: 1 1 0%;
@@ -1948,6 +1966,9 @@ input:checked + .toggle-bg {
 }
 .overflow-x-auto {
   overflow-x: auto;
+}
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 .truncate {
   overflow: hidden;
@@ -3718,6 +3739,10 @@ input {
     width: auto;
   }
 
+  .lg\:min-w-0 {
+    min-width: 0px;
+  }
+
   .lg\:max-w-\[1100px\] {
     max-width: 1100px;
   }
@@ -3906,6 +3931,10 @@ input {
     margin-bottom: calc(1rem * var(--tw-space-y-reverse));
   }
 
+  .lg\:overflow-visible {
+    overflow: visible;
+  }
+
   .lg\:rounded-20 {
     border-radius: 20px;
   }
@@ -3988,6 +4017,11 @@ input {
   .lg\:py-14 {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
+  }
+
+  .lg\:px-2\.5 {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
   }
 
   .lg\:pl-5 {
