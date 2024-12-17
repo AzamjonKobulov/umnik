@@ -1280,6 +1280,9 @@ input:checked + .toggle-bg {
 .mt-auto {
   margin-top: auto;
 }
+.mt-5 {
+  margin-top: 1.25rem;
+}
 .block {
   display: block;
 }
@@ -1788,6 +1791,9 @@ input:checked + .toggle-bg {
 .gap-\[90px\] {
   gap: 90px;
 }
+.gap-80 {
+  gap: 20rem;
+}
 .gap-x-1 {
   -moz-column-gap: 0.25rem;
        column-gap: 0.25rem;
@@ -1888,6 +1894,11 @@ input:checked + .toggle-bg {
   --tw-space-y-reverse: 0;
   margin-top: calc(90px * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(90px * var(--tw-space-y-reverse));
+}
+.space-y-7 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
 }
 .self-center {
   align-self: center;
@@ -2399,6 +2410,26 @@ input:checked + .toggle-bg {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+.text-\[280px\] {
+  font-size: 280px;
+}
+.text-\[320px\] {
+  font-size: 320px;
+}
+.text-\[300px\] {
+  font-size: 300px;
+}
+.text-\[200px\] {
+  font-size: 200px;
+}
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
 }
 .\!font-medium {
   font-weight: 500 !important;
@@ -3450,12 +3481,20 @@ input {
 
 @media (min-width: 768px) {
 
+  .md\:relative {
+    position: relative;
+  }
+
   .md\:col-span-1 {
     grid-column: span 1 / span 1;
   }
 
   .md\:mt-0 {
     margin-top: 0px;
+  }
+
+  .md\:block {
+    display: block;
   }
 
   .md\:flex {
@@ -3476,6 +3515,11 @@ input {
 
   .md\:max-w-\[388px\] {
     max-width: 388px;
+  }
+
+  .md\:translate-x-0 {
+    --tw-translate-x: 0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .md\:grid-cols-2 {
@@ -3508,8 +3552,37 @@ input {
     padding: 2.5rem;
   }
 
+  .md\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .md\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .md\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
   .md\:pt-30px {
     padding-top: 30px;
+  }
+
+  .md\:pt-0 {
+    padding-top: 0px;
   }
 
   .md\:text-base {
@@ -3520,6 +3593,10 @@ input {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-\[300px\] {
+    font-size: 300px;
   }
 
   .md\:leading-5 {
@@ -3543,6 +3620,10 @@ input {
 
   .lg\:right-20 {
     right: 5rem;
+  }
+
+  .lg\:top-0 {
+    top: 0px;
   }
 
   .lg\:order-1 {
@@ -3727,6 +3808,10 @@ input {
     max-width: none;
   }
 
+  .lg\:max-w-\[500px\] {
+    max-width: 500px;
+  }
+
   .lg\:shrink-0 {
     flex-shrink: 0;
   }
@@ -3789,6 +3874,10 @@ input {
 
   .lg\:gap-\[120px\] {
     gap: 120px;
+  }
+
+  .lg\:gap-20 {
+    gap: 5rem;
   }
 
   .lg\:gap-x-10 {
@@ -4184,6 +4273,21 @@ input {
   .xl\:py-60px {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+
+  .xl\:px-60px {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .xl\:py-28 {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  .xl\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   .xl\:pl-60px {
