@@ -3292,6 +3292,10 @@ input {
     max-width: 28rem;
   }
 
+  .sm\:max-w-\[350px\] {
+    max-width: 350px;
+  }
+
   .sm\:shrink {
     flex-shrink: 1;
   }
@@ -3461,6 +3465,10 @@ input {
 
   .md\:max-w-\[388px\] {
     max-width: 388px;
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:flex-row {
