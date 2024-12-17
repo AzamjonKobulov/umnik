@@ -48,21 +48,21 @@
       </div>
 
       <!-- Navbar -->
-      <nav class="">
+      <nav>
         <!-- Nav Top -->
         <div class="border-b py-3.5">
           <div class="max-w-base mx-auto px-2.5 grid grid-cols-2 gap-[73px]">
             <!-- Left -->
             <div class="flex items-center justify-between">
               <!-- Logo & Location -->
-              <div class="flex items-center gap-14">
+              <div class="flex items-center gap-8 xl:gap-14">
                 <!-- Logo -->
-                <a href="#" class="w-40 h-10">
+                <a href="#" class="w-32 h-9 xl:w-40 xl:h-10">
                   <img src="./assets/images/logo.png" alt="Logo" />
                 </a>
 
                 <!-- Location -->
-                <a href="#" class="flex items-center gap-2">
+                <a href="#" class="hidden lg:flex items-center gap-2">
                   <svg
                     width="12"
                     height="15"
@@ -83,52 +83,62 @@
               </div>
 
               <!-- Socials -->
-              <div class="flex items-center gap-5">
+              <div class="hidden lg:flex items-center gap-3.5 xl:gap-5">
                 <a href="#">
                   <img
                     src="./assets/images/icon-vkontakte.svg"
                     alt="Vkontakte"
+                    class="size-8 xl:size-10 shrink-0"
                   />
                 </a>
                 <a href="#">
                   <img
                     src="./assets/images/icon-whatsapp.svg"
                     alt="Vkontakte"
+                    class="size-8 xl:size-10 shrink-0"
                   />
                 </a>
                 <a href="#">
                   <img
                     src="./assets/images/icon-telegram.svg"
                     alt="Vkontakte"
+                    class="size-8 xl:size-10 shrink-0"
                   />
                 </a>
               </div>
             </div>
 
             <!-- Right -->
-            <div class="flex items-center justify-between">
+            <div class="hidden lg:flex items-center justify-between">
               <div>
                 <a
                   href="tel:+7 (343) 219-00-33"
-                  class="font-bold text-brand-blue text-2xl leading-10"
+                  class="font-bold text-brand-blue text-xl xl:text-2xl leading-5 xl:leading-10"
                 >
                   +7 (343) 219-00-33
                 </a>
-                <p class="text-sm">ежедневно с 8:00 до 20:00</p>
+                <p class="text-xs xl:text-sm">ежедневно с 8:00 до 20:00</p>
               </div>
 
               <button
-                class="h-50px bg-brand-yellow border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:border-brand-yellow transition-all duration-300 px-5"
+                class="h-10 xl:h-50px bg-brand-yellow text-sm xl:text-base border-4 border-dashed border-transparent rounded-2xl xl:rounded-20 hover:bg-white hover:border-brand-yellow transition-all duration-300 px-3.5 xl:px-5"
               >
                 Записаться на пробный урок
               </button>
             </div>
+            <!-- Menu Btn -->
+            <button class="lg:hidden ml-auto">
+              <img
+                src="./assets/images/icon-hamburger.svg"
+                alt="Hamburger icon"
+              />
+            </button>
           </div>
         </div>
 
         <!-- Nav Bottom -->
-        <div class="max-w-base mx-auto py-5 px-2.5">
-          <ul class="flex justify-between">
+        <div class="max-w-base mx-auto lg:py-5 px-2.5">
+          <ul class="hidden lg:flex justify-between text-sm xl:text-base">
             <li>
               <a
                 href="#"
@@ -325,26 +335,33 @@
     <main>
       <!-- Hero -->
       <section id="hero">
-        <div class="max-w-base mx-auto pt-60px px2.5">
+        <div class="max-w-base mx-auto pt-30px lg:pt-60px px2.5">
           <div
-            class="h-[570px] relative grid place-content-center bg-brand-yellow-light rounded-30 p-60px"
+            class="sm:h-[450px] lg:h-[570px] relative grid place-content-center bg-brand-yellow-light rounded-30 overflow-hidden p-2.5 md:p-10 lg:p-60px"
           >
             <!-- Stars Image -->
             <img
               src="./assets/images/img-star-center.png"
               alt="Stars"
-              class="absolute z-10 inset-0 size-full object-cover"
+              class="absolute hidden sm:block z-10 inset-0 size-full object-cover"
+            />
+
+            <!-- Stars Image Mobile -->
+            <img
+              src="./assets/images/img-star-center-mobile.png"
+              alt="Stars"
+              class="absolute sm:hidden top-0 right-0 z-10 object-cover"
             />
 
             <!-- Kids Image -->
             <img
               src="./assets/images/img-center.png"
               alt="Stars"
-              class="absolute max-w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover p-2.5"
+              class="absolute hidden sm:block max-w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover p-2.5"
             />
 
             <div
-              class="max-w-lg relative z-20 mx-auto text-center space-y-30px"
+              class="max-w-lg relative z-20 mx-auto text-center space-y-30px pt-28 px-2.5 md:p-0"
             >
               <h2>
                 Об академии интеллекта <br />
@@ -355,6 +372,13 @@
                 закончили начальную и среднюю школу на «отлично»
               </p>
             </div>
+
+            <!-- Kids Image Mobile -->
+            <img
+              src="./assets/images/img-center-mobile.png"
+              alt="Stars"
+              class="w-full object-cover relative z-10 sm:hidden mt-30px"
+            />
           </div>
         </div>
       </section>
@@ -362,26 +386,24 @@
       <!-- Categories -->
       <section id="categories">
         <div class="max-w-base mx-auto space-y-30px lg:space-y-60px px-2.5">
-          <h2 class="text-center">Направления академии</h2>
+          <h2 class="text-center">
+            Выберите программу обучения для вашего ребенка
+          </h2>
 
           <!-- Categories -->
-          <div class="grid grid-cols-6 gap-5">
+          <div class="grid sm:grid-cols-2 lg:grid-cols-6 gap-5">
             <!-- Category 1 -->
             <div
-              class="col-span-3 relative flex flex-col justify-between gap-20 bg-brand-blue-norm rounded-2xl p-8"
+              class="lg:col-span-3 relative flex flex-col justify-between gap-20 bg-brand-blue-norm rounded-2xl p-5 xl:p-30px"
             >
               <!-- Info -->
-              <div class="space-y-8">
+              <div class="relative z-10 space-y-5 xl:space-y-8">
                 <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-blue-light rounded-2xl px-3.5"
-                  >
+                <div class="flex items-center gap-2.5 text-xs xl:text-sm">
+                  <div class="bg-brand-blue-light rounded-2xl py-2 px-3.5">
                     5-10 лет
                   </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-blue-light rounded-2xl px-3.5"
-                  >
+                  <div class="bg-brand-blue-light rounded-2xl py-2 px-3.5">
                     группы до 8 чел
                   </div>
                 </div>
@@ -389,41 +411,40 @@
                 <!-- Title & Text -->
                 <div class="space-y-2.5">
                   <h2>Робототехника</h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
+                  <p
+                    class="max-w-64 text-brand-gray text-sm xl:text-base leading-4 xl:leading-5"
+                  >
                     Конструирование и программирование настоящих роботов из LEGO
                   </p>
                 </div>
               </div>
 
-              <button
-                class="h-50px w-fit flex items-center bg-brand-blue text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-blue transition-all duration-300 hover px-10"
+              <a
+                href="#"
+                class="h-50px w-fit relative z-10 flex items-center xl:text-xl bg-brand-blue text-white border-2 xl:border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-blue transition-all duration-300 px-30px xl:px-10"
               >
                 Подробнее →
-              </button>
+              </a>
 
               <!-- Image -->
               <img
                 src="./assets/images/img-category-1.png"
                 alt="Image"
-                class="absolute bottom-0 right-0"
+                class="w-1/3 absolute bottom-0 right-0"
               />
             </div>
             <!-- Category 2 -->
             <div
-              class="col-span-3 relative flex flex-col justify-between gap-20 bg-brand-purple-light rounded-2xl p-8"
+              class="lg:col-span-3 relative flex flex-col justify-between gap-20 bg-brand-purple-light rounded-2xl p-5 xl:p-30px"
             >
               <!-- Info -->
-              <div class="space-y-8">
+              <div class="relative z-10 space-y-5 xl:space-y-8">
                 <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-purple-100 rounded-2xl px-3.5"
-                  >
+                <div class="flex items-center gap-2.5 text-xs xl:text-sm">
+                  <div class="bg-brand-purple-100 rounded-2xl py-2 px-3.5">
                     5-15 лет
                   </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-purple-100 rounded-2xl px-3.5"
-                  >
+                  <div class="bg-brand-purple-100 rounded-2xl py-2 px-3.5">
                     группы до 6 чел
                   </div>
                 </div>
@@ -431,41 +452,40 @@
                 <!-- Title & Text -->
                 <div class="space-y-2.5">
                   <h2>Программирование</h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
+                  <p
+                    class="max-w-64 text-brand-gray text-sm xl:text-base leading-4 xl:leading-5"
+                  >
                     Краткое описание программы, раскрывающее ценности
                   </p>
                 </div>
               </div>
 
-              <button
-                class="h-50px w-fit flex items-center bg-brand-purple text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-purple transition-all duration-300 hover px-10"
+              <a
+                href="#"
+                class="h-50px w-fit relative z-10 flex items-center xl:text-xl bg-brand-purple text-white border-2 xl:border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-purple transition-all duration-300 px-30px xl:px-10"
               >
                 Подробнее →
-              </button>
+              </a>
 
               <!-- Image -->
               <img
                 src="./assets/images/img-category-2.png"
                 alt="Image"
-                class="absolute bottom-0 right-0"
+                class="w-[40%] absolute bottom-0 right-0"
               />
             </div>
             <!-- Category 3 -->
             <div
-              class="col-span-2 relative flex flex-col justify-between gap-20 bg-brand-green-light rounded-2xl p-8"
+              class="lg:col-span-2 relative flex flex-col justify-between gap-20 bg-brand-green-light rounded-2xl p-5 xl:p-30px"
             >
               <!-- Info -->
-              <div class="space-y-8">
+              <div class="relative z-10 space-y-5 xl:space-y-8">
                 <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
-                  >
+                <div class="flex items-center gap-2.5 text-xs xl:text-sm">
+                  <div class="bg-brand-green-100 rounded-2xl py-2 px-3.5">
                     5-15 лет
                   </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
-                  >
+                  <div class="bg-brand-green-100 rounded-2xl py-2 px-3.5">
                     индивидуально
                   </div>
                 </div>
@@ -473,41 +493,40 @@
                 <!-- Title & Text -->
                 <div class="space-y-2.5">
                   <h2>Логопед</h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
+                  <p
+                    class="max-w-64 text-brand-gray text-sm xl:text-base leading-4 xl:leading-5"
+                  >
                     Краткое описание программы, раскрывающее ценности
                   </p>
                 </div>
               </div>
 
-              <button
-                class="h-50px w-fit flex items-center bg-brand-green text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-green transition-all duration-300 hover px-10"
+              <a
+                href="#"
+                class="h-50px w-fit relative z-10 flex items-center xl:text-xl bg-brand-green text-white border-2 xl:border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-green transition-all duration-300 px-30px xl:px-10"
               >
                 Подробнее →
-              </button>
+              </a>
 
               <!-- Image -->
               <img
                 src="./assets/images/img-category-3.png"
                 alt="Image"
-                class="absolute bottom-0 right-0"
+                class="w-[40%] absolute bottom-0 right-0"
               />
             </div>
             <!-- Category 4 -->
             <div
-              class="col-span-2 relative flex flex-col justify-between gap-20 bg-brand-yellow-light rounded-2xl p-8"
+              class="lg:col-span-2 relative flex flex-col justify-between gap-20 bg-brand-yellow-light rounded-2xl p-5 xl:p-30px"
             >
               <!-- Info -->
-              <div class="space-y-8">
+              <div class="relative z-10 space-y-5 xl:space-y-8">
                 <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-yellow-100 rounded-2xl px-3.5"
-                  >
+                <div class="flex items-center gap-2.5 text-xs xl:text-sm">
+                  <div class="bg-brand-yellow-100 rounded-2xl py-2 px-3.5">
                     5-15 лет
                   </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-yellow-100 rounded-2xl px-3.5"
-                  >
+                  <div class="bg-brand-yellow-100 rounded-2xl py-2 px-3.5">
                     группы по уровню
                   </div>
                 </div>
@@ -515,41 +534,40 @@
                 <!-- Title & Text -->
                 <div class="space-y-2.5">
                   <h2>ИЗО</h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
+                  <p
+                    class="max-w-64 text-brand-gray text-sm xl:text-base leading-4 xl:leading-5"
+                  >
                     Краткое описание программы, раскрывающее ценности
                   </p>
                 </div>
               </div>
 
-              <button
-                class="h-50px w-fit flex items-center bg-brand-yellow border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-yellow transition-all duration-300 hover px-10"
+              <a
+                href="#"
+                class="h-50px w-fit relative z-10 flex items-center xl:text-xl bg-brand-yellow border-2 xl:border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-yellow transition-all duration-300 px-30px xl:px-10"
               >
                 Подробнее →
-              </button>
+              </a>
 
               <!-- Image -->
               <img
                 src="./assets/images/img-category-4.png"
                 alt="Image"
-                class="absolute bottom-0 right-0"
+                class="w-[40%] absolute bottom-0 right-0"
               />
             </div>
             <!-- Category 5 -->
             <div
-              class="col-span-2 relative flex flex-col justify-between gap-20 bg-brand-green-light rounded-2xl p-8"
+              class="lg:col-span-2 relative flex flex-col justify-between gap-20 bg-brand-green-light rounded-2xl p-5 xl:p-30px"
             >
               <!-- Info -->
-              <div class="space-y-8">
+              <div class="relative z-10 space-y-5 xl:space-y-8">
                 <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
-                  >
+                <div class="flex items-center gap-2.5 text-xs xl:text-sm">
+                  <div class="bg-brand-green-100 rounded-2xl py-2 px-3.5">
                     5-15 лет
                   </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
-                  >
+                  <div class="bg-brand-green-100 rounded-2xl py-2 px-3.5">
                     группы до 6 чел
                   </div>
                 </div>
@@ -557,41 +575,40 @@
                 <!-- Title & Text -->
                 <div class="space-y-2.5">
                   <h2>Лепка</h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
+                  <p
+                    class="max-w-64 text-brand-gray text-sm xl:text-base leading-4 xl:leading-5"
+                  >
                     Краткое описание программы, раскрывающее ценности
                   </p>
                 </div>
               </div>
 
-              <button
-                class="h-50px w-fit flex items-center bg-brand-green text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-green transition-all duration-300 hover px-10"
+              <a
+                href="#"
+                class="h-50px w-fit relative z-10 flex items-center xl:text-xl bg-brand-green text-white border-2 xl:border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-green transition-all duration-300 px-30px xl:px-10"
               >
                 Подробнее →
-              </button>
+              </a>
 
               <!-- Image -->
               <img
                 src="./assets/images/img-category-5.png"
                 alt="Image"
-                class="absolute bottom-0 right-0"
+                class="w-[40%] absolute bottom-0 right-0"
               />
             </div>
             <!-- Category 6 -->
             <div
-              class="col-span-3 relative flex flex-col justify-between gap-20 bg-brand-blue-norm rounded-2xl p-8"
+              class="lg:col-span-3 relative flex flex-col justify-between gap-20 bg-brand-blue-norm rounded-2xl p-5 xl:p-30px"
             >
               <!-- Info -->
-              <div class="space-y-8">
+              <div class="relative z-10 space-y-5 xl:space-y-8">
                 <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-blue-light rounded-2xl px-3.5"
-                  >
+                <div class="flex items-center gap-2.5 text-xs xl:text-sm">
+                  <div class="bg-brand-blue-light rounded-2xl py-2 px-3.5">
                     5-7 лет
                   </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-blue-light rounded-2xl px-3.5"
-                  >
+                  <div class="bg-brand-blue-light rounded-2xl py-2 px-3.5">
                     группы до 6 чел
                   </div>
                 </div>
@@ -599,41 +616,40 @@
                 <!-- Title & Text -->
                 <div class="space-y-2.5">
                   <h2>Подготовка к школе</h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
+                  <p
+                    class="max-w-64 text-brand-gray text-sm xl:text-base leading-4 xl:leading-5"
+                  >
                     Конструирование и программирование настоящих роботов из LEGO
                   </p>
                 </div>
               </div>
 
-              <button
-                class="h-50px w-fit flex items-center bg-brand-blue text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-blue transition-all duration-300 hover px-10"
+              <a
+                href="#"
+                class="h-50px w-fit relative z-10 flex items-center xl:text-xl bg-brand-blue text-white border-2 xl:border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-blue transition-all duration-300 px-30px xl:px-10"
               >
                 Подробнее →
-              </button>
+              </a>
 
               <!-- Image -->
               <img
                 src="./assets/images/img-category-6.png"
                 alt="Image"
-                class="absolute bottom-0 right-0"
+                class="w-[40%] absolute bottom-0 right-0"
               />
             </div>
             <!-- Category 7 -->
             <div
-              class="col-span-3 relative flex flex-col justify-between gap-20 bg-brand-purple-light rounded-2xl p-8"
+              class="lg:col-span-3 relative flex flex-col justify-between gap-20 bg-brand-purple-light rounded-2xl p-5 xl:p-30px"
             >
               <!-- Info -->
-              <div class="space-y-8">
+              <div class="relative z-10 space-y-5 xl:space-y-8">
                 <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-purple-100 rounded-2xl px-3.5"
-                  >
+                <div class="flex items-center gap-2.5 text-xs xl:text-sm">
+                  <div class="bg-brand-purple-100 rounded-2xl py-2 px-3.5">
                     8-11 лет
                   </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-purple-100 rounded-2xl px-3.5"
-                  >
+                  <div class="bg-brand-purple-100 rounded-2xl py-2 px-3.5">
                     группы до 6 чел
                   </div>
                 </div>
@@ -641,41 +657,40 @@
                 <!-- Title & Text -->
                 <div class="space-y-2.5">
                   <h2>Техника чтения</h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
+                  <p
+                    class="max-w-64 text-brand-gray text-sm xl:text-base leading-4 xl:leading-5"
+                  >
                     Краткое описание программы, раскрывающее ценности
                   </p>
                 </div>
               </div>
 
-              <button
-                class="h-50px w-fit flex items-center bg-brand-purple text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-purple transition-all duration-300 hover px-10"
+              <a
+                href="#"
+                class="h-50px w-fit relative z-10 flex items-center xl:text-xl bg-brand-purple text-white border-2 xl:border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-purple transition-all duration-300 px-30px xl:px-10"
               >
                 Подробнее →
-              </button>
+              </a>
 
               <!-- Image -->
               <img
                 src="./assets/images/img-category-7.png"
                 alt="Image"
-                class="absolute bottom-0 right-0"
+                class="w-[40%] absolute bottom-0 right-0"
               />
             </div>
             <!-- Category 8 -->
             <div
-              class="col-span-2 relative flex flex-col justify-between gap-20 bg-brand-yellow-light rounded-2xl p-8"
+              class="lg:col-span-2 relative flex flex-col justify-between gap-20 bg-brand-yellow-light rounded-2xl p-5 xl:p-30px"
             >
               <!-- Info -->
-              <div class="space-y-8">
+              <div class="relative z-10 space-y-5 xl:space-y-8">
                 <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-yellow-100 rounded-2xl px-3.5"
-                  >
+                <div class="flex items-center gap-2.5 text-xs xl:text-sm">
+                  <div class="bg-brand-yellow-100 rounded-2xl py-2 px-3.5">
                     5-7 лет
                   </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-yellow-100 rounded-2xl px-3.5"
-                  >
+                  <div class="bg-brand-yellow-100 rounded-2xl py-2 px-3.5">
                     для новичков
                   </div>
                 </div>
@@ -683,41 +698,40 @@
                 <!-- Title & Text -->
                 <div class="space-y-2.5">
                   <h2>Шахматы</h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
+                  <p
+                    class="max-w-64 text-brand-gray text-sm xl:text-base leading-4 xl:leading-5"
+                  >
                     Краткое описание программы, раскрывающее ценности
                   </p>
                 </div>
               </div>
 
-              <button
-                class="h-50px w-fit flex items-center bg-brand-yellow border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-yellow transition-all duration-300 hover px-10"
+              <a
+                href="#"
+                class="h-50px w-fit relative z-10 flex items-center xl:text-xl bg-brand-yellow border-2 xl:border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-yellow transition-all duration-300 px-30px xl:px-10"
               >
                 Подробнее →
-              </button>
+              </a>
 
               <!-- Image -->
               <img
                 src="./assets/images/img-category-8.png"
                 alt="Image"
-                class="absolute bottom-0 right-0"
+                class="w-[40%] absolute bottom-0 right-0"
               />
             </div>
             <!-- Category 9 -->
             <div
-              class="col-span-2 relative flex flex-col justify-between gap-20 bg-brand-yellow-light rounded-2xl p-8"
+              class="lg:col-span-2 relative flex flex-col justify-between gap-20 bg-brand-yellow-light rounded-2xl p-5 xl:p-30px"
             >
               <!-- Info -->
-              <div class="space-y-8">
+              <div class="relative z-10 space-y-5 xl:space-y-8">
                 <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-yellow-100 rounded-2xl px-3.5"
-                  >
+                <div class="flex items-center gap-2.5 text-xs xl:text-sm">
+                  <div class="bg-brand-yellow-100 rounded-2xl py-2 px-3.5">
                     11-15 лет
                   </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-yellow-100 rounded-2xl px-3.5"
-                  >
+                  <div class="bg-brand-yellow-100 rounded-2xl py-2 px-3.5">
                     новинка
                   </div>
                 </div>
@@ -725,41 +739,40 @@
                 <!-- Title & Text -->
                 <div class="space-y-2.5">
                   <h2>Комиксы</h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
+                  <p
+                    class="max-w-64 text-brand-gray text-sm xl:text-base leading-4 xl:leading-5"
+                  >
                     Краткое описание программы, раскрывающее ценности
                   </p>
                 </div>
               </div>
 
-              <button
-                class="h-50px w-fit flex items-center bg-brand-yellow border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-yellow transition-all duration-300 hover px-10"
+              <a
+                href="#"
+                class="h-50px w-fit relative z-10 flex items-center xl:text-xl bg-brand-yellow border-2 xl:border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-yellow transition-all duration-300 px-30px xl:px-10"
               >
                 Подробнее →
-              </button>
+              </a>
 
               <!-- Image -->
               <img
                 src="./assets/images/img-category-9.png"
                 alt="Image"
-                class="absolute bottom-0 right-0"
+                class="w-[40%] absolute bottom-0 right-0"
               />
             </div>
             <!-- Category 10 -->
             <div
-              class="col-span-2 relative flex flex-col justify-between gap-20 bg-brand-yellow-light rounded-2xl p-8"
+              class="lg:col-span-2 relative flex flex-col justify-between gap-20 bg-brand-yellow-light rounded-2xl p-5 xl:p-30px"
             >
               <!-- Info -->
-              <div class="space-y-8">
+              <div class="relative z-10 space-y-5 xl:space-y-8">
                 <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-yellow-100 rounded-2xl px-3.5"
-                  >
+                <div class="flex items-center gap-2.5 text-xs xl:text-sm">
+                  <div class="bg-brand-yellow-100 rounded-2xl py-2 px-3.5">
                     5-15 лет
                   </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-yellow-100 rounded-2xl px-3.5"
-                  >
+                  <div class="bg-brand-yellow-100 rounded-2xl py-2 px-3.5">
                     группы до 6 чел
                   </div>
                 </div>
@@ -770,84 +783,81 @@
                     Настольные <br />
                     игры
                   </h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
+                  <p
+                    class="max-w-64 text-brand-gray text-sm xl:text-base leading-4 xl:leading-5"
+                  >
                     Краткое описание программы, раскрывающее ценности
                   </p>
                 </div>
               </div>
 
-              <button
-                class="h-50px w-fit flex items-center bg-brand-yellow border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-yellow transition-all duration-300 hover px-10"
+              <a
+                href="#"
+                class="h-50px w-fit relative z-10 flex items-center xl:text-xl bg-brand-yellow border-2 xl:border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-yellow transition-all duration-300 px-30px xl:px-10"
               >
                 Подробнее →
-              </button>
+              </a>
 
               <!-- Image -->
               <img
                 src="./assets/images/img-category-10.png"
                 alt="Image"
-                class="absolute bottom-0 right-0"
+                class="w-[40%] absolute bottom-0 right-0"
               />
             </div>
             <!-- Category 11 -->
             <div
-              class="col-span-2 relative flex flex-col justify-between gap-20 bg-brand-green-light rounded-2xl p-8"
+              class="lg:col-span-2 relative flex flex-col justify-between gap-20 bg-brand-green-light rounded-2xl p-5 xl:p-30px"
             >
               <!-- Info -->
-              <div class="space-y-8">
+              <div class="relative z-10 space-y-5 xl:space-y-8">
                 <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
-                  >
+                <div class="flex items-center gap-2.5 text-xs xl:text-sm">
+                  <div class="bg-brand-green-100 rounded-2xl py-2 px-3.5">
                     5-15 лет
                   </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
-                  >
-                    «Мама + <br />
-                    Ребёнок»
+                  <div class="bg-brand-green-100 rounded-2xl py-2 px-3.5">
+                    индивидуально
                   </div>
                 </div>
 
                 <!-- Title & Text -->
                 <div class="space-y-2.5">
-                  <h2>Логопед</h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
+                  <h2>«Мама + Ребёнок»</h2>
+                  <p
+                    class="max-w-64 text-brand-gray text-sm xl:text-base leading-4 xl:leading-5"
+                  >
                     Краткое описание программы, раскрывающее ценности
                   </p>
                 </div>
               </div>
 
-              <button
-                class="h-50px w-fit flex items-center bg-brand-green text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-green transition-all duration-300 hover px-10"
+              <a
+                href="#"
+                class="h-50px w-fit relative z-10 flex items-center xl:text-xl bg-brand-green text-white border-2 xl:border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-green transition-all duration-300 px-30px xl:px-10"
               >
                 Подробнее →
-              </button>
+              </a>
 
               <!-- Image -->
               <img
                 src="./assets/images/img-category-11.png"
                 alt="Image"
-                class="absolute bottom-0 right-0"
+                class="w-[40%] absolute bottom-0 right-0"
               />
             </div>
             <!-- Category 12 -->
             <div
-              class="col-span-2 relative flex flex-col justify-between gap-20 bg-brand-green-light rounded-2xl p-8"
+              class="lg:col-span-2 relative flex flex-col justify-between gap-20 bg-brand-green-light rounded-2xl p-5 xl:p-30px"
             >
               <!-- Info -->
-              <div class="space-y-8">
+              <div class="relative z-10 space-y-5 xl:space-y-8">
                 <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
-                  >
+                <div class="flex items-center gap-2.5 text-xs xl:text-sm">
+                  <div class="bg-brand-green-100 rounded-2xl py-2 px-3.5">
                     12-15 лет
                   </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
-                  >
+                  <div class="bg-brand-green-100 rounded-2xl py-2 px-3.5">
                     занятия в группах
                   </div>
                 </div>
@@ -858,41 +868,40 @@
                     Подготовка <br />
                     к ОГЭ
                   </h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
+                  <p
+                    class="max-w-64 text-brand-gray text-sm xl:text-base leading-4 xl:leading-5"
+                  >
                     Краткое описание программы, раскрывающее ценности
                   </p>
                 </div>
               </div>
 
-              <button
-                class="h-50px w-fit flex items-center bg-brand-green text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-green transition-all duration-300 hover px-10"
+              <a
+                href="#"
+                class="h-50px w-fit relative z-10 flex items-center xl:text-xl bg-brand-green text-white border-2 xl:border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-green transition-all duration-300 px-30px xl:px-10"
               >
                 Подробнее →
-              </button>
+              </a>
 
               <!-- Image -->
               <img
                 src="./assets/images/img-category-12.png"
                 alt="Image"
-                class="absolute bottom-0 right-0"
+                class="w-2/3 absolute bottom-0 right-0"
               />
             </div>
             <!-- Category 13 -->
             <div
-              class="col-span-2 relative flex flex-col justify-between gap-20 bg-brand-green-light rounded-2xl p-8"
+              class="lg:col-span-2 relative flex flex-col justify-between gap-20 bg-brand-green-light rounded-2xl p-5 xl:p-30px"
             >
               <!-- Info -->
-              <div class="space-y-8">
+              <div class="relative z-10 space-y-5 xl:space-y-8">
                 <!-- Stats -->
-                <div class="flex items-center gap-2.5">
-                  <div
-                    class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
-                  >
+                <div class="flex items-center gap-2.5 text-xs xl:text-sm">
+                  <div class="bg-brand-green-100 rounded-2xl py-2 px-3.5">
                     8-11 лет
                   </div>
-                  <div
-                    class="h-9 grid place-content-center bg-brand-green-100 rounded-2xl px-3.5"
-                  >
+                  <div class="bg-brand-green-100 rounded-2xl py-2 px-3.5">
                     группы до 6 чел
                   </div>
                 </div>
@@ -900,23 +909,26 @@
                 <!-- Title & Text -->
                 <div class="space-y-2.5">
                   <h2>Каллиграфия</h2>
-                  <p class="max-w-64 text-brand-gray leading-5">
+                  <p
+                    class="max-w-64 text-brand-gray text-sm xl:text-base leading-4 xl:leading-5"
+                  >
                     Краткое описание программы, раскрывающее ценности
                   </p>
                 </div>
               </div>
 
-              <button
-                class="h-50px w-fit flex items-center bg-brand-green text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-green transition-all duration-300 hover px-10"
+              <a
+                href="#"
+                class="h-50px w-fit relative z-10 flex items-center xl:text-xl bg-brand-green text-white border-2 xl:border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-green transition-all duration-300 px-30px xl:px-10"
               >
                 Подробнее →
-              </button>
+              </a>
 
               <!-- Image -->
               <img
                 src="./assets/images/img-category-13.png"
                 alt="Image"
-                class="absolute bottom-0 right-0"
+                class="w-1/2 absolute bottom-0 right-0"
               />
             </div>
           </div>
@@ -930,10 +942,10 @@
 
           <!-- Branches Info Tabs -->
           <div
-            class="flex gap-60px bg-brand-blue-light rounded-30 py-10 pr-10 pl-8"
+            class="flex gap-60px sm:bg-brand-blue-light rounded-30 sm:py-10 sm:pr-10 sm:pl-8"
           >
             <!-- Tabs -->
-            <div class="w-[200px] shrink-0 space-y-12">
+            <div class="hidden lg:block w-[200px] shrink-0 space-y-12">
               <p class="font-semibold text-brand-gray text-xl ml-2">
                 Название филиала
               </p>
@@ -1057,553 +1069,12 @@
             </div>
 
             <!-- Tab Content -->
-            <div class="flex-1 space-y-8 bg-white rounded-20 p-8">
-              <div class="flex items-center justify-between">
-                <div class="space-y-2.5">
-                  <h3 class="text-2xl font-semibold">Уралмаш</h3>
-                  <p class="text-brand-gray">ул. Бакинских Комиссаров, 107</p>
-                </div>
-
-                <button
-                  class="h-50px w-fit flex items-center bg-brand-blue text-white border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-blue transition-all duration-300 hover px-10"
-                >
-                  Перейти →
-                </button>
-              </div>
-
-              <!-- Map & Contacts -->
-              <div class="flex gap-5">
-                <!-- Map -->
-                <div class="flex-1 rounded-30 overflow-hidden">
-                  <script
-                    type="text/javascript"
-                    charset="utf-8"
-                    async
-                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A40eab08b3d25e42e00e767f7b626b5a17a57055e7780c042043ca8dcaa6a196a&amp;width=100%25&amp;height=450&amp;lang=en_FR&amp;scroll=true"
-                  ></script>
-                </div>
-                <div class="w-[332px] shrink-0 space-y-5">
-                  <!-- Top -->
-                  <div class="grid grid-cols-2 gap-5">
-                    <div
-                      class="grid place-content-center bg-brand-purple-light rounded-2xl py-10"
-                    >
-                      <div class="text-center">
-                        <p
-                          class="text-2xl font-semibold text-brand-purple px-8"
-                        >
-                          10
-                        </p>
-                        <p class="text-brand-gray leading-5">направлений</p>
-                      </div>
-                    </div>
-                    <div
-                      class="grid place-content-center bg-brand-green-light rounded-2xl py-10"
-                    >
-                      <div class="text-center">
-                        <p class="text-2xl font-semibold text-brand-green px-8">
-                          5-15 лет
-                        </p>
-                        <p class="text-brand-gray leading-5">возраст детей</p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Bottom -->
-                  <div class="bg-brand-blue-light rounded-2xl px-30px py-7">
-                    <ul class="space-y-5">
-                      <li class="space-y-2.5">
-                        <p class="text-brand-gray leading-5">Телефон</p>
-                        <a
-                          href="tel:"
-                          class="text-2xl font-bold text-brand-blue"
-                          >+7 (343) 219-00-33</a
-                        >
-                      </li>
-                      <li class="space-y-2.5">
-                        <p class="text-brand-gray leading-5">WhatsApp</p>
-                        <a
-                          href="tel:"
-                          class="text-2xl font-bold text-brand-blue"
-                          >+7 (950) 633-62-96</a
-                        >
-                      </li>
-                      <li class="space-y-2.5">
-                        <p class="text-brand-gray leading-5">Почта для связи</p>
-                        <a
-                          href="mailto:"
-                          class="text-2xl font-bold text-brand-blue"
-                          >info@umnik66.ru</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Teachers -->
-      <section id="teachers">
-        <div class="max-w-base mx-auto flex items-stretch gap-8 px-2.5">
-          <div class="max-w-[435px] flex flex-col justify-between">
-            <h2>
-              Преподаватели <br />
-              академии
-            </h2>
-
-            <!-- Rounds -->
-            <div class="flex items-center gap-5">
-              <!-- Round 1 with border -->
-              <div
-                class="size-20 shrink-0 border-2 border-brand-blue border-dashed rounded-full p-1"
-              >
-                <div class="w-full h-full bg-brand-gray-200 rounded-full"></div>
-              </div>
-              <!-- Round 2 -->
-              <div class="size-20 shrink-0 rounded-full p-1">
-                <div class="w-full h-full bg-brand-gray-200 rounded-full"></div>
-              </div>
-              <!-- Round 3 -->
-              <div class="size-20 shrink-0 rounded-full p-1">
-                <div class="w-full h-full bg-brand-gray-200 rounded-full"></div>
-              </div>
-              <!-- Round 4 -->
-              <div class="size-20 shrink-0 rounded-full p-1">
-                <div class="w-full h-full bg-brand-gray-200 rounded-full"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex-1 flex justify-end gap-10">
-            <!-- Main Image -->
-            <div
-              class="max-w-[350px] h-[380px] w-full bg-brand-gray-200 rounded-2xl"
-            ></div>
-
-            <div class="space-y-8">
-              <div class="space-y-5">
-                <h3 class="text-2xl font-semibold">Владимир Турыгин</h3>
-                <ul
-                  class="max-w-[364px] space-y-2.5 list-disc text-brand-gray leading-5"
-                >
-                  <li>
-                    Дипломированный преподаватель робототехники и
-                    программирования.
-                  </li>
-                  <li>
-                    Выпускник: Уральского государственного технического
-                    университета.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Reviews -->
-      <section id="reviews" class="space-y-60px">
-        <div
-          class="max-w-base mx-auto flex items-center justify-between px-2.5"
-        >
-          <h2>Отзывы родителей</h2>
-          <!-- Slider Navigation Buttons -->
-          <div class="flex items-center gap-5">
-            <!-- Prev -->
-            <button
-              class="slider-reviews-prev size-60px shrink-0 group grid place-content-center bg-brand-blue-norm border-2 border-transparent rounded-full hover:bg-white hover:border-brand-blue hover:border-dashed transition-all duration-300"
-            >
-              <svg
-                width="17"
-                height="30"
-                viewBox="0 0 17 30"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M16.0591 1L2 15.059L16.0591 29.1179"
-                  stroke="#3FA2F6"
-                  stroke-width="1.87777"
-                />
-              </svg>
-            </button>
-            <!-- Next -->
-            <button
-              class="slider-reviews-next size-60px shrink-0 group grid place-content-center bg-brand-blue-norm border-2 border-transparent rounded-full hover:bg-white hover:border-brand-blue hover:border-dashed transition-all duration-300"
-            >
-              <svg
-                width="17"
-                height="30"
-                viewBox="0 0 17 30"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.940915 1L15 15.059L0.940915 29.1179"
-                  stroke="#3FA2F6"
-                  stroke-width="1.87777"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        <div class="relative">
-          <!-- Swiper -->
-          <div class="max-w-base mx-auto">
-            <div class="swiper reviesSwiper w-full px-2.5">
-              <div class="swiper-wrapper">
-                <!-- Review 1 -->
-                <div class="swiper-slide">
-                  <div class="space-y-8">
-                    <!-- Parent -->
-                    <div class="flex items-center gap-5">
-                      <div
-                        class="size-20 shrink-0 bg-brand-blue rounded-full"
-                      ></div>
-                      <div class="space-y-1">
-                        <h3 class="text-2xl font-semibold">Людмила</h3>
-                        <a
-                          href="#"
-                          class="text-brand-blue text-sm underline underline-offset-4"
-                          >ссылка на отзыв</a
-                        >
-                      </div>
-                    </div>
-
-                    <!-- Review -->
-                    <div class="bg-brand-blue-norm rounded-20 p-30px">
-                      Отличная школа, отдал ребенка 5 лет на робототехнику, он
-                      там то-то, я доволен.... Отличная школа, отдал ребенка 5
-                      лет на робототехнику, он там то-то, я доволен....Отличная
-                      школа, отдал ребенка 5 лет на робототехнику, он там то-то,
-                      я доволен....
-                    </div>
-                  </div>
-                </div>
-                <!-- Review 2 -->
-                <div class="swiper-slide">
-                  <div class="space-y-8">
-                    <!-- Parent -->
-                    <div class="flex items-center gap-5">
-                      <div
-                        class="size-20 shrink-0 bg-brand-green rounded-full"
-                      ></div>
-                      <div class="space-y-1">
-                        <h3 class="text-2xl font-semibold">Георгий</h3>
-                        <a
-                          href="#"
-                          class="text-brand-green text-sm underline underline-offset-4"
-                          >ссылка на отзыв</a
-                        >
-                      </div>
-                    </div>
-
-                    <!-- Review -->
-                    <div class="bg-brand-green-light rounded-20 p-30px">
-                      Добрый день, хотим поблагодарить за урок Александра, дает
-                      задание читабельно, не торопится, детям интересно. Аня
-                      занималась сегодня с удовольствием, я присутствовала на
-                      занятии. Надеемся, что следующий урок будет проводить
-                      Александр), или другой преподаватель в таком же формате.
-                      Спасибо.
-                    </div>
-                  </div>
-                </div>
-                <!-- Review 3 -->
-                <div class="swiper-slide">
-                  <div class="space-y-8">
-                    <!-- Parent -->
-                    <div class="flex items-center gap-5">
-                      <div
-                        class="size-20 shrink-0 bg-brand-purple rounded-full"
-                      ></div>
-                      <div class="space-y-1">
-                        <h3 class="text-2xl font-semibold">Анастасия</h3>
-                        <a
-                          href="#"
-                          class="text-brand-purple text-sm underline underline-offset-4"
-                          >ссылка на отзыв</a
-                        >
-                      </div>
-                    </div>
-
-                    <!-- Review -->
-                    <div class="bg-brand-purple-light rounded-20 p-30px">
-                      Да, преподавателем очень довольны. Даша сказала, что это
-                      лучший учитель по программированию из всех, что у нее
-                      были)
-                    </div>
-                  </div>
-                </div>
-                <!-- Review 4 -->
-                <div class="swiper-slide">
-                  <div class="space-y-8">
-                    <!-- Parent -->
-                    <div class="flex items-center gap-5">
-                      <div
-                        class="size-20 shrink-0 bg-brand-yellow rounded-full"
-                      ></div>
-                      <div class="space-y-1">
-                        <h3 class="text-2xl font-semibold">Сергей</h3>
-                        <a
-                          href="#"
-                          class="text-brand-yellow text-sm underline underline-offset-4"
-                          >ссылка на отзыв</a
-                        >
-                      </div>
-                    </div>
-
-                    <!-- Review -->
-                    <div class="bg-brand-yellow-light rounded-20 p-30px">
-                      Отличная школа, отдал ребенка 5 лет на робототехнику, он
-                      там то-то, я доволен.... Отличная школа, отдал ребенка 5
-                      лет на робототехнику, он там то-то, я доволен....Отличная
-                      школа, отдал ребенка 5 лет на робототехнику, он там то-то,
-                      я доволен....
-                    </div>
-                  </div>
-                </div>
-                <!-- Review 5 -->
-                <div class="swiper-slide">
-                  <div class="space-y-8">
-                    <!-- Parent -->
-                    <div class="flex items-center gap-5">
-                      <div
-                        class="size-20 shrink-0 bg-brand-blue rounded-full"
-                      ></div>
-                      <div class="space-y-1">
-                        <h3 class="text-2xl font-semibold">Людмила</h3>
-                        <a
-                          href="#"
-                          class="text-brand-blue text-sm underline underline-offset-4"
-                          >ссылка на отзыв</a
-                        >
-                      </div>
-                    </div>
-
-                    <!-- Review -->
-                    <div class="bg-brand-blue-norm rounded-20 p-30px">
-                      Отличная школа, отдал ребенка 5 лет на робототехнику, он
-                      там то-то, я доволен.... Отличная школа, отдал ребенка 5
-                      лет на робототехнику, он там то-то, я доволен....Отличная
-                      школа, отдал ребенка 5 лет на робототехнику, он там то-то,
-                      я доволен....
-                    </div>
-                  </div>
-                </div>
-                <!-- Review 6 -->
-                <div class="swiper-slide">
-                  <div class="space-y-8">
-                    <!-- Parent -->
-                    <div class="flex items-center gap-5">
-                      <div
-                        class="size-20 shrink-0 bg-brand-green rounded-full"
-                      ></div>
-                      <div class="space-y-1">
-                        <h3 class="text-2xl font-semibold">Георгий</h3>
-                        <a
-                          href="#"
-                          class="text-brand-green text-sm underline underline-offset-4"
-                          >ссылка на отзыв</a
-                        >
-                      </div>
-                    </div>
-
-                    <!-- Review -->
-                    <div class="bg-brand-green-light rounded-20 p-30px">
-                      Добрый день, хотим поблагодарить за урок Александра, дает
-                      задание читабельно, не торопится, детям интересно. Аня
-                      занималась сегодня с удовольствием, я присутствовала на
-                      занятии. Надеемся, что следующий урок будет проводить
-                      Александр), или другой преподаватель в таком же формате.
-                      Спасибо.
-                    </div>
-                  </div>
-                </div>
-                <!-- Review 7 -->
-                <div class="swiper-slide">
-                  <div class="space-y-8">
-                    <!-- Parent -->
-                    <div class="flex items-center gap-5">
-                      <div
-                        class="size-20 shrink-0 bg-brand-purple rounded-full"
-                      ></div>
-                      <div class="space-y-1">
-                        <h3 class="text-2xl font-semibold">Анастасия</h3>
-                        <a
-                          href="#"
-                          class="text-brand-purple text-sm underline underline-offset-4"
-                          >ссылка на отзыв</a
-                        >
-                      </div>
-                    </div>
-
-                    <!-- Review -->
-                    <div class="bg-brand-purple-light rounded-20 p-30px">
-                      Да, преподавателем очень довольны. Даша сказала, что это
-                      лучший учитель по программированию из всех, что у нее
-                      были)
-                    </div>
-                  </div>
-                </div>
-                <!-- Review 8 -->
-                <div class="swiper-slide">
-                  <div class="space-y-8">
-                    <!-- Parent -->
-                    <div class="flex items-center gap-5">
-                      <div
-                        class="size-20 shrink-0 bg-brand-yellow rounded-full"
-                      ></div>
-                      <div class="space-y-1">
-                        <h3 class="text-2xl font-semibold">Сергей</h3>
-                        <a
-                          href="#"
-                          class="text-brand-yellow text-sm underline underline-offset-4"
-                          >ссылка на отзыв</a
-                        >
-                      </div>
-                    </div>
-
-                    <!-- Review -->
-                    <div class="bg-brand-yellow-light rounded-20 p-30px">
-                      Отличная школа, отдал ребенка 5 лет на робототехнику, он
-                      там то-то, я доволен.... Отличная школа, отдал ребенка 5
-                      лет на робототехнику, он там то-то, я доволен....Отличная
-                      школа, отдал ребенка 5 лет на робототехнику, он там то-то,
-                      я доволен....
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Images -->
-      <section id="image">
-        <div class="max-w-base mx-auto grid grid-cols-4 gap-5 px-2.5">
-          <!-- Image 1 -->
-          <div class="aspect-square rounded-2xl overflow-hidden">
-            <img
-              src="./assets/images/img-images-1.png"
-              alt="Image"
-              class="size-full object-cover"
-            />
-          </div>
-          <!-- Image 2 -->
-          <div
-            class="aspect-square relative bg-brand-yellow-light border-2 border-brand-yellow border-dashed rounded-2xl overflow-hidden"
-          >
-            <img
-              src="./assets/images/img-images-stars.png"
-              alt="Image"
-              class="size-full object-cover"
-            />
-            <h3
-              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-2xl font-semibold leading-8 text-center whitespace-nowrap"
-            >
-              Родителям и детям <br />
-              у нас нравится
-            </h3>
-          </div>
-          <!-- Image 3 -->
-          <div class="aspect-square rounded-2xl overflow-hidden">
-            <img
-              src="./assets/images/img-images-2.png"
-              alt="Image"
-              class="size-full object-cover"
-            />
-          </div>
-          <!-- Image 4 -->
-          <div class="aspect-square rounded-2xl overflow-hidden">
-            <img
-              src="./assets/images/img-images-3.png"
-              alt="Image"
-              class="size-full object-cover"
-            />
-          </div>
-          <!-- Image 5 -->
-          <div class="aspect-square rounded-2xl overflow-hidden">
-            <img
-              src="./assets/images/img-images-4.png"
-              alt="Image"
-              class="size-full object-cover"
-            />
-          </div>
-          <!-- Image 6 -->
-          <div class="aspect-square rounded-2xl overflow-hidden">
-            <img
-              src="./assets/images/img-images-5.png"
-              alt="Image"
-              class="size-full object-cover"
-            />
-          </div>
-          <!-- Image 7 -->
-          <div class="aspect-square rounded-2xl overflow-hidden">
-            <img
-              src="./assets/images/img-images-6.png"
-              alt="Image"
-              class="size-full object-cover"
-            />
-          </div>
-          <!-- Image 8 -->
-          <div class="aspect-square rounded-2xl overflow-hidden">
-            <img
-              src="./assets/images/img-images-7.png"
-              alt="Image"
-              class="size-full object-cover"
-            />
-          </div>
-        </div>
-      </section>
-
-      <!-- Leave Questions ? -->
-      <section id="leave-question">
-        <div class="max-w-base mx-auto px-2.5">
-          <div
-            class="relative flex justify-between bg-brand-blue-norm rounded-30 overflow-hidden"
-          >
-            <div class="w-1/2 spac-y-10 py-60px pl-60px">
-              <div class="space-y-5 relative z-10">
-                <h2>
-                  <span
-                    class="bg-white border-2 border-dashed border-brand-blue rounded-20 mt-2 -ml-5 py-0.5 px-4"
-                    >Остались вопросы?</span
-                  >
-                  Получите ответы у преподавателя
-                </h2>
-                <p class="max-w-[360px] text-xl text-brand-gray leading-6">
-                  Подробно обсудим всё, что вас волнует, и подберём подходящий
-                  курс для вашего ребёнка
-                </p>
-              </div>
-            </div>
-
-            <!-- Image Boxes -->
-            <img
-              src="./assets/images/img-question.png"
-              alt="Image"
-              class="absolute left-0 bottom-0"
-            />
-
-            <!-- Image Girl -->
-            <img
-              src="./assets/images/img-girl-question.png"
-              alt="Image"
-              class="w-fit h-fit mt-auto mr-10"
-            />
-
-            <!-- Form -->
-            <form action="#" class="w-1/2 space-y-5 py-[90px] pr-60px">
+            <div class="flex-1 bg-white rounded-20 p-1.5 sm:p-8">
               <!-- Select Container -->
-              <div class="relative select">
+              <div class="relative select block lg:hidden mb-30px">
                 <!-- Select Button -->
                 <button
-                  class="select-button h-50px sm:h-60px w-full flex items-center justify-between bg-white text-brand-gray-100 focus:outline-none focus:ring-2 focus:ring-brand-blue rounded-20 px-5"
+                  class="select-button w-full flex items-center justify-between bg-white text-brand-gray-100 border border-brand-blue focus:outline-none focus:ring-2 focus:ring-brand-blue rounded-20 p-5"
                 >
                   <span class="select-label">Выберите филиал</span>
                   <svg
@@ -1624,7 +1095,7 @@
 
                 <!-- Select List -->
                 <ul
-                  class="select-list fade-in absolute mt-2 bg-white rounded-20 shadow-lg w-full hidden z-10"
+                  class="select-list fade-in absolute mt-2 bg-white rounded-20 shadow-lg w-full hidden z-20"
                 >
                   <li
                     class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
@@ -1679,17 +1150,781 @@
                 </ul>
               </div>
 
-              <input
-                type="text"
-                placeholder="Ваше имя"
-                class="w-full text-brand-gray-100 outline-none border-none focus:outline-none focus:ring-2 focus:ring-brand-blue rounded-20 placeholder:text-brand-gray-100 p-5"
-              />
+              <div
+                class="flex flex-col sm:flex-row sm:items-center justify-between gap-5 mb-8"
+              >
+                <div class="space-y-2.5">
+                  <h3
+                    class="text-xl sm:text-2xl font-semibold leading-5 sm:leading-30px"
+                  >
+                    Уралмаш
+                  </h3>
+                  <p
+                    class="text-sm sm:text-base text-brand-gray leading-4 sm:leading-6"
+                  >
+                    ул. Бакинских Комиссаров, 107
+                  </p>
+                </div>
 
-              <input
-                type="text"
-                placeholder="Ваш номер телефона"
-                class="w-full text-brand-gray-100 outline-none border-none focus:outline-none focus:ring-2 focus:ring-brand-blue rounded-20 placeholder:text-brand-gray-100 p-5"
-              />
+                <button
+                  class="h-50px w-fit relative z-10 flex items-center xl:text-xl bg-brand-blue text-white border-2 xl:border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-blue transition-all duration-300 px-30px xl:px-10"
+                >
+                  Перейти →
+                </button>
+              </div>
+
+              <!-- Map & Contacts -->
+              <div class="flex flex-col lg:flex-col-reverse xl:flex-row gap-5">
+                <!-- Map -->
+                <div class="flex-1 rounded-20 sm:rounded-30 overflow-hidden">
+                  <script
+                    type="text/javascript"
+                    charset="utf-8"
+                    async
+                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A40eab08b3d25e42e00e767f7b626b5a17a57055e7780c042043ca8dcaa6a196a&amp;width=100%25&amp;height=450&amp;lang=en_FR&amp;scroll=true"
+                  ></script>
+                </div>
+
+                <div class="xl:w-[332px] shrink-0 space-y-5">
+                  <!-- Top -->
+                  <div class="grid grid-cols-2 gap-5">
+                    <div
+                      class="grid place-content-center bg-brand-purple-light rounded-2xl py-8 sm:py-10"
+                    >
+                      <div class="text-center">
+                        <p
+                          class="text-xl sm:text-2xl font-semibold text-brand-purple leading-6 sm:leading-30px px-8"
+                        >
+                          10
+                        </p>
+                        <p
+                          class="text-sm sm:text-base text-brand-gray leading-4 sm:leading-5"
+                        >
+                          направлений
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="grid place-content-center bg-brand-green-light rounded-2xl py-8 sm:py-10"
+                    >
+                      <div class="text-center">
+                        <p
+                          class="text-xl sm:text-2xl font-semibold text-brand-green leading-6 sm:leading-30px px-8"
+                        >
+                          5-15 лет
+                        </p>
+                        <p
+                          class="text-sm sm:text-base text-brand-gray leading-4 sm:leading-5"
+                        >
+                          возраст детей
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Bottom -->
+                  <div class="bg-brand-blue-light rounded-2xl px-30px py-7">
+                    <ul class="space-y-5">
+                      <li class="space-y-2.5 sm:space-y-2.5">
+                        <p
+                          class="text-sm sm:text-base text-brand-gray leading-4 sm:leading-5"
+                        >
+                          Телефон
+                        </p>
+                        <a
+                          href="tel:"
+                          class="block text-brand-blue text-xl sm:text-2xl font-bold leading-5 sm:leading-30px"
+                          >+7 (343) 219-00-33</a
+                        >
+                      </li>
+                      <li class="space-y-2.5">
+                        <p
+                          class="text-sm sm:text-base text-brand-gray leading-4 sm:leading-5"
+                        >
+                          WhatsApp
+                        </p>
+                        <a
+                          href="tel:"
+                          class="block text-brand-blue text-xl sm:text-2xl font-bold leading-5 sm:leading-30px"
+                          >+7 (950) 633-62-96</a
+                        >
+                      </li>
+                      <li class="space-y-2.5">
+                        <p
+                          class="text-sm sm:text-base text-brand-gray leading-4 sm:leading-5"
+                        >
+                          Почта для связи
+                        </p>
+                        <a
+                          href="mailto:"
+                          class="block text-brand-blue text-xl sm:text-2xl font-bold leading-5 sm:leading-30px"
+                          >info@umnik66.ru</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Teachers -->
+      <section id="teachers">
+        <div
+          class="max-w-base mx-auto flex flex-col lg:flex-row items-stretch sm:gap-10 xl:gap-28"
+        >
+          <div class="lg:max-w-[435px] flex flex-col justify-between gap-30px">
+            <h2 class="text-center lg:text-start px-2.5">
+              Преподаватели <br class="hidden lg:block" />
+              академии
+            </h2>
+
+            <!-- Rounds -->
+            <div
+              class="no-scroll flex items-center gap-2.5 xl:gap-5 overflow-auto px-2.5"
+            >
+              <!-- Round 1 with border -->
+              <div
+                class="size-20 shrink-0 border-2 border-brand-blue border-dashed rounded-full p-1"
+              >
+                <div class="w-full h-full bg-brand-gray-200 rounded-full"></div>
+              </div>
+              <!-- Round 2 -->
+              <div class="size-20 shrink-0 rounded-full p-1">
+                <div class="w-full h-full bg-brand-gray-200 rounded-full"></div>
+              </div>
+              <!-- Round 3 -->
+              <div class="size-20 shrink-0 rounded-full p-1">
+                <div class="w-full h-full bg-brand-gray-200 rounded-full"></div>
+              </div>
+              <!-- Round 4 -->
+              <div class="size-20 shrink-0 rounded-full p-1">
+                <div class="w-full h-full bg-brand-gray-200 rounded-full"></div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex-1 flex flex-col sm:flex-row lg:justify-end gap-10 px-2.5"
+          >
+            <!-- Main Image -->
+            <div
+              class="w-full lg:max-w-[350px] lg:shrink-0 h-[380px] bg-brand-gray-200 rounded-2xl mt-30px md:mt-0"
+            ></div>
+
+            <div class="w-full space-y-8">
+              <div class="space-y-5">
+                <h3
+                  class="text-xl xs:text-2xl font-semibold leading-6 xs:leading-30px"
+                >
+                  Владимир Турыгин
+                </h3>
+                <ul
+                  class="max-w-[364px] space-y-2.5 text-sm xs:text-base list-disc text-brand-gray leading-4 xs:leading-5"
+                >
+                  <li>
+                    Дипломированный преподаватель робототехники и
+                    программирования.
+                  </li>
+                  <li>
+                    Выпускник: Уральского государственного технического
+                    университета.
+                  </li>
+                </ul>
+              </div>
+
+              <div
+                class="inline-flex items-center gap-4 bg-brand-blue-light rounded-20 text-sm xs:text-base leading-4 xs:leading- p-4"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.0262 13.0335C14.5846 12.6668 15.3179 13.0668 15.3179 13.7335V14.8085C15.3179 15.8668 14.4929 17.0001 13.5012 17.3335L10.8429 18.2168C10.3762 18.3751 9.61791 18.3751 9.15958 18.2168L6.50124 17.3335C5.50124 17.0001 4.68457 15.8668 4.68457 14.8085V13.7251C4.68457 13.0668 5.4179 12.6668 5.9679 13.0251L7.68457 14.1418C8.34291 14.5835 9.17624 14.8001 10.0096 14.8001C10.8429 14.8001 11.6762 14.5835 12.3346 14.1418L14.0262 13.0335Z"
+                    fill="#3FA2F6"
+                  />
+                  <path
+                    d="M16.6493 5.38281L11.6576 2.10781C10.7576 1.51615 9.27426 1.51615 8.37426 2.10781L3.35762 5.38281C1.74928 6.42448 1.74928 8.78282 3.35762 9.83282L4.69095 10.6995L8.37426 13.0995C9.27426 13.6912 10.7576 13.6912 11.6576 13.0995L15.3159 10.6995L16.4576 9.94949V12.4995C16.4576 12.8412 16.7409 13.1245 17.0826 13.1245C17.4243 13.1245 17.7076 12.8412 17.7076 12.4995V8.39949C18.0409 7.32448 17.6993 6.07448 16.6493 5.38281Z"
+                    fill="#3FA2F6"
+                  />
+                </svg>
+
+                Преподаёт 10 лет
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews -->
+      <section id="reviews" class="space-y-30px lg:space-y-60px">
+        <div
+          class="max-w-base mx-auto flex items-center justify-between px-2.5"
+        >
+          <h2>Отзывы родителей</h2>
+          <!-- Slider Navigation Buttons -->
+          <div class="hidden lg:flex items-center gap-5">
+            <!-- Prev -->
+            <button
+              class="slider-reviews-prev size-60px shrink-0 group grid place-content-center bg-brand-blue-norm border-2 border-transparent rounded-full hover:bg-white hover:border-brand-blue hover:border-dashed transition-all duration-300"
+            >
+              <svg
+                width="17"
+                height="30"
+                viewBox="0 0 17 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.0591 1L2 15.059L16.0591 29.1179"
+                  stroke="#3FA2F6"
+                  stroke-width="1.87777"
+                />
+              </svg>
+            </button>
+            <!-- Next -->
+            <button
+              class="slider-reviews-next size-60px shrink-0 group grid place-content-center bg-brand-blue-norm border-2 border-transparent rounded-full hover:bg-white hover:border-brand-blue hover:border-dashed transition-all duration-300"
+            >
+              <svg
+                width="17"
+                height="30"
+                viewBox="0 0 17 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.940915 1L15 15.059L0.940915 29.1179"
+                  stroke="#3FA2F6"
+                  stroke-width="1.87777"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="relative">
+          <!-- Swiper -->
+          <div class="max-w-base mx-auto">
+            <div class="swiper reviesSwiper w-full px-2.5">
+              <div class="swiper-wrapper">
+                <!-- Review 1 -->
+                <div class="swiper-slide">
+                  <div class="space-y-8">
+                    <!-- Parent -->
+                    <div class="flex items-center gap-5">
+                      <div
+                        class="size-60px lg:size-20 shrink-0 bg-brand-blue rounded-full"
+                      ></div>
+                      <div class="space-y-1">
+                        <h3
+                          class="text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px"
+                        >
+                          Людмила
+                        </h3>
+                        <a
+                          href="#"
+                          class="text-brand-blue text-xs lg:text-sm underline underline-offset-4"
+                          >ссылка на отзыв</a
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Review -->
+                    <div
+                      class="text-sm lg:text-base bg-brand-blue-norm rounded-20 leading-4 lg:leading-5 p-5 lg:p-30px"
+                    >
+                      Отличная школа, отдал ребенка 5 лет на робототехнику, он
+                      там то-то, я доволен.... Отличная школа, отдал ребенка 5
+                      лет на робототехнику, он там то-то, я доволен....Отличная
+                      школа, отдал ребенка 5 лет на робототехнику, он там то-то,
+                      я доволен....
+                    </div>
+                  </div>
+                </div>
+                <!-- Review 2 -->
+                <div class="swiper-slide">
+                  <div class="space-y-8">
+                    <!-- Parent -->
+                    <div class="flex items-center gap-5">
+                      <div
+                        class="size-60px lg:size-20 shrink-0 bg-brand-green rounded-full"
+                      ></div>
+                      <div class="space-y-1">
+                        <h3
+                          class="text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px"
+                        >
+                          Георгий
+                        </h3>
+                        <a
+                          href="#"
+                          class="text-brand-green text-xs lg:text-sm underline underline-offset-4"
+                          >ссылка на отзыв</a
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Review -->
+                    <div
+                      class="text-sm lg:text-base bg-brand-green-light rounded-20 leading-4 lg:leading-5 p-5 lg:p-30px"
+                    >
+                      Добрый день, хотим поблагодарить за урок Александра, дает
+                      задание читабельно, не торопится, детям интересно. Аня
+                      занималась сегодня с удовольствием, я присутствовала на
+                      занятии. Надеемся, что следующий урок будет проводить
+                      Александр), или другой преподаватель в таком же формате.
+                      Спасибо.
+                    </div>
+                  </div>
+                </div>
+                <!-- Review 3 -->
+                <div class="swiper-slide">
+                  <div class="space-y-8">
+                    <!-- Parent -->
+                    <div class="flex items-center gap-5">
+                      <div
+                        class="size-60px lg:size-20 shrink-0 bg-brand-purple rounded-full"
+                      ></div>
+                      <div class="space-y-1">
+                        <h3
+                          class="text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px"
+                        >
+                          Анастасия
+                        </h3>
+                        <a
+                          href="#"
+                          class="text-brand-purple text-xs lg:text-sm underline underline-offset-4"
+                          >ссылка на отзыв</a
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Review -->
+                    <div
+                      class="text-sm lg:text-base bg-brand-purple-light rounded-20 leading-4 lg:leading-5 p-5 lg:p-30px"
+                    >
+                      Да, преподавателем очень довольны. Даша сказала, что это
+                      лучший учитель по программированию из всех, что у нее
+                      были)
+                    </div>
+                  </div>
+                </div>
+                <!-- Review 4 -->
+                <div class="swiper-slide">
+                  <div class="space-y-8">
+                    <!-- Parent -->
+                    <div class="flex items-center gap-5">
+                      <div
+                        class="size-60px lg:size-20 shrink-0 bg-brand-yellow rounded-full"
+                      ></div>
+                      <div class="space-y-1">
+                        <h3
+                          class="text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px"
+                        >
+                          Сергей
+                        </h3>
+                        <a
+                          href="#"
+                          class="text-brand-yellow text-xs lg:text-sm underline underline-offset-4"
+                          >ссылка на отзыв</a
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Review -->
+                    <div
+                      class="text-sm lg:text-base bg-brand-yellow-light rounded-20 leading-4 lg:leading-5 p-5 lg:p-30px"
+                    >
+                      Отличная школа, отдал ребенка 5 лет на робототехнику, он
+                      там то-то, я доволен.... Отличная школа, отдал ребенка 5
+                      лет на робототехнику, он там то-то, я доволен....Отличная
+                      школа, отдал ребенка 5 лет на робототехнику, он там то-то,
+                      я доволен....
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Review 1 -->
+                <div class="swiper-slide">
+                  <div class="space-y-8">
+                    <!-- Parent -->
+                    <div class="flex items-center gap-5">
+                      <div
+                        class="size-60px lg:size-20 shrink-0 bg-brand-blue rounded-full"
+                      ></div>
+                      <div class="space-y-1">
+                        <h3
+                          class="text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px"
+                        >
+                          Людмила
+                        </h3>
+                        <a
+                          href="#"
+                          class="text-brand-blue text-xs lg:text-sm underline underline-offset-4"
+                          >ссылка на отзыв</a
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Review -->
+                    <div
+                      class="text-sm lg:text-base bg-brand-blue-norm rounded-20 leading-4 lg:leading-5 p-5 lg:p-30px"
+                    >
+                      Отличная школа, отдал ребенка 5 лет на робототехнику, он
+                      там то-то, я доволен.... Отличная школа, отдал ребенка 5
+                      лет на робототехнику, он там то-то, я доволен....Отличная
+                      школа, отдал ребенка 5 лет на робототехнику, он там то-то,
+                      я доволен....
+                    </div>
+                  </div>
+                </div>
+                <!-- Review 2 -->
+                <div class="swiper-slide">
+                  <div class="space-y-8">
+                    <!-- Parent -->
+                    <div class="flex items-center gap-5">
+                      <div
+                        class="size-60px lg:size-20 shrink-0 bg-brand-green rounded-full"
+                      ></div>
+                      <div class="space-y-1">
+                        <h3
+                          class="text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px"
+                        >
+                          Георгий
+                        </h3>
+                        <a
+                          href="#"
+                          class="text-brand-green text-xs lg:text-sm underline underline-offset-4"
+                          >ссылка на отзыв</a
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Review -->
+                    <div
+                      class="text-sm lg:text-base bg-brand-green-light rounded-20 leading-4 lg:leading-5 p-5 lg:p-30px"
+                    >
+                      Добрый день, хотим поблагодарить за урок Александра, дает
+                      задание читабельно, не торопится, детям интересно. Аня
+                      занималась сегодня с удовольствием, я присутствовала на
+                      занятии. Надеемся, что следующий урок будет проводить
+                      Александр), или другой преподаватель в таком же формате.
+                      Спасибо.
+                    </div>
+                  </div>
+                </div>
+                <!-- Review 3 -->
+                <div class="swiper-slide">
+                  <div class="space-y-8">
+                    <!-- Parent -->
+                    <div class="flex items-center gap-5">
+                      <div
+                        class="size-60px lg:size-20 shrink-0 bg-brand-purple rounded-full"
+                      ></div>
+                      <div class="space-y-1">
+                        <h3
+                          class="text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px"
+                        >
+                          Анастасия
+                        </h3>
+                        <a
+                          href="#"
+                          class="text-brand-purple text-xs lg:text-sm underline underline-offset-4"
+                          >ссылка на отзыв</a
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Review -->
+                    <div
+                      class="text-sm lg:text-base bg-brand-purple-light rounded-20 leading-4 lg:leading-5 p-5 lg:p-30px"
+                    >
+                      Да, преподавателем очень довольны. Даша сказала, что это
+                      лучший учитель по программированию из всех, что у нее
+                      были)
+                    </div>
+                  </div>
+                </div>
+                <!-- Review 4 -->
+                <div class="swiper-slide">
+                  <div class="space-y-8">
+                    <!-- Parent -->
+                    <div class="flex items-center gap-5">
+                      <div
+                        class="size-60px lg:size-20 shrink-0 bg-brand-yellow rounded-full"
+                      ></div>
+                      <div class="space-y-1">
+                        <h3
+                          class="text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px"
+                        >
+                          Сергей
+                        </h3>
+                        <a
+                          href="#"
+                          class="text-brand-yellow text-xs lg:text-sm underline underline-offset-4"
+                          >ссылка на отзыв</a
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Review -->
+                    <div
+                      class="text-sm lg:text-base bg-brand-yellow-light rounded-20 leading-4 lg:leading-5 p-5 lg:p-30px"
+                    >
+                      Отличная школа, отдал ребенка 5 лет на робототехнику, он
+                      там то-то, я доволен.... Отличная школа, отдал ребенка 5
+                      лет на робототехнику, он там то-то, я доволен....Отличная
+                      школа, отдал ребенка 5 лет на робототехнику, он там то-то,
+                      я доволен....
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Images -->
+      <section id="image">
+        <div
+          class="no-scroll max-w-base mx-auto flex sm:grid grid-cols-3 lg:grid-cols-4 gap-2.5 lg:gap-5 overflow-auto px-2.5"
+        >
+          <!-- Image 1 -->
+          <div
+            class="w-[280px] shrink-0 sm:shrink sm:w-auto aspect-square rounded-2xl overflow-hidden"
+          >
+            <img
+              src="./assets/images/img-images-1.png"
+              alt="Image"
+              class="size-full object-cover"
+            />
+          </div>
+          <!-- Image 2 -->
+          <div
+            class="hidden sm:block aspect-square relative bg-brand-yellow-light border-2 border-brand-yellow border-dashed rounded-2xl overflow-hidden"
+          >
+            <img
+              src="./assets/images/img-images-stars.png"
+              alt="Image"
+              class="size-full object-cover"
+            />
+            <h3
+              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-2xl font-semibold leading-8 text-center whitespace-nowrap"
+            >
+              Родителям и детям <br />
+              у нас нравится
+            </h3>
+          </div>
+          <!-- Image 3 -->
+          <div
+            class="w-[280px] shrink-0 sm:shrink sm:w-auto aspect-square rounded-2xl overflow-hidden"
+          >
+            <img
+              src="./assets/images/img-images-2.png"
+              alt="Image"
+              class="size-full object-cover"
+            />
+          </div>
+          <!-- Image 4 -->
+          <div
+            class="w-[280px] shrink-0 sm:shrink sm:w-auto aspect-square rounded-2xl overflow-hidden"
+          >
+            <img
+              src="./assets/images/img-images-3.png"
+              alt="Image"
+              class="size-full object-cover"
+            />
+          </div>
+          <!-- Image 5 -->
+          <div
+            class="w-[280px] shrink-0 sm:shrink sm:w-auto aspect-square rounded-2xl overflow-hidden"
+          >
+            <img
+              src="./assets/images/img-images-4.png"
+              alt="Image"
+              class="size-full object-cover"
+            />
+          </div>
+          <!-- Image 6 -->
+          <div
+            class="w-[280px] shrink-0 sm:shrink sm:w-auto aspect-square rounded-2xl overflow-hidden"
+          >
+            <img
+              src="./assets/images/img-images-5.png"
+              alt="Image"
+              class="size-full object-cover"
+            />
+          </div>
+          <!-- Image 7 -->
+          <div
+            class="w-[280px] shrink-0 sm:shrink sm:w-auto aspect-square rounded-2xl overflow-hidden"
+          >
+            <img
+              src="./assets/images/img-images-6.png"
+              alt="Image"
+              class="size-full object-cover"
+            />
+          </div>
+          <!-- Image 8 -->
+          <div
+            class="w-[280px] shrink-0 sm:shrink sm:w-auto aspect-square rounded-2xl overflow-hidden"
+          >
+            <img
+              src="./assets/images/img-images-7.png"
+              alt="Image"
+              class="size-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Leave Questions ? -->
+      <section id="leave-question">
+        <div class="max-w-base mx-auto px-2.5">
+          <div
+            class="relative flex flex-col lg:flex-row justify-between bg-brand-blue-norm rounded-30 overflow-hidden"
+          >
+            <div
+              class="lg:w-1/2 spac-y-10 px-30px py-30px sm:py-50px lg:pl-50px xl:py-60px xl:pl-60px"
+            >
+              <div
+                class="max-w-xl mx-auto lg:mx-0 space-y-5 relative text-center lg:text-start z-10"
+              >
+                <h2>
+                  <span
+                    class="bg-white border-2 border-dashed border-brand-blue rounded-20 mt-2 -ml-5 py-0.5 px-4"
+                    >Остались вопросы?</span
+                  >
+                  <br />
+                  Получите ответы у преподавателя
+                </h2>
+                <p
+                  class="lg:max-w-[360px] mx-auto lg:mx-0 text-brand-gray text-sm sm:text-xl leading-4 sm:leading-6"
+                >
+                  Подробно обсудим всё, что вас волнует, и подберём подходящий
+                  курс для вашего ребёнка
+                </p>
+              </div>
+            </div>
+
+            <!-- Image Boxes -->
+            <img
+              src="./assets/images/img-question.png"
+              alt="Image"
+              class="hidden sm:block absolute left-0 bottom-0"
+            />
+
+            <!-- Image Girl -->
+            <img
+              src="./assets/images/img-girl-question.png"
+              alt="Image"
+              class="hidden absolute bottom-0 left-1/2 -translate-x-1/2 lg:block w-fit h-fit mt-auto"
+            />
+
+            <!-- Form -->
+            <form
+              action="#"
+              class="lg:max-w-[460px] w-full relative z-10 lg:w-1/2 space-y-5 pb-30px px-4 lg:py-[90px] lg:pr-60px"
+            >
+              <div class="grid xs:grid-cols-2 lg:grid-cols-1 gap-2.5 sm:gap-5">
+                <!-- Select Container -->
+                <div class="xs:col-span-2 md:col-span-1 relative select">
+                  <!-- Select Button -->
+                  <button
+                    class="select-button h-50px xs:h-60px w-full flex items-center justify-between bg-white text-brand-gray-100 focus:outline-none focus:ring-2 focus:ring-brand-blue rounded-20 px-5"
+                  >
+                    <span class="select-label">Выберите филиал</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      class="select-icon w-5 h-5 transition-transform"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19.5 8.25L12 15.75L4.5 8.25"
+                      />
+                    </svg>
+                  </button>
+
+                  <!-- Select List -->
+                  <ul
+                    class="select-list fade-in absolute mt-2 bg-white rounded-20 shadow-lg w-full hidden z-10"
+                  >
+                    <li
+                      class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                      data-value="Уралмаш"
+                    >
+                      <img
+                        src="./assets/images/icon-location.svg"
+                        alt="Location Icon"
+                      />
+                      Уралмаш
+                    </li>
+                    <li
+                      class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                      data-value="Эльмаш"
+                    >
+                      <img
+                        src="./assets/images/icon-location.svg"
+                        alt="Location Icon"
+                      />
+                      Эльмаш
+                    </li>
+                    <li
+                      class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                      data-value="Садовый"
+                    >
+                      <img
+                        src="./assets/images/icon-location.svg"
+                        alt="Location Icon"
+                      />
+                      Садовый
+                    </li>
+                    <li
+                      class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                      data-value="Завокзальный"
+                    >
+                      <img
+                        src="./assets/images/icon-location.svg"
+                        alt="Location Icon"
+                      />
+                      Завокзальный
+                    </li>
+                    <li
+                      class="flex items-center gap-2 hover:bg-gray-100 cursor-pointer p-5"
+                      data-value="Широкая речка"
+                    >
+                      <img
+                        src="./assets/images/icon-location.svg"
+                        alt="Location Icon"
+                      />
+                      Широкая речка
+                    </li>
+                  </ul>
+                </div>
+
+                <input
+                  type="text"
+                  placeholder="Ваше имя"
+                  class="w-full text-brand-gray-100 outline-none border-none focus:outline-none focus:ring-2 focus:ring-brand-blue rounded-20 placeholder:text-brand-gray-100 p-5"
+                />
+
+                <input
+                  type="text"
+                  placeholder="Ваш номер телефона"
+                  class="w-full text-brand-gray-100 outline-none border-none focus:outline-none focus:ring-2 focus:ring-brand-blue rounded-20 placeholder:text-brand-gray-100 p-5"
+                />
+              </div>
 
               <div class="flex items-center gap-2.5">
                 <input
@@ -1706,11 +1941,25 @@
               </div>
 
               <button
-                class="w-full bg-brand-blue text-white text-xl leading-5 border-4 border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-blue hover:border-dashed transition-all duration-300 p-5"
+                class="w-full h-50px sm:h-60px bg-brand-blue text-white sm:text-xl leading-5 sm:leading-6 border-2 lg:border-4 border-transparent rounded-20 hover:bg-white hover:text-black hover:border-brand-blue hover:border-dashed transition-all duration-300 px-5"
               >
                 Записаться на пробный урок
               </button>
             </form>
+
+            <!-- Image Girl Mobile -->
+            <img
+              src="./assets/images/img-girl-question.png"
+              alt="Image"
+              class="relative z-10 lg:hidden w-1/2 sm:w-1/3 mt-auto ml-auto mr-3"
+            />
+
+            <!-- Image Boxes Mobile -->
+            <img
+              src="./assets/images/img-question-mobile.png"
+              alt="Image"
+              class="sm:hidden absolute left-0 bottom-0"
+            />
           </div>
         </div>
       </section>
@@ -1720,21 +1969,21 @@
     <footer id="footer">
       <!-- Top -->
       <div
-        class="max-w-base mx-auto flex justify-between border-t border-brand-blue-norm py-60px px-2.5"
+        class="max-w-base mx-auto flex flex-col xl:flex-row justify-between gap-30px border-t border-brand-blue-norm py-30px lg:py-60px px-2.5"
       >
         <!-- Logo & Socials -->
-        <div class="space-y-60px">
+        <div class="mx-auto space-y-30px lg:space-y-60px">
           <!-- Logo -->
-          <a href="#" class="w-56 h-[70px]">
+          <a href="#" class="">
             <img
               src="./assets/images/logo.png"
               alt="Logo"
-              class="w-56 h-[70px]"
+              class="w-[171px] h-[53px] sm:w-56 sm:h-[70px]"
             />
           </a>
 
           <!-- Socials -->
-          <div class="flex items-center gap-5">
+          <div class="flex items-center justify-center gap-5">
             <a href="#">
               <img src="./assets/images/icon-vkontakte.svg" alt="Vkontakte" />
             </a>
@@ -1748,10 +1997,16 @@
         </div>
 
         <!-- Links -->
-        <div class="flex gap-[90px] leading-5">
+        <div
+          class="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 xl:flex flex-wrap gap-10 lggap-16 xl:gap-[90px] text-sm xl:text-base leading-4 xl:leading-5"
+        >
           <!-- Links 1 -->
           <div class="space-y-5">
-            <h3 class="text-2xl font-semibold leading-30px">Меню</h3>
+            <h3
+              class="text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px"
+            >
+              Меню
+            </h3>
 
             <ul class="space-y-5">
               <li>
@@ -1821,7 +2076,11 @@
           </div>
           <!-- Links 1 -->
           <div class="space-y-5">
-            <h3 class="text-2xl font-semibold leading-30px">Направления</h3>
+            <h3
+              class="text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px"
+            >
+              Направления
+            </h3>
 
             <ul class="space-y-5">
               <li>
@@ -1919,7 +2178,11 @@
           </div>
           <!-- Links 1 -->
           <div class="space-y-5">
-            <h3 class="text-2xl font-semibold leading-30px">Филиалы</h3>
+            <h3
+              class="text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px"
+            >
+              Филиалы
+            </h3>
 
             <ul class="space-y-5">
               <li>
@@ -1961,7 +2224,9 @@
           </div>
           <!-- Links 1 -->
           <div class="space-y-5">
-            <h3 class="text-2xl font-semibold leading-30px">
+            <h3
+              class="text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px"
+            >
               Группы по возрасту
             </h3>
 
@@ -1995,13 +2260,14 @@
       <!-- Bottom -->
       <div class="bg-brand-yellow-100">
         <div
-          class="max-w-base mx-auto flex justify-between text-sm leading-4 text-brand-gray py-30px px-2.5"
+          class="max-w-base mx-auto flex flex-col-reverse lg:flex-row justify-between gap-2.5 text-xs sm:text-sm leading-[14px] sm:leading-4 text-brand-gray py-30px px-2.5"
         >
           <div class="space-y-2.5">
             <p class="max-w-xl pr-10">
               Вы принимаете условия политики в отношении обработки персональных
-              данных и пользовательского соглашения каждый раз, когда оставляете
-              свои данные в любой форме обратной связи на сайте Умник66.ру
+              данных и пользовательского соглашения кажд ый раз, когда
+              оставляете свои данные в любой форме обратной связи на сайте
+              Умник66.ру
             </p>
             <p>© 2024. Академия интеллекта «Умник»</p>
           </div>

@@ -48,21 +48,21 @@
       </div>
 
       <!-- Navbar -->
-      <nav class="">
+      <nav>
         <!-- Nav Top -->
         <div class="border-b py-3.5">
           <div class="max-w-base mx-auto px-2.5 grid grid-cols-2 gap-[73px]">
             <!-- Left -->
             <div class="flex items-center justify-between">
               <!-- Logo & Location -->
-              <div class="flex items-center gap-14">
+              <div class="flex items-center gap-8 xl:gap-14">
                 <!-- Logo -->
-                <a href="#" class="w-40 h-10">
+                <a href="#" class="w-32 h-9 xl:w-40 xl:h-10">
                   <img src="./assets/images/logo.png" alt="Logo" />
                 </a>
 
                 <!-- Location -->
-                <a href="#" class="flex items-center gap-2">
+                <a href="#" class="hidden lg:flex items-center gap-2">
                   <svg
                     width="12"
                     height="15"
@@ -83,52 +83,62 @@
               </div>
 
               <!-- Socials -->
-              <div class="flex items-center gap-5">
+              <div class="hidden lg:flex items-center gap-3.5 xl:gap-5">
                 <a href="#">
                   <img
                     src="./assets/images/icon-vkontakte.svg"
                     alt="Vkontakte"
+                    class="size-8 xl:size-10 shrink-0"
                   />
                 </a>
                 <a href="#">
                   <img
                     src="./assets/images/icon-whatsapp.svg"
                     alt="Vkontakte"
+                    class="size-8 xl:size-10 shrink-0"
                   />
                 </a>
                 <a href="#">
                   <img
                     src="./assets/images/icon-telegram.svg"
                     alt="Vkontakte"
+                    class="size-8 xl:size-10 shrink-0"
                   />
                 </a>
               </div>
             </div>
 
             <!-- Right -->
-            <div class="flex items-center justify-between">
+            <div class="hidden lg:flex items-center justify-between">
               <div>
                 <a
                   href="tel:+7 (343) 219-00-33"
-                  class="font-bold text-brand-blue text-2xl leading-10"
+                  class="font-bold text-brand-blue text-xl xl:text-2xl leading-5 xl:leading-10"
                 >
                   +7 (343) 219-00-33
                 </a>
-                <p class="text-sm">ежедневно с 8:00 до 20:00</p>
+                <p class="text-xs xl:text-sm">ежедневно с 8:00 до 20:00</p>
               </div>
 
               <button
-                class="h-50px bg-brand-yellow border-4 border-dashed border-transparent rounded-20 hover:bg-white hover:border-brand-yellow transition-all duration-300 px-5"
+                class="h-10 xl:h-50px bg-brand-yellow text-sm xl:text-base border-4 border-dashed border-transparent rounded-2xl xl:rounded-20 hover:bg-white hover:border-brand-yellow transition-all duration-300 px-3.5 xl:px-5"
               >
                 Записаться на пробный урок
               </button>
             </div>
+            <!-- Menu Btn -->
+            <button class="lg:hidden ml-auto">
+              <img
+                src="./assets/images/icon-hamburger.svg"
+                alt="Hamburger icon"
+              />
+            </button>
           </div>
         </div>
 
         <!-- Nav Bottom -->
-        <div class="max-w-base mx-auto py-5 px-2.5">
-          <ul class="flex justify-between">
+        <div class="max-w-base mx-auto lg:py-5 px-2.5">
+          <ul class="hidden lg:flex justify-between text-sm xl:text-base">
             <li>
               <a
                 href="#"
@@ -661,21 +671,21 @@
     <footer id="footer">
       <!-- Top -->
       <div
-        class="max-w-base mx-auto flex justify-between border-t border-brand-blue-norm py-60px px-2.5"
+        class="max-w-base mx-auto flex flex-col xl:flex-row justify-between gap-30px border-t border-brand-blue-norm py-30px lg:py-60px px-2.5"
       >
         <!-- Logo & Socials -->
-        <div class="space-y-60px">
+        <div class="mx-auto space-y-30px lg:space-y-60px">
           <!-- Logo -->
-          <a href="#" class="w-56 h-[70px]">
+          <a href="#" class="">
             <img
               src="./assets/images/logo.png"
               alt="Logo"
-              class="w-56 h-[70px]"
+              class="w-[171px] h-[53px] sm:w-56 sm:h-[70px]"
             />
           </a>
 
           <!-- Socials -->
-          <div class="flex items-center gap-5">
+          <div class="flex items-center justify-center gap-5">
             <a href="#">
               <img src="./assets/images/icon-vkontakte.svg" alt="Vkontakte" />
             </a>
@@ -689,10 +699,16 @@
         </div>
 
         <!-- Links -->
-        <div class="flex gap-[90px] leading-5">
+        <div
+          class="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 xl:flex flex-wrap gap-10 lggap-16 xl:gap-[90px] text-sm xl:text-base leading-4 xl:leading-5"
+        >
           <!-- Links 1 -->
           <div class="space-y-5">
-            <h3 class="text-2xl font-semibold leading-30px">Меню</h3>
+            <h3
+              class="text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px"
+            >
+              Меню
+            </h3>
 
             <ul class="space-y-5">
               <li>
@@ -762,7 +778,11 @@
           </div>
           <!-- Links 1 -->
           <div class="space-y-5">
-            <h3 class="text-2xl font-semibold leading-30px">Направления</h3>
+            <h3
+              class="text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px"
+            >
+              Направления
+            </h3>
 
             <ul class="space-y-5">
               <li>
@@ -860,7 +880,11 @@
           </div>
           <!-- Links 1 -->
           <div class="space-y-5">
-            <h3 class="text-2xl font-semibold leading-30px">Филиалы</h3>
+            <h3
+              class="text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px"
+            >
+              Филиалы
+            </h3>
 
             <ul class="space-y-5">
               <li>
@@ -902,7 +926,9 @@
           </div>
           <!-- Links 1 -->
           <div class="space-y-5">
-            <h3 class="text-2xl font-semibold leading-30px">
+            <h3
+              class="text-xl lg:text-2xl font-semibold leading-6 lg:leading-30px"
+            >
               Группы по возрасту
             </h3>
 
@@ -936,13 +962,14 @@
       <!-- Bottom -->
       <div class="bg-brand-yellow-100">
         <div
-          class="max-w-base mx-auto flex justify-between text-sm leading-4 text-brand-gray py-30px px-2.5"
+          class="max-w-base mx-auto flex flex-col-reverse lg:flex-row justify-between gap-2.5 text-xs sm:text-sm leading-[14px] sm:leading-4 text-brand-gray py-30px px-2.5"
         >
           <div class="space-y-2.5">
             <p class="max-w-xl pr-10">
               Вы принимаете условия политики в отношении обработки персональных
-              данных и пользовательского соглашения каждый раз, когда оставляете
-              свои данные в любой форме обратной связи на сайте Умник66.ру
+              данных и пользовательского соглашения кажд ый раз, когда
+              оставляете свои данные в любой форме обратной связи на сайте
+              Умник66.ру
             </p>
             <p>© 2024. Академия интеллекта «Умник»</p>
           </div>
