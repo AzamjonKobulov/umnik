@@ -99,13 +99,21 @@ var swiper = new Swiper(".otherProgramsSwiper", {
   },
   loop: true,
   breakpoints: {
+    0: {
+      slidesPerView: 1.2,
+      spaceBetween: 10,
+    },
+    480: {
+      slidesPerView: 1.5,
+      spaceBetween: 10,
+    },
     640: {
-      slidesPerView: 2,
-      spaceBetween: 20,
+      slidesPerView: 1.8,
+      spaceBetween: 10,
     },
     768: {
-      slidesPerView: 4,
-      spaceBetween: 20,
+      slidesPerView: 2.5,
+      spaceBetween: 10,
     },
     1024: {
       slidesPerView: 3,
@@ -122,13 +130,21 @@ var swiper = new Swiper(".newsSwiper", {
   },
   loop: true,
   breakpoints: {
+    0: {
+      slidesPerView: 1.2,
+      spaceBetween: 10,
+    },
+    480: {
+      slidesPerView: 1.5,
+      spaceBetween: 10,
+    },
     640: {
-      slidesPerView: 2,
-      spaceBetween: 20,
+      slidesPerView: 1.8,
+      spaceBetween: 10,
     },
     768: {
-      slidesPerView: 4,
-      spaceBetween: 20,
+      slidesPerView: 2.5,
+      spaceBetween: 10,
     },
     1024: {
       slidesPerView: 3,
