@@ -3577,6 +3577,11 @@ input {
     padding-right: 5rem;
   }
 
+  .md\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
   .md\:pt-30px {
     padding-top: 30px;
   }
@@ -4288,6 +4293,11 @@ input {
   .xl\:py-32 {
     padding-top: 8rem;
     padding-bottom: 8rem;
+  }
+
+  .xl\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .xl\:pl-60px {
