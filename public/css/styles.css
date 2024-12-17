@@ -3177,6 +3177,15 @@ input {
     gap: 0.625rem;
   }
 
+  .xs\:gap-x-2\.5 {
+    -moz-column-gap: 0.625rem;
+         column-gap: 0.625rem;
+  }
+
+  .xs\:gap-y-30px {
+    row-gap: 30px;
+  }
+
   .xs\:border-2 {
     border-width: 2px;
   }
